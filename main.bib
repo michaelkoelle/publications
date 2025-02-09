@@ -122,7 +122,8 @@
   keywords  = {quantum computing, continuous optimization, quantum approximate optimization algorithm, quadratic unconstrained binary optimization, polynomial unconstrained binary optimization},
   location  = {Lisbon, Portugal},
   series    = {GECCO '23 Companion},
-  preprint  = {https://arxiv.org/abs/2305.03390}
+  preprint  = {https://arxiv.org/abs/2305.03390},
+  pdf       = {https://dl.acm.org/doi/pdf/10.1145/3583133.3596358}
 }
 
 @inproceedings{Koelle2024Weight,
@@ -206,14 +207,19 @@
   publisher    = {SciTePress},
   organization = {INSTICC},
   doi          = {10.5220/0012326100003636},
-  isbn         = {978-989-758-680-4}
+  isbn         = {978-989-758-680-4},
+  url          = {https://www.scitepress.org/Papers/2024/123261/},
+  pdf          = {https://www.scitepress.org/Papers/2024/123261/123261.pdf},
+  preprint     = {https://arxiv.org/pdf/2306.04998},
+  code         = {https://github.com/jonas-stein/QBM-Anomaly-Detection},
+  abstract     = {Anomaly detection in Endpoint Detection and Response (EDR) is a critical task in cybersecurity programs of large companies. With rapidly growing amounts of data and the omnipresence of zero-day attacks, manual and rule-based detection techniques are no longer eligible in practice. While classical machine learning approaches to this problem exist, they frequently show unsatisfactory performance in differentiating malicious from benign anomalies. A promising approach to attain superior generalization compard to currently employed machine learning techniques is using quantum generative models. Allowing for the largest representation of data on available quantum hardware, we investigate Quantum-Annealing-based Quantum Boltzmann Machines (QBMs) for the given problem. We contribute the first fully unsupervised approach for the problem of anomaly detection using QBMs and evaluate its performance on an EDR-inspired synthetic dataset. Our results indicate that QBMs can outperform their classical analog (i.e., Restricted Boltzmann Machines) in terms of result quality and training steps in special cases. When employing Quantum Annealers from D-Wave Systems, we conclude that either more accurate classical simulators or substantially more QPU time is needed to conduct the necessary hyperparameter optimization allowing to replicate our simulation results on quantum hardware.}
 }
 
 @article{Phan2024Emergent,
   title    = {Emergent cooperation from mutual acknowledgment exchange in multi-agent reinforcement learning},
   volume   = {38},
   issn     = {1573-7454},
-  url      = {https://doi.org/10.1007/s10458-024-09666-5},
+  url      = {https://link.springer.com/article/10.1007/s10458-024-09666-5},
   doi      = {10.1007/s10458-024-09666-5},
   abstract = {Peer incentivization (PI) is a recent approach where all agents learn to reward or penalize each other in a distributed fashion, which often leads to emergent cooperation. Current PI mechanisms implicitly assume a flawless communication channel in order to exchange rewards. These rewards are directly incorporated into the learning process without any chance to respond with feedback. Furthermore, most PI approaches rely on global information, which limits scalability and applicability to real-world scenarios where only local information is accessible. In this paper, we propose Mutual Acknowledgment Token Exchange (MATE), a PI approach defined by a two-phase communication protocol to exchange acknowledgment tokens as incentives to shape individual rewards mutually. All agents condition their token transmissions on the locally estimated quality of their own situations based on environmental rewards and received tokens. MATE is completely decentralized and only requires local communication and information. We evaluate MATE in three social dilemma domains. Our results show that MATE is able to achieve and maintain significantly higher levels of cooperation than previous PI approaches. In addition, we evaluate the robustness of MATE in more realistic scenarios, where agents can deviate from the protocol and communication failures can occur. We also evaluate the sensitivity of MATE w.r.t. the choice of token values.},
   number   = {2},
@@ -221,7 +227,10 @@
   author   = {Phan, Thomy and Sommer, Felix and Ritz, Fabian and Altmann, Philipp and Nüßlein, Jonas and Kölle, Michael and Belzner, Lenz and Linnhoff-Popien, Claudia},
   month    = jul,
   year     = {2024},
-  pages    = {34}
+  pages    = {34},
+  pdf      = {https://www.ifaamas.org/Proceedings/aamas2022/pdfs/p1047.pdf},
+  code     = {https://github.com/thomyphan/emergent-cooperation},
+  abstract = {Peer incentivization (PI) is a recent approach where all agents learn to reward or penalize each other in a distributed fashion, which often leads to emergent cooperation. Current PI mechanisms implicitly assume a flawless communication channel in order to exchange rewards. These rewards are directly incorporated into the learning process without any chance to respond with feedback. Furthermore, most PI approaches rely on global information, which limits scalability and applicability to real-world scenarios where only local information is accessible. In this paper, we propose Mutual Acknowledgment Token Exchange (MATE), a PI approach defined by a two-phase communication protocol to exchange acknowledgment tokens as incentives to shape individual rewards mutually. All agents condition their token transmissions on the locally estimated quality of their own situations based on environmental rewards and received tokens. MATE is completely decentralized and only requires local communication and information. We evaluate MATE in three social dilemma domains. Our results show that MATE is able to achieve and maintain significantly higher levels of cooperation than previous PI approaches. In addition, we evaluate the robustness of MATE in more realistic scenarios, where agents can deviate from the protocol and communication failures can occur. We also evaluate the sensitivity of MATE w.r.t. the choice of token values.}
 }
 
 @inproceedings{Altmann2024Quantum,
@@ -237,7 +246,11 @@
   numpages  = {3},
   keywords  = {architecture search, circuit optimization, quantum computing, reinforcement learning},
   location  = {Auckland, New Zealand},
-  series    = {AAMAS '24}
+  series    = {AAMAS '24},
+  preprint  = {https://arxiv.org/abs/2312.11337},
+  pdf       = {https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p2123.pdf},
+  url       = {https://dl.acm.org/doi/10.5555/3635637.3663081},
+  code      = {https://github.com/philippaltmann/QCD}
 }
 
 @inproceedings{Koelle2024Aquarium,
@@ -249,7 +262,12 @@
   publisher    = {SciTePress},
   organization = {INSTICC},
   doi          = {10.5220/0012382300003636},
-  isbn         = {978-989-758-680-4}
+  isbn         = {978-989-758-680-4},
+  preprint     = {https://arxiv.org/abs/2401.07056},
+  code         = {https://github.com/michaelkoelle/marl-aquarium},
+  pdf          = {https://www.scitepress.org/Papers/2024/123823/123823.pdf},
+  url          = {https://www.scitepress.org/Papers/2024/123823},
+  abstract     = {Recent advances in Multi-Agent Reinforcement Learning have prompted the modeling of intricate interactions between agents in simulated environments. In particular, the predator-prey dynamics have captured substantial interest and various simulations been tailored to unique requirements. To prevent further time-intensive developments, we introduce Aquarium, a comprehensive Multi-Agent Reinforcement Learning environment for predator-prey interaction, enabling the study of emergent behavior. Aquarium is open source and offers a seamless integration of the PettingZoo framework, allowing a quick start with proven algorithm implementations. It features physics-based agent movement on a two-dimensional, edge-wrapping plane. The agent-environment interaction (observations, actions, rewards) and the environment settings (agent speed, prey reproduction, predator starvation, and others) are fully customizable. Besides a resource-efficient visualization, Aquarium supports to record video files, providing a visual comprehension of agent behavior. To demonstrate the environment’s capabilities, we conduct preliminary studies which use PPO to train multiple prey agents to evade a predator. In accordance to the literature, we find Individual Learning to result in worse performance than Parameter Sharing, which significantly improves coordination and sample-efficiency.}
 }
 
 @inproceedings{Koelle2024MultiAgent,
@@ -261,7 +279,12 @@
   publisher    = {SciTePress},
   organization = {INSTICC},
   doi          = {10.5220/0012382800003636},
-  isbn         = {978-989-758-680-4}
+  isbn         = {978-989-758-680-4},
+  preprint     = {https://arxiv.org/abs/2311.05546},
+  pdf          = {https://www.scitepress.org/Papers/2024/123828/123828.pdf},
+  url          = {https://www.scitepress.org/Papers/2024/123828},
+  code         = {https://github.com/michaelkoelle/qmarl-evo},
+  abstract     = {Multi-Agent Reinforcement Learning is becoming increasingly more important in times of autonomous driving and other smart industrial applications. Simultaneously a promising new approach to Reinforcement Learning arises using the inherent properties of quantum mechanics, reducing the trainable parameters of a model significantly. However, gradient-based Multi-Agent Quantum Reinforcement Learning methods often have to struggle with barren plateaus, holding them back from matching the performance of classical approaches. We build upon an existing approach for gradient free Quantum Reinforcement Learning and propose tree approaches with Variational Quantum Circuits for Multi-Agent Reinforcement Learning using evolutionary optimization. We evaluate our approach in the Coin Game environment and compare them to classical approaches. We showed that our Variational Quantum Circuit approaches perform significantly better compared to a neural network with a similar amount of trainable parameters. Compared to the larger neural network, our approaches archive similar results using 97.88% less parameters.}
 }
 
 @inproceedings{Koelle2024Reinforcement,
@@ -273,7 +296,12 @@
   publisher    = {SciTePress},
   organization = {INSTICC},
   doi          = {10.5220/0012383200003636},
-  isbn         = {978-989-758-680-4}
+  isbn         = {978-989-758-680-4},
+  preprint     = {https://arxiv.org/abs/2401.07054},
+  pdf          = {https://www.scitepress.org/Papers/2024/123832/123832.pdf},
+  url          = {https://www.scitepress.org/Papers/2024/123832/},
+  code         = {https://github.com/michaelkoelle/rl-qc-syn},
+  abstract     = {With recent advancements in quantum computing technology, optimizing quantum circuits and ensuring reliable quantum state preparation have become increasingly vital. Traditional methods often demand extensive expertise and manual calculations, posing challenges as quantum circuits grow in qubit- and gate-count. Therefore, harnessing machine learning techniques to handle the growing variety of gate-to-qubit combinations is a promising approach. In this work, we introduce a comprehensive reinforcement learning environment for quantum circuit synthesis, where circuits are constructed utilizing gates from the the Clifford+T gate set to prepare specific target states. Our experiments focus on exploring the relationship between the depth of synthesized quantum circuits and the circuit depths used for target initialization, as well as qubit count. We organize the environment configurations into multiple evaluation levels and include a range of well-known quantum states for benchmarking purposes. We also lay baselines for evaluating the environment using Proximal Policy Optimization. By applying the trained agents to benchmark tests, we demonstrated their ability to reliably design minimal quantum circuits for a selection of 2-qubit Bell states.}
 }
 
 @inproceedings{Stein2024Improving,
@@ -285,7 +313,12 @@
   publisher    = {SciTePress},
   organization = {INSTICC},
   doi          = {10.5220/0012312500003636},
-  isbn         = {978-989-758-680-4}
+  isbn         = {978-989-758-680-4},
+  preprint     = {https://arxiv.org/abs/2312.05552},
+  pdf          = {https://www.scitepress.org/Papers/2024/123125/123125.pdf},
+  code         = {https://github.com/jonas-stein/sha},
+  url          = {https://www.scitepress.org/Papers/2024/123125/},
+  abstract     = {A central challenge in quantum machine learning is the design and training of parameterized quantum circuits (PQCs). Similar to deep learning, vanishing gradients pose immense problems in the trainability of PQCs, which have been shown to arise from a multitude of sources. One such cause are non-local loss functions, that demand the measurement of a large subset of involved qubits. To facilitate the parameter training for quantum applications using global loss functions, we propose a Sequential Hamiltonian Assembly (SHA) approach, which iteratively approximates the loss function using local components. Aiming for a prove of principle, we evaluate our approach using Graph Coloring problem with a Varational Quantum Eigensolver (VQE). Simulation results show, that our approach outperforms conventional parameter training by 29.99% and the empirical state of the art, Layerwise Learning, by 5.12% in the mean accuracy. This paves the way towards locality-aware learning techniques, allowing to evade vanishing gradients for a large class of practically relevant problems.}
 }
 
 @inproceedings{Koelle2024QuantumAdvantage,
@@ -297,7 +330,12 @@
   publisher    = {SciTePress},
   organization = {INSTICC},
   doi          = {10.5220/0012383900003636},
-  isbn         = {978-989-758-680-4}
+  isbn         = {978-989-758-680-4},
+  preprint     = {https://arxiv.org/abs/2401.07043},
+  pdf          = {https://www.scitepress.org/Papers/2024/123839/123839.pdf},
+  url          = {https://www.scitepress.org/Papers/2024/123839/},
+  code         = {https://github.com/Hajuj/Quantum-A2C},
+  abstract     = {Quantum computing offers efficient encapsulation of high-dimensional states. In this work, we propose a novel quantum reinforcement learning approach that combines the Advantage Actor-Critic algorithm with variational quantum circuits by substituting parts of the classical components. This approach addresses reinforcement learning’s scalability concerns while maintaining high performance. We empirically test multiple quantum Advantage Actor-Critic configurations with the well known Cart Pole environment to evaluate our approach in control tasks with continuous state spaces. Our results indicate that the hybrid strategy of using either a quantum actor or quantum critic with classical post-processing yields a substantial performance increase compared to pure classical and pure quantum variants with similar parameter counts. They further reveal the limits of current quantum approaches due to the hardware constraints of noisy intermediate-scale quantum computers, suggesting further research to scale hybrid approaches for larger and more complex control tasks.}
 }
 
 @inproceedings{Mueller2024ClusterComm,
@@ -309,7 +347,11 @@
   publisher    = {SciTePress},
   organization = {INSTICC},
   doi          = {10.5220/0012384300003636},
-  isbn         = {978-989-758-680-4}
+  isbn         = {978-989-758-680-4},
+  preprint     = {https://arxiv.org/abs/2401.03504},
+  pdf          = {https://www.scitepress.org/publishedPapers/2024/123843/pdf/index.html},
+  url          = {https://www.scitepress.org/PublishedPapers/2024/123843/},
+  abstract     = {In the realm of Multi-Agent Reinforcement Learning (MARL), prevailing approaches exhibit shortcomings in aligning with human learning, robustness, and scalability. Addressing this, we introduce ClusterComm, a fully decentralized MARL framework where agents communicate discretely without a central control unit. ClusterComm utilizes Mini-Batch-K-Means clustering on the last hidden layer’s activations of an agent’s policy network, translating them into discrete messages. This approach outperforms no communication and competes favorably with unbounded, continuous communication and hence poses a simple yet effective strategy for enhancing collaborative task-solving in MARL.}
 }
 
 @inproceedings{Koelle2024Towards,
@@ -321,7 +363,12 @@
   publisher    = {SciTePress},
   organization = {INSTICC},
   doi          = {10.5220/0012381200003636},
-  isbn         = {978-989-758-680-4}
+  isbn         = {978-989-758-680-4},
+  preprint     = {https://arxiv.org/abs/2312.09174},
+  pdf          = {https://www.scitepress.org/Papers/2024/123812/123812.pdf},
+  url          = {https://www.scitepress.org/Papers/2024/123812/},
+  code         = {https://github.com/AfraeA/q-anomaly},
+  abstract     = {Quantum computing, with its potential to enhance various machine learning tasks, allows significant advancements in kernel calculation and model precision. Utilizing the one-class Support Vector Machine alongside a quantum kernel, known for its classically challenging representational capacity, notable improvements in average precision compared to classical counterparts were observed in previous studies. Conventional calculations of these kernels, however, present a quadratic time complexity concerning data size, posing challenges in practical applications. To mitigate this, we explore two distinct approaches: utilizing randomized measurements to evaluate the quantum kernel and implementing the variable subsampling ensemble method, both targeting linear time complexity. Experimental results demonstrate a substantial reduction in training and inference times by up to 95% and 25% respectively, employing these methods. Although unstable, the average precision of randomized measurements discernibly surpasses that of the classical Radial Basis Function kernel, suggesting a promising direction for further research in scalable, efficient quantum computing applications in machine learning.}
 }
 
 @inproceedings{Stein2024Benchmarking,
@@ -333,7 +380,11 @@
   publisher    = {SciTePress},
   organization = {INSTICC},
   doi          = {10.5220/0012348900003636},
-  isbn         = {978-989-758-680-4}
+  isbn         = {978-989-758-680-4},
+  preprint     = {https://arxiv.org/abs/2306.05042},
+  pdf          = {https://www.scitepress.org/Papers/2024/123489/123489.pdf},
+  url          = {https://www.scitepress.org/Papers/2024/123489/},
+  abstract     = {Surrogate models are ubiquitously used in industry and academia to efficiently approximate black box functions. As state-of-the-art methods from classical machine learning frequently struggle to solve this problem accurately for the often scarce and noisy data sets in practical applications, investigating novel approaches is of great interest. Motivated by recent theoretical results indicating that quantum neural networks (QNNs) have the potential to outperform their classical analogs in the presence of scarce and noisy data, we benchmark their qualitative performance for this scenario empirically. Our contribution displays the first application-centered approach of using QNNs as surrogate models on higher dimensional, real world data. When compared to a classical artificial neural network with a similar number of parameters, our QNN demonstrates significantly better results for noisy and scarce data, and thus motivates future work to explore this potential quantum advantage. Finally, we demonstrate the performance of current NISQ hardware experimentally and estimate the gate fidelities necessary to replicate our simulation results.}
 }
 
 @inproceedings{Koelle2024Disentangling,
@@ -345,7 +396,12 @@
   publisher    = {SciTePress},
   organization = {INSTICC},
   doi          = {10.5220/0012381600003636},
-  isbn         = {978-989-758-680-4}
+  isbn         = {978-989-758-680-4},
+  preprint     = {https://arxiv.org/abs/2311.05559},
+  pdf          = {https://www.scitepress.org/Papers/2024/123816/123816.pdf},
+  url          = {https://www.scitepress.org/Papers/2024/123816/},
+  code         = {https://github.com/javajonny/AE-and-VQC},
+  abstract     = {Quantum computing offers the potential for superior computational capabilities, particularly for data-intensive tasks. However, the current state of quantum hardware puts heavy restrictions on input size. To address this, hybrid transfer learning solutions have been developed, merging pre-trained classical models, capable of handling extensive inputs, with variational quantum circuits. Yet, it remains unclear how much each component – classical and quantum – contributes to the model’s results. We propose a novel hybrid architecture: instead of utilizing a pre-trained network for compression, we employ an autoencoder to derive a compressed version of the input data. This compressed data is then channeled through the encoder part of the autoencoder to the quantum component. We assess our model’s classification capabilities against two state-of-the-art hybrid transfer learning architectures, two purely classical architectures and one quantum architecture. Their accuracy is compared across four datasets: Banknote Authentication, Breast Cancer Wisconsin, MNIST digits, and AudioMNIST. Our research suggests that classical components significantly influence classification in hybrid transfer learning, a contribution often mistakenly ascribed to the quantum element. The performance of our model aligns with that of a variational quantum circuit using amplitude embedding, positioning it as a feasible alternative.}
 }
 
 @inproceedings{Suenkel2024Quantum,
@@ -357,7 +413,10 @@
   publisher    = {SciTePress},
   organization = {INSTICC},
   doi          = {10.5220/0012421200003636},
-  isbn         = {978-989-758-680-4}
+  isbn         = {978-989-758-680-4},
+  pdf          = {https://www.scitepress.org/Papers/2024/124212/124212.pdf},
+  url          = {https://www.scitepress.org/Papers/2024/124212/},
+  abstract     = {Federated learning is a technique in classical machine learning in which a global model is collectively trained by a number of independent clients, each with their own datasets. Using this learning method, clients are not required to reveal their dataset as it remains local; clients may only exchange parameters with each other. As the interest in quantum computing and especially quantum machine learning is steadily increasing, more concepts and approaches based on classical machine learning principles are being applied to the respective counterparts in the quantum domain. Thus, the idea behind federated learning has been transferred to the quantum realm in recent years. In this paper, we evaluate a straightforward approach to quantum federated learning using the widely used MNIST dataset. In this approach, we replace a classical neural network with a variational quantum circuit, i.e., the global model as well as the clients are trainable quantum circuits. We run three different experiments which differ in number of clients and data-subsets used. Our results demonstrate that basic principles of federated learning can be applied to the quantum domain while still achieving acceptable results. However, they also illustrate that further research is required for scenarios with increasing number of clients.}
 }
 
 @inproceedings{Stein2024Introducing,
@@ -369,7 +428,11 @@
   publisher    = {SciTePress},
   organization = {INSTICC},
   doi          = {10.5220/0012449800003636},
-  isbn         = {978-989-758-680-4}
+  isbn         = {978-989-758-680-4},
+  preprint     = {https://arxiv.org/abs/2306.05047},
+  pdf          = {https://www.scitepress.org/Papers/2024/124498/124498.pdf},
+  url          = {https://www.scitepress.org/Papers/2024/124498/},
+  abstract     = {Variational Quantum Algorithms are one of the most promising candidates to yield the first industrially relevant quantum advantage. Being capable of arbitrary function approximation, they are often referred to as Quantum Neural Networks (QNNs) when being used in analog settings as classical Artificial Neural Networks (ANNs). Similar to the early stages of classical machine learning, known schemes for efficient architectures of these networks are scarce. Exploring beyond existing design patterns, we propose a reduced-width circuit ansatz design, which is motivated by recent results gained in the analysis of dropout regularization in QNNs. More precisely, this exploits the insight, that the gates of overparameterized QNNs can be pruned substantially until their expressibility decreases. The results of our case study show, that the proposed design pattern can significantly reduce training time while maintaining the same result quality as the standard "full-width" design in the presence of noise. We thus argue, that quantum architecture search should not blindly follow the classical overparameterization trend.}
 }
 
 @inproceedings{Suenkel2024Towards,
@@ -381,13 +444,15 @@
   isbn      = {978-3-031-63777-3},
   publisher = {Springer-Verlag},
   address   = {Berlin, Heidelberg},
-  url       = {https://doi.org/10.1007/978-3-031-63778-0_24},
+  url       = {https://link.springer.com/chapter/10.1007/978-3-031-63778-0_24},
   doi       = {10.1007/978-3-031-63778-0_24},
   abstract  = {While the majority of focus in quantum computing has so far been on monolithic quantum systems, quantum communication networks and the quantum internet in particular are increasingly receiving attention from researchers and industry alike. The quantum internet may allow a plethora of applications such as distributed or blind quantum computing, though research still is at an early stage, both for its physical implementation as well as algorithms; thus suitable applications are an open research question. We evaluate a potential application for the quantum internet, namely quantum federated learning. We run experiments under different settings in various scenarios (e.g. network constraints) using several datasets from different domains and show that (1) quantum federated learning is a valid alternative for regular training and (2) network topology and nature of training are crucial considerations as they may drastically influence the models performance. The results indicate that more comprehensive research is required to optimally deploy quantum federated learning on a potential quantum internet.},
   pages     = {330–344},
   numpages  = {15},
   keywords  = {Quantum Federated Learning, Quantum Internet, Quantum Machine Learning, Quantum Communication Networks},
-  location  = {Malaga, Spain}
+  location  = {Malaga, Spain},
+  preprint  = {https://arxiv.org/abs/2402.09902},
+  pdf       = {https://link.springer.com/content/pdf/10.1007/978-3-031-63778-0.pdf}
 }
 
 @inproceedings{Koelle2024QuantumDenoising,
@@ -401,10 +466,12 @@
   abstract  = { In recent years, machine learning models like DALL-E, Craiyon, and Stable Diffusion have gained significant attention for their ability to generate high-resolution images from concise descriptions. Concurrently, quantum computing is showing promising advances, especially with quantum machine learning which capitalizes on quantum mechanics to meet the increasing computational requirements of traditional machine learning algorithms. This paper explores the integration of quantum machine learning and variational quantum circuits to augment the efficacy of diffusion-based image generation models. Specifically, we address two challenges of classical diffusion models: their low sampling speed and the extensive parameter requirements. We introduce two quantum diffusion models and benchmark their capabilities against their classical counterparts using MNIST digits, Fashion MNIST, and CIFAR-10. Our models surpass the classical models with similar parameter counts in terms of performance metrics FID, SSIM, and PSNR. Moreover, we introduce a consistency model unitary single sampling architecture that combines the diffusion procedure into a single step, enabling a fast one-step image generation. },
   keywords  = {Measurement;Image synthesis;Computational modeling;Noise reduction;Computer architecture;Benchmark testing;Diffusion models},
   doi       = {10.1109/QSW62656.2024.00023},
-  url       = {https://doi.ieeecomputersociety.org/10.1109/QSW62656.2024.00023},
+  url       = {https://www.computer.org/csdl/proceedings-article/qsw/2024/684700a088/1ZMeeEZjPPy},
   publisher = {IEEE Computer Society},
   address   = {Los Alamitos, CA, USA},
-  month     = Jul
+  month     = Jul,
+  preprint  = {https://arxiv.org/abs/2401.07049},
+  code      = {https://github.com/michaelkoelle/quantum-diffusion}
 }
 
 @inproceedings{Koelle2024Study,
@@ -418,10 +485,12 @@
   abstract  = { Quantum Computing aims to streamline machine learning, making it more effective with fewer trainable parameters. This reduction of parameters can speed up the learning process and reduce the use of computational resources. However, in the current phase of quantum computing development, known as the noisy intermediate-scale quantum era (NISQ), learning is difficult due to a limited number of qubits and widespread quantum noise. To overcome these challenges, researchers are focusing on variational quantum circuits (VQCs). VQCs are hybrid algorithms that merge a quantum circuit, which can be adjusted through parameters, with traditional classical optimization techniques. These circuits require only few qubits for effective learning. Recent studies have presented new ways of applying VQCs to reinforcement learning, showing promising results that warrant further exploration. This study investigates the effects of various techniques — data re-uploading, input scaling, output scaling — and introduces exponential learning rate decay in the quantum proximal policy optimization algorithm’s actor-VQC. We assess these methods in the popular Frozen Lake and Cart Pole environments. Our focus is on their ability to reduce the number of parameters in the VQC without losing effectiveness. Our findings indicate that data re-uploading and an exponential learning rate decay significantly enhance hyperparameter stability and overall performance. While input scaling does not improve parameter efficiency, output scaling effectively manages greediness, leading to increased learning speed and robustness. },
   keywords  = {Qubit;Noise;Reinforcement learning;Software;Robustness;Circuit stability;Time factors},
   doi       = {10.1109/QSW62656.2024.00031},
-  url       = {https://doi.ieeecomputersociety.org/10.1109/QSW62656.2024.00031},
+  url       = {https://www.computer.org/csdl/proceedings-article/qsw/2024/684700a157/1ZMefLwAX1m},
   publisher = {IEEE Computer Society},
   address   = {Los Alamitos, CA, USA},
-  month     = Jul
+  month     = Jul,
+  preprint  = {https://arxiv.org/abs/2405.12354},
+  code      = {https://github.com/michaelkoelle/vqc-opt-rl}
 }
 
 @inproceedings{Stenzel2025SEGym,
@@ -434,13 +503,16 @@
   address   = {Cham},
   pages     = {107--124},
   abstract  = {Current software development agents based on large language models (LLMs) are often defined using heuristic methods, which can limit their flexibility and effectiveness. Moreover, the entry barriers for new researchers in this field are high, largely due to the complex infrastructure required to develop and optimize these agents. This paper proposes a new approach: modeling software development agents over LLMs as a partially observable Markov decision process (POMDP) to enable data-driven optimization. To support this approach, we introduce SEGym, a framework based on the Gym interface for reinforcement learning agents. SEGym simplifies the setup of optimization experiments for software development agents within the POMDP framework, making it more accessible for researchers to engage in this field.},
-  isbn      = {978-3-031-75434-0}
+  isbn      = {978-3-031-75434-0},
+  url       = {https://link.springer.com/chapter/10.1007/978-3-031-75434-0_8},
+  pdf       = {https://link.springer.com/content/pdf/10.1007/978-3-031-75434-0.pdf},
+  code      = {https://github.com/gstenzel/SEGym}
 }
 
 @inproceedings{Koelle2024Optimizing,
   author    = { Kölle, Michael and Seidl, Daniel and Zorn, Maximilian and Altmann, Philipp and Stein, Jonas and Gabor, Thomas },
   booktitle = { 2024 IEEE International Conference on Quantum Computing and Engineering (QCE) },
-  title     = {{ Optimizing Variational Quantum Circuits Using Metaheuristic Strategies in Reinforcement Learning }},
+  title     = { Optimizing Variational Quantum Circuits Using Metaheuristic Strategies in Reinforcement Learning },
   year      = {2024},
   volume    = {},
   issn      = {},
@@ -448,10 +520,12 @@
   abstract  = {Quantum Reinforcement Learning (QRL) offers potential advantages over classical Reinforcement Learning, such as compact state space representation and faster convergence in certain scenarios. However, practical benefits require further validation. QRL faces challenges like flat solution landscapes, where traditional gradient-based methods are inefficient, necessitating the use of gradient-free algorithms. This work explores the integration of metaheuristic algorithms — Particle Swarm Optimization, Ant Colony Optimization, Tabu Search, Genetic Algorithm, Simulated Annealing, and Harmony Search — into QRL. These algorithms provide flexibility and efficiency in parameter optimization. Evaluations in $5\times 5$ MiniGrid Reinforcement Learning environments show that, all algorithms yield nearoptimal results, with Simulated Annealing and Particle Swarm Optimization performing best. In the Cart Pole environment, Simulated Annealing, Genetic Algorithms, and Particle Swarm Optimization achieve optimal results, while the others perform slightly better than random action selection. These findings demonstrate the potential of Particle Swarm Optimization and Simulated Annealing for efficient QRL learning, emphasizing the need for careful algorithm selection and adaptation. },
   keywords  = {Metaheuristics;Stability criteria;Reinforcement learning;Simulated annealing;Circuit stability;Particle swarm optimization;Quantum circuit;Robots;Genetic algorithms;Testing},
   doi       = {10.1109/QCE60285.2024.10300},
-  url       = {https://doi.ieeecomputersociety.org/10.1109/QCE60285.2024.10300},
+  url       = {https://www.computer.org/csdl/proceedings-article/qce/2024/413702a323/23oqmUz6JjO},
   publisher = {IEEE Computer Society},
   address   = {Los Alamitos, CA, USA},
-  month     = sep
+  month     = sep,
+  preprint  = {https://arxiv.org/abs/2408.01187},
+  code      = {https://github.com/michaelkoelle/metaheuristic-vis}
 }
 
 @inproceedings{Stenzel2024SelfReplicating,
@@ -464,8 +538,9 @@
   month    = {07},
   abstract = {We consider various setups where large language models (LLMs) communicate solely with themselves or other LLMs. In accordance with similar results known for program representations (like λ-expressions or automata), we observe a natural tendency for the evolution of self-replicating text pieces, i.e., LLM prompts that cause any receiving LLM to produce a response similar to the original prompt. We argue that the study of these self-replicating patterns, which exist in natural language and across different types of LLMs, may have important implications on artificial intelligence, cultural studies, and related fields.},
   doi      = {10.1162/isal_a_00813},
-  url      = {https://doi.org/10.1162/isal\_a\_00813},
-  eprint   = {https://direct.mit.edu/isal/proceedings-pdf/isal2024/36/110/2461211/isal\_a\_00813.pdf}
+  url      = {https://direct.mit.edu/isal/proceedings/isal2024/36/110/123523},
+  pdf      = {https://direct.mit.edu/isal/proceedings-pdf/isal2024/36/110/2461211/isal_a_00813.pdf},
+  code     = {https://github.com/gstenzel/TowardsACULTURECode}
 }
 
 @inproceedings{Zorn2024SelfAdaptive,
@@ -478,8 +553,8 @@
   month    = {07},
   abstract = {We consider the dynamics of artificial chemistry systems consisting of small, interacting neural-network particles. Although recent explorations into properties of such systems have shown interesting phenomena, like self-replication tendencies, social interplay, and the ability for multi-objective applications, most of these settings are reasoned about in the abstract weight space. We extend this setup to involve an applied, stateful positioning task with mutual dependencies and show that stable configurations can be found jointly in both the weight space and 3D space. We show that the main contributing factor is enabling the networks to self-adapt their interaction rates depending on their internal stability or their ability to position themselves correctly. We find that this method effectively prepares the network assembly against potentially destabilizing interactions, promoting emergent stability while preventing convergence to trivial states.},
   doi      = {10.1162/isal_a_00811},
-  url      = {https://doi.org/10.1162/isal\_a\_00811},
-  eprint   = {https://direct.mit.edu/isal/proceedings-pdf/isal2024/36/74/2461231/isal\_a\_00811.pdf}
+  url      = {https://direct.mit.edu/isal/proceedings/isal2024/36/74/123495},
+  pdf      = {https://direct.mit.edu/isal/proceedings-pdf/isal2024/36/74/2461231/isal_a_00811.pdf}
 }
 
 @inproceedings{Zielinski2024Max3SAT,
@@ -491,7 +566,10 @@
   number    = {},
   pages     = {681-691},
   keywords  = {Computers;Performance evaluation;Annealing;Systematics;Qubit;Quantum annealing;Hardware;Error correction;Approximation methods;Optimization;Quadratic Unconstrained Binary Optimization;Combinatorial Optimization;Max-3SAT;Approximation},
-  doi       = {10.1109/QCE60285.2024.00085}
+  doi       = {10.1109/QCE60285.2024.00085},
+  preprint  = {https://arxiv.org/abs/2409.15891},
+  url       = {https://ieeexplore.ieee.org/document/10821359},
+  abstract  = {As contemporary quantum computers do not possess error correction, any calculation performed by these devices can be considered an involuntary approximation. To solve a problem on a quantum annealer, it has to be expressed as an instance of Quadratic Unconstrained Binary Optimization (QUBO). In this work, we thus study whether systematically approximating QUBO representations of the MAX-3SAT problem can improve the solution quality when solved on contemporary quantum hardware, compared to using exact, non-approximated QUBO representations. For a MAX-3SAT instance consisting of a 3SAT formula with n variables and m clauses, we propose a method of systematically creating approximate QUBO representations of dimension (n×n), which is significantly smaller than the QUBO matrices of any exact, non-approximated MAX-3SAT QUBO transformation. In an empirical evaluation, we demonstrate that using our QUBO approximations for solving MAX-3SAT problems on D-Wave's quantum annealer Advantage_System6.4 can yield better results than using state-of-the-art exact QUBO transformations. Furthermore, we demonstrate that using naive QUBO approximation methods, based on removing values from exact (n+m)×(n+m)−dimensional QUBO representations of MAX-3SAT instances, is ineffective.}
 }
 
 @inproceedings{Zorn2024Cohesive,
@@ -503,19 +581,24 @@
   number    = {},
   pages     = {1721-1730},
   keywords  = {Training;Measurement;Qubit;Reinforcement learning;Logic gates;Linear programming;Search problems;Iterative methods;Quantum circuit;Integrated circuit modeling;Reinforcement Learning;Quantum Computing;Circuit Optimization;Quantum Circuit Construction},
-  doi       = {10.1109/QCE60285.2024.00201}
+  doi       = {10.1109/QCE60285.2024.00201},
+  abstract  = {While classical reinforcement learning (RL) has gained popularity for creating and optimizing variational quantum circuits (VQCs), there is still no consensus on the best model for the underlying problem of quantum architecture search (QAS). Specifically, how to effectively scope the iterative VQC adjustment steps of the RL policy remains an open question, with various approaches offering distinct benefits and challenges. In this work, we propose an RL approach that can cohesively predict entire circuit layers simultaneously, enabling rapid iterations in QAS. Our method allows for variable circuit lengths and is problem-agnostic, provided an objective function is available to guide the RL process. This makes it suitable for a broad range of applications. We evaluate our approach on the combinatorial optimization problem MaxCut, and achieve competitive results in terms of circuit solution quality when compared to both gradient-based and gradient-free circuit optimization baselines.},
+  url       = {https://ieeexplore.ieee.org/document/10821274}
 }
 
 @article{Altmann2024Discriminative,
   title    = {Discriminative reward co-training},
   issn     = {1433-3058},
-  url      = {https://doi.org/10.1007/s00521-024-10512-8},
+  url      = {https://link.springer.com/article/10.1007/s00521-024-10512-8},
   doi      = {10.1007/s00521-024-10512-8},
   abstract = {We propose discriminative reward co-training (DIRECT) as an extension to deep reinforcement learning algorithms. Building upon the concept of self-imitation learning (SIL), we introduce an imitation buffer to store beneficial trajectories generated by the policy, determined by their return. A discriminator network is trained concurrently to the policy to distinguish between trajectories generated by the current policy and beneficial trajectories generated by previous policies. The discriminator’s verdict is used to construct a reward signal for optimizing the policy. By interpolating prior experience, DIRECT is able to act as a reward surrogate, steering policy optimization toward more valuable regions of the reward landscape, thus, toward learning an optimal policy. In this article, we formally introduce the additional components, their intended purpose and parameterization, and define a unified training procedure. To reveal insights into the mechanics of the proposed architecture, we provide evaluations of the introduced hyperparameters. Further benchmark evaluations in various discrete and continuous control environments provide evidence that DIRECT is especially beneficial in environments possessing sparse rewards, hard exploration tasks, and shifting circumstances. Our results show that DIRECT outperforms state-of-the-art algorithms in those challenging scenarios by providing a surrogate reward to the policy and direct the optimization toward valuable areas.},
   journal  = {Neural Computing and Applications},
   author   = {Altmann, Philipp and Ritz, Fabian and Zorn, Maximilian and Kölle, Michael and Phan, Thomy and Gabor, Thomas and Linnhoff-Popien, Claudia},
   month    = dec,
-  year     = {2024}
+  year     = {2024},
+  preprint = {https://arxiv.org/abs/2301.07421},
+  code     = {https://github.com/philippaltmann/DIRECT},
+  pdf      = {https://link.springer.com/content/pdf/10.1007/s00521-024-10512-8.pdf}
 }
 
 
@@ -532,8 +615,9 @@
   eprint        = {2406.19876},
   archiveprefix = {arXiv},
   primaryclass  = {quant-ph},
-  url           = {https://arxiv.org/abs/2406.19876},
-  keywords      = {insubmission}
+  abstract      = {With constant improvements of quantum hardware and quantum algorithms, quantum advantage comes within reach. Parallel to the development of the computer at the end of the twentieth century, quantum software development will now also rapidly gain in importance and scale. On account of the inherent complexity and novelty of quantum computing (QC), as well as the expected lack of expertise of many of the stakeholders involved in its development, QC software development projects are exposed to the risk of being conducted in a crowded and unstructured way, lacking clear guidance and understanding. This paper presents a comprehensive quantum optimisation development pipeline, novel in its depth of 22 activities across multiple stages, coupled with project management insights, uniquely targeted to the late noisy intermediate-scale quantum (NISQ) [1] and early post-NISQ eras. We have extensively screened literature and use-cases, interviewed experts, and brought in our own expertise to develop this general quantum pipeline. The proposed solution pipeline is divided into five stages: Use-case Identification, Solution Draft, Pre-Processing, Execution and Post-Processing. Additionally, the pipeline contains two review points to address the project management view, the inherent risk of the project and the current technical maturity of QC technology. This work is intended as an orientation aid for all stakeholders involved in the development of QC applications and should therefore increase the chances of success of quantum software projects. We encourage researchers to adapt and extend the model where appropriate, as technological development also continues.},
+  preprint      = {https://arxiv.org/abs/2406.19876},
+  keywords      = {toapprear}
 }
 
 @misc{Koelle2022Decentralized,
@@ -543,8 +627,10 @@
   eprint        = {2207.11172},
   archiveprefix = {arXiv},
   primaryclass  = {cs.AI},
-  url           = {https://arxiv.org/abs/2207.11172},
-  keywords      = {insubmission}
+  preprint      = {https://arxiv.org/abs/2207.11172},
+  keywords      = {insubmission},
+  code          = {https://github.com/lr40/marl-scheduling},
+  abstract      = {In multi-agent reinforcement learning systems, the actions of one agent can have a negative impact on the rewards of other agents. One way to combat this problem is to let agents trade their rewards amongst each other. Motivated by this, this work applies a trading approach to a simulated scheduling environment, where the agents are responsible for the assignment of incoming jobs to compute cores. In this environment, reinforcement learning agents learn to trade successfully. The agents can trade the usage right of computational cores to process high-priority, high-reward jobs faster than low-priority, low-reward jobs. However, due to combinatorial effects, the action and observation spaces of a simple reinforcement learning agent in this environment scale exponentially with key parameters of the problem size. However, the exponential scaling behavior can be transformed into a linear one if the agent is split into several independent sub-units. We further improve this distributed architecture using agent-internal parameter sharing. Moreover, it can be extended to set the exchange prices autonomously. We show that in our scheduling environment, the advantages of a distributed agent architecture clearly outweigh more aggregated approaches. We demonstrate that the distributed agent architecture becomes even more performant using agent-internal parameter sharing. Finally, we investigate how two different reward functions affect autonomous pricing and the corresponding scheduling.}
 }
 
 @misc{Koelle2024Architectural,
@@ -554,8 +640,10 @@
   eprint        = {2407.20739},
   archiveprefix = {arXiv},
   primaryclass  = {quant-ph},
-  url           = {https://arxiv.org/abs/2407.20739},
-  keywords      = {insubmission}
+  preprint      = {https://arxiv.org/abs/2407.20739},
+  keywords      = {insubmission},
+  code          = {https://github.com/karolaschneider/vqc-opt-arch-evo},
+  abstract      = {In recent years, Multi-Agent Reinforcement Learning (MARL) has found application in numerous areas of science and industry, such as autonomous driving, telecommunications, and global health. Nevertheless, MARL suffers from, for instance, an exponential growth of dimensions. Inherent properties of quantum mechanics help to overcome these limitations, e.g., by significantly reducing the number of trainable parameters. Previous studies have developed an approach that uses gradient-free quantum Reinforcement Learning and evolutionary optimization for variational quantum circuits (VQCs) to reduce the trainable parameters and avoid barren plateaus as well as vanishing gradients. This leads to a significantly better performance of VQCs compared to classical neural networks with a similar number of trainable parameters and a reduction in the number of parameters by more than 97 \% compared to similarly good neural networks. We extend an approach of Kölle et al. by proposing a Gate-Based, a Layer-Based, and a Prototype-Based concept to mutate and recombine VQCs. Our results show the best performance for mutation-only strategies and the Gate-Based approach. In particular, we observe a significantly better score, higher total and own collected coins, as well as a superior own coin rate for the best agent when evaluated in the Coin Game environment.}
 }
 
 @misc{Koelle2024Efficient,
@@ -565,19 +653,10 @@
   eprint        = {2407.20753},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
-  url           = {https://arxiv.org/abs/2407.20753},
-  keywords      = {insubmission}
-}
-
-@misc{Altmann2024Challenges,
-  title         = {Challenges for Reinforcement Learning in Quantum Circuit Design},
-  author        = {Philipp Altmann and Jonas Stein and Michael Kölle and Adelina Bärligea and Thomas Gabor and Thomy Phan and Sebastian Feld and Claudia Linnhoff-Popien},
-  year          = {2024},
-  eprint        = {2312.11337},
-  archiveprefix = {arXiv},
-  primaryclass  = {quant-ph},
-  url           = {https://arxiv.org/abs/2312.11337},
-  keywords      = {insubmission}
+  preprint      = {https://arxiv.org/abs/2407.20753},
+  keywords      = {insubmission},
+  code          = {https://github.com/AfraeA/q-anomaly},
+  abstract      = {Quantum one-class support vector machines leverage the advantage of quantum kernel methods for semi-supervised anomaly detection. However, their quadratic time complexity with respect to data size poses challenges when dealing with large datasets. In recent work, quantum randomized measurements kernels and variable subsampling were proposed, as two independent methods to address this problem. The former achieves higher average precision, but suffers from variance, while the latter achieves linear complexity to data size and has lower variance. The current work focuses instead on combining these two methods, along with rotated feature bagging, to achieve linear time complexity both to data size and to number of features. Despite their instability, the resulting models exhibit considerably higher performance and faster training and testing times.}
 }
 
 @misc{Rohe2024Coconut,
@@ -587,8 +666,9 @@
   eprint        = {2412.11949},
   archiveprefix = {arXiv},
   primaryclass  = {cs.CV},
-  url           = {https://arxiv.org/abs/2412.11949},
-  keywords      = {insubmission}
+  preprint      = {https://arxiv.org/abs/2412.11949},
+  keywords      = {toappear},
+  abstract      = {Drones have revolutionized various domains, including agriculture. Recent advances in deep learning have propelled among other things object detection in computer vision. This study utilized YOLO, a real-time object detector, to identify and count coconut palm trees in Ghanaian farm drone footage. The farm presented has lost track of its trees due to different planting phases. While manual counting would be very tedious and error-prone, accurately determining the number of trees is crucial for efficient planning and management of agricultural processes, especially for optimizing yields and predicting production. We assessed YOLO for palm detection within a semi-automated framework, evaluated accuracy augmentations, and pondered its potential for farmers. Data was captured in September 2022 via drones. To optimize YOLO with scarce data, synthetic images were created for model training and validation. The YOLOv7 model, pretrained on the COCO dataset (excluding coconut palms), was adapted using tailored data. Trees from footage were repositioned on synthetic images, with testing on distinct authentic images. In our experiments, we adjusted hyperparameters, improving YOLO's mean average precision (mAP). We also tested various altitudes to determine the best drone height. From an initial mAP@.5 of 0.65, we achieved 0.88, highlighting the value of synthetic images in agricultural scenarios.}
 }
 
 @misc{Koelle2025PIMAEX,
@@ -598,8 +678,9 @@
   eprint        = {2501.01266},
   archiveprefix = {arXiv},
   primaryclass  = {cs.MA},
-  url           = {https://arxiv.org/abs/2501.01266},
-  keywords      = {insubmission}
+  preprint      = {https://arxiv.org/abs/2501.01266},
+  keywords      = {toappear},
+  abstract      = {While exploration in single-agent reinforcement learning has been studied extensively in recent years, considerably less work has focused on its counterpart in multi-agent reinforcement learning. To address this issue, this work proposes a peer-incentivized reward function inspired by previous research on intrinsic curiosity and influence-based rewards. The \textit{PIMAEX} reward, short for Peer-Incentivized Multi-Agent Exploration, aims to improve exploration in the multi-agent setting by encouraging agents to exert influence over each other to increase the likelihood of encountering novel states. We evaluate the \textit{PIMAEX} reward in conjunction with \textit{PIMAEX-Communication}, a multi-agent training algorithm that employs a communication channel for agents to influence one another. The evaluation is conducted in the \textit{Consume/Explore} environment, a partially observable environment with deceptive rewards, specifically designed to challenge the exploration vs.\ exploitation dilemma and the credit-assignment problem. The results empirically demonstrate that agents using the \textit{PIMAEX} reward with \textit{PIMAEX-Communication} outperform those that do not.}
 }
 
 @misc{Rohe2025Optimization,
@@ -609,8 +690,9 @@
   eprint        = {2501.08220},
   archiveprefix = {arXiv},
   primaryclass  = {cs.AI},
-  url           = {https://arxiv.org/abs/2501.08220},
-  keywords      = {insubmission}
+  preprint      = {https://arxiv.org/abs/2501.08220},
+  keywords      = {toappear},
+  abstract      = {Satellite communication is a key technology in our modern connected world. With increasingly complex hardware, one challenge is to efficiently configure links (connections) on a satellite transponder. Planning an optimal link configuration is extremely complex and depends on many parameters and metrics. The optimal use of the limited resources, bandwidth and power of the transponder is crucial. Such an optimization problem can be approximated using metaheuristic methods such as simulated annealing, but recent research results also show that reinforcement learning can achieve comparable or even better performance in optimization methods. However, there have not yet been any studies on link configuration on satellite transponders. In order to close this research gap, a transponder environment was developed as part of this work. For this environment, the performance of the reinforcement learning algorithm PPO was compared with the metaheuristic simulated annealing in two experiments. The results show that Simulated Annealing delivers better results for this static problem than the PPO algorithm, however, the research in turn also underlines the potential of reinforcement learning for optimization problems.}
 }
 
 @misc{Rohe2025Investigating,
@@ -620,8 +702,9 @@
   eprint        = {2501.08678},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
-  url           = {https://arxiv.org/abs/2501.08678},
-  keywords      = {insubmission}
+  preprint      = {https://arxiv.org/abs/2501.08678},
+  keywords      = {insubmission},
+  abstract      = {The demand for artificially generated data for the development, training and testing of new algorithms is omnipresent. Quantum computing (QC), does offer the hope that its inherent probabilistic functionality can be utilised in this field of generative artificial intelligence. In this study, we use quantum-classical hybrid generative adversarial networks (QuGANs) to artificially generate graphs of shipping routes. We create a training dataset based on real shipping data and investigate to what extent QuGANs are able to learn and reproduce inherent distributions and geometric features of this data. We compare hybrid QuGANs with classical Generative Adversarial Networks (GANs), with a special focus on their parameter efficiency. Our results indicate that QuGANs are indeed able to quickly learn and represent underlying geometric properties and distributions, although they seem to have difficulties in introducing variance into the sampled data. Compared to classical GANs of greater size, measured in the number of parameters used, some QuGANs show similar result quality. Our reference to concrete use cases, such as the generation of shipping data, provides an illustrative example and demonstrate the potential and diversity in which QC can be used.}
 }
 
 @misc{Altmann2024MEDIATE,
@@ -631,8 +714,10 @@
   eprint        = {2404.03431},
   archiveprefix = {arXiv},
   primaryclass  = {cs.MA},
-  url           = {https://arxiv.org/abs/2404.03431},
-  keywords      = {insubmission}
+  preprint      = {https://arxiv.org/abs/2404.03431},
+  keywords      = {toappear},
+  code          = {https://github.com/KathiWinter/emergent-cooperation},
+  abstract      = {Recent advances in multi-agent systems (MAS) have shown that incorporating peer incentivization (PI) mechanisms vastly improves cooperation. Especially in social dilemmas, communication between the agents helps to overcome sub-optimal Nash equilibria. However, incentivization tokens need to be carefully selected. Furthermore, real-world applications might yield increased privacy requirements and limited exchange. Therefore, we extend the PI protocol for mutual acknowledgment token exchange (MATE) and provide additional analysis on the impact of the chosen tokens. Building upon those insights, we propose mutually endorsed distributed incentive acknowledgment token exchange (MEDIATE), an extended PI architecture employing automatic token derivation via decentralized consensus. Empirical results show the stable agreement on appropriate tokens yielding superior performance compared to static tokens and state-of-the-art approaches in different social dilemma environments with various reward distributions.}
 }
 
 @misc{Stenzel2024Qandle,
@@ -642,50 +727,59 @@
   eprint        = {2404.09213},
   archiveprefix = {arXiv},
   primaryclass  = {quant-ph},
-  url           = {https://arxiv.org/abs/2404.09213},
-  keywords      = {insubmission}
+  preprint      = {https://arxiv.org/abs/2404.09213},
+  keywords      = {toappear},
+  code          = {https://github.com/gstenzel/qandle},
+  abstract      = {To address the computational complexity associated with state-vector simulation for quantum circuits, we propose a combination of advanced techniques to accelerate circuit execution. Quantum gate matrix caching reduces the overhead of repeated applications of the Kronecker product when applying a gate matrix to the state vector by storing decomposed partial matrices for each gate. Circuit splitting divides the circuit into sub-circuits with fewer gates by constructing a dependency graph, enabling parallel or sequential execution on disjoint subsets of the state vector. These techniques are implemented using the PyTorch machine learning framework. We demonstrate the performance of our approach by comparing it to other PyTorch-compatible quantum state-vector simulators. Our implementation, named Qandle, is designed to seamlessly integrate with existing machine learning workflows, providing a user-friendly API and compatibility with the OpenQASM format. Qandle is an open-source project hosted on GitHub this https://github.com/gstenzel/qandle and PyPI this https://pypi.org/project/qandle/.}
 }
 
 @misc{Koelle2024QuantumTransfer,
   title    = {Quantum Transfer Learning: The Impact of Classical Preprocessing},
   author   = {Michael Kölle and Jonas Maurer and Philipp Altmann and Leo Sünkel and Jonas Stein and Julian Hager and Sebastian Zielinski and Claudia Linnhoff-Popien},
   year     = {2024},
-  keywords = {insubmission}
+  code     = {https://github.com/javajonny/AE-and-VQC},
+  keywords = {insubmission},
+  abstract = {Quantum computing promises performance advantages, especially for data-intensive and complex computations. However, the current limitations of quantum hardware impose significant constraints on input sizes. To mitigate this, hybrid transfer learning solutions have been developed, which combine pre-trained classical models capable of managing large inputs with variational quantum circuits. Despite these advancements, the individual contributions of the classical and quantum components to the model's overall performance remain unclear. We propose a novel hybrid architecture that, instead of using a pre-trained network for data compression, employs an autoencoder to generate a compressed version of the input data. This compressed data is then passed to the quantum component. To evaluate our model's classification performance, we compare it against two state-of-the-art hybrid transfer learning architectures, two purely classical architectures, and one quantum architecture. Additionally, we check our compression method with the autoencoder against a Principal Component Analysis (PCA) and Gaussian Mixture Model (GMM). Finally we train our model with another technique where the autoencoder and variational quantum circuit are trained in parallel. The accuracy of each model is tested on four datasets: Banknote Authentication, Breast Cancer Wisconsin, MNIST digits, and AudioMNIST. Our findings indicate that the classical components play a significant role in classification within hybrid transfer learning models, a contribution that is often incorrectly attributed to the quantum component. The performance of our proposed model is comparable to that of a variational quantum circuit utilizing amplitude embedding, and also to a variational quantum circuit which uses compressed data through a PCA or a GMM, suggesting that our approach is a viable alternative.}
 }
 
 @misc{Suenkel2025QuantumCircuit,
   title    = {Quantum Circuit Construction and Optimization through Hybrid Evolutionary Algorithms},
   author   = {Leo Sünkel and Philipp Altmann and Michael Kölle and Gerhard Stenzel and Thomas Gabor and Claudia Linnhoff-Popien},
   year     = {2025},
-  keywords = {insubmission}
+  keywords = {insubmission},
+  abstract = {We apply a hybrid evolutionary algorithm to minimize the depth of circuits in quantum computing. More specifically, we evaluate two different variants of the algorithm. In the first approach, we combine the evolutionary algorithm with an optimization subroutine to optimize the parameters of the rotation gates present in the quantum circuit. In the second, the algorithm solely relies on evolutionary operations (i.e., mutations and crossover). We approach the problem from two sides: (1) constructing circuits from the ground up by starting with random initializations and (2) initializing individuals with the target in order to optimize it according to the fitness function. We run experiments on random circuits with 4 and 6 qubits varying in circuit depth. Our results show that the proposed methods are able to significantly reduce the depth of circuits while still retaining a high fidelity to the target state.}
 }
 
 @misc{Koelle2025EvaluatingMutation,
   title    = {Evaluating Mutation Techniques in Genetic Algorithm-Based Quantum Circuit Synthesis},
   author   = {Michael Kölle and Tom Bintener and Maximilian Zorn and Gerhard Stenzel and Leo Sünkel and Thomas Gabor and Claudia Linnhoff-Popien},
   year     = {2025},
-  keywords = {insubmission}
+  keywords = {insubmission},
+  abstract = {Quantum computing leverages the unique properties of qubits and quantum parallelism to solve problems intractable for classical systems, offering unparalleled computational potential. However, the optimization of quantum circuits remains critical, especially for noisy intermediate-scale quantum (NISQ) devices with limited qubits and high error rates. Genetic algorithms (GAs) provide a promising approach for efficient quantum circuit synthesis by automating optimization tasks. This work examines the impact of various mutation strategies within a GA framework for quantum circuit synthesis. By analyzing how different mutations transform circuits, it identifies strategies that enhance efficiency and performance. Experiments utilized a fitness function emphasizing fidelity, while accounting for circuit depth and T operations, to optimize circuits with four to six qubits. Comprehensive hyperparameter testing revealed that combining delete and swap strategies outperformed other approaches, demonstrating their effectiveness in developing robust GA-based quantum circuit optimizers.}
 }
 
 @misc{Stenzel2025GeneralGenetic,
   title    = {A General Genetic Algorithm Using Natural Language Evolutionary Operators},
   author   = {Gerhard Stenzel and Sarah Gerner and Michael Kölle and Maximilian Zorn and Thomas Gabor},
   year     = {2025},
-  keywords = {insubmission}
+  keywords = {insubmission},
+  abstract = {By employing large language models (LLMs) we build a general genetic algorithm, i.e., a genetic algorithm (GA) that can solve various domains without any changes to its algorithmic components. Our approach requires only a problem description in natural language and a black-box fitness function and can then handle any type of data via natural-language-based evolutionary operators that call an LLM to compute their application. The relevant prompts for the operators can be human-designed or self-optimized with similar performance results. Compared to the only other generalist GA approach, i.e., asking an LLM to write a new specific GA, our natural-language-based genetic algorithm (NaLaGA) offers not only a better class of safety (since no LLM-generated code is executed by NaLaGA) but also greatly improved results in the two example domains ``Schwefel'' and ``grid world maze''.}
 }
 
 @misc{Koelle2025LotteryTicket,
   title    = {Investigating the Lottery Ticket Hypothesis for Variational Quantum Circuits},
   author   = {Michael Kölle and Leonhard Klingert and Julian Schönberger and Philipp Altmann and Maximilian Mansky and Claudia Linnhoff-Popien},
   year     = {2025},
-  keywords = {insubmission}
+  keywords = {insubmission},
+  abstract = {Quantum computing is an emerging field in computer science that has seen considerable progress in recent years, especially in machine learning. By harnessing the principles of quantum physics, it can surpass the limitations of classical algorithms. However, variational quantum circuits (VQCs), which rely on adjustable parameters, often face the barren plateau phenomenon, hindering optimization. The Lottery Ticket Hypothesis (LTH) is a recent concept in classical machine learning that has led to notable improvements in parameter efficiency for neural networks. It posits that within a large network, a smaller, more efficient subnetwork, or “winning ticket,” can achieve comparable performance, potentially circumventing plateau challenges. In this work, we investigate whether this idea can apply to VQCs. We show that the weak LTH holds for VQCs, revealing winning tickets that retain just 26.0\% of the original parameters. For the strong LTH, where a pruning mask is learned without any training, we discovered a winning ticket in a binary VQC, achieving 100\% accuracy with only 45\% of the weights. These findings indicate that LTH may mitigate barren plateaus by reducing parameter counts while preserving performance, thus enhancing the efficiency of VQCs in quantum machine learning tasks.}
 }
 
 @misc{Koelle2025ParameterBased,
   title    = {Evaluating Parameter-Based Training Performance of Neural Networks and Variational Quantum Circuits},
   author   = {Michael Kölle and Alexander Feist and Jonas Stein and Claudia Linnhoff-Popien},
   year     = {2025},
-  keywords = {insubmission}
+  keywords = {insubmission},
+  abstract = {In recent years, neural networks (NNs) have driven significant advances in machine learning. However, as tasks grow more complex, NNs often require large numbers of trainable parameters, which increases computational and energy demands. Variational quantum circuits (VQCs) offer a promising alternative: they leverage quantum mechanics to capture intricate relationships and typically need fewer parameters. In this work, we evaluate NNs and VQCs on simple supervised and reinforcement learning tasks, examining models with different parameter sizes. We simulate VQCs and execute selected parts of the training process on real quantum hardware to approximate actual training times. Our results show that VQCs can match NNs in performance while using significantly fewer parameters, despite longer training durations. As quantum technology and algorithms advance, and VQC architectures improve, we posit that VQCs could become advantageous for certain machine learning tasks.}
 }
 
 @misc{Zorn2025QualityDiversity,
