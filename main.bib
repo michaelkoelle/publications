@@ -601,10 +601,111 @@
   pdf      = {https://link.springer.com/content/pdf/10.1007/s00521-024-10512-8.pdf}
 }
 
+@conference{Stenzel2024Qandle,
+  author       = {Gerhard Stenzel and Sebastian Zielinski and Michael Kölle and Philipp Altmann and Jonas Nüßlein and Thomas Gabor},
+  title        = {Qandle: Accelerating State Vector Simulation Using Gate-Matrix Caching and Circuit Splitting},
+  booktitle    = {Proceedings of the 17th International Conference on Agents and Artificial Intelligence - Volume 1: QAIO},
+  year         = {2025},
+  pages        = {715-723},
+  publisher    = {SciTePress},
+  organization = {INSTICC},
+  doi          = {10.5220/0013343500003890},
+  isbn         = {978-989-758-737-5},
+  pdf          = {https://www.scitepress.org/Papers/2025/133435/133435.pdf},
+  preprint     = {https://arxiv.org/abs/2404.09213},
+  code         = {https://github.com/gstenzel/qandle},
+  abstract     = {To address the computational complexity associated with state-vector simulation for quantum circuits, we propose a combination of advanced techniques to accelerate circuit execution. Quantum gate matrix caching reduces the overhead of repeated applications of the Kronecker product when applying a gate matrix to the state vector by storing decomposed partial matrices for each gate. Circuit splitting divides the circuit into sub-circuits with fewer gates by constructing a dependency graph, enabling parallel or sequential execution on disjoint subsets of the state vector. These techniques are implemented using the PyTorch machine learning framework. We demonstrate the performance of our approach by comparing it to other PyTorch-compatible quantum state-vector simulators. Our implementation, named Qandle, is designed to seamlessly integrate with existing machine learning workflows, providing a user-friendly API and compatibility with the OpenQASM format. Qandle is an open-source project hosted on GitHub this https://github.com/gstenzel/qandle and PyPI this https://pypi.org/project/qandle/.}
+}
 
+@conference{Rohe2024Coconut,
+  author       = {Tobias Rohe and Barbara Böhm and Michael Kölle and Jonas Stein and Robert Müller and Claudia Linnhoff-Popien},
+  title        = {Coconut Palm Tree Counting on Drone Images with Deep Object Detection and Synthetic Training Data},
+  booktitle    = {Proceedings of the 17th International Conference on Agents and Artificial Intelligence - Volume 3: ICAART},
+  year         = {2025},
+  pages        = {662-669},
+  publisher    = {SciTePress},
+  organization = {INSTICC},
+  doi          = {10.5220/0013172900003890},
+  isbn         = {978-989-758-737-5},
+  preprint     = {https://arxiv.org/abs/2412.11949},
+  abstract     = {Drones have revolutionized various domains, including agriculture. Recent advances in deep learning have propelled among other things object detection in computer vision. This study utilized YOLO, a real-time object detector, to identify and count coconut palm trees in Ghanaian farm drone footage. The farm presented has lost track of its trees due to different planting phases. While manual counting would be very tedious and error-prone, accurately determining the number of trees is crucial for efficient planning and management of agricultural processes, especially for optimizing yields and predicting production. We assessed YOLO for palm detection within a semi-automated framework, evaluated accuracy augmentations, and pondered its potential for farmers. Data was captured in September 2022 via drones. To optimize YOLO with scarce data, synthetic images were created for model training and validation. The YOLOv7 model, pretrained on the COCO dataset (excluding coconut palms), was adapted using tailored data. Trees from footage were repositioned on synthetic images, with testing on distinct authentic images. In our experiments, we adjusted hyperparameters, improving YOLO's mean average precision (mAP). We also tested various altitudes to determine the best drone height. From an initial mAP@.5 of 0.65, we achieved 0.88, highlighting the value of synthetic images in agricultural scenarios.},
+  pdf          = {https://www.scitepress.org/Papers/2025/131729/131729.pdf}
+}
 
+@conference{Koelle2025PIMAEX,
+  author       = {Michael Kölle and Johannes Tochtermann and Julian Schönberger and Gerhard Stenzel and Philipp Altmann and Claudia Linnhoff-Popien},
+  title        = {PIMAEX: Multi-Agent Exploration Through Peer Incentivization},
+  booktitle    = {Proceedings of the 17th International Conference on Agents and Artificial Intelligence - Volume 1: ICAART},
+  year         = {2025},
+  pages        = {572-579},
+  publisher    = {SciTePress},
+  organization = {INSTICC},
+  doi          = {10.5220/0013260000003890},
+  isbn         = {978-989-758-737-5},
+  preprint     = {https://arxiv.org/abs/2501.01266},
+  abstract     = {While exploration in single-agent reinforcement learning has been studied extensively in recent years, consid-erably less work has focused on its counterpart in multi-agent reinforcement learning. To address this issue, this work proposes a peer-incentivized reward function inspired by previous research on intrinsic curiosity and influence-based rewards. The PIMAEX reward, short for Peer-Incentivized Multi-Agent Exploration, aims to improve exploration in the multi-agent setting by encouraging agents to exert influence over each other to increase the likelihood of encountering novel states. We evaluate the PIMAEX reward in conjunction with PIMAEX-Communication, a multi-agent training algorithm that employs a communication channel for agents to influence one another. The evaluation is conducted in the Consume/Explore environment, a partially observable environment with deceptive rewards, specifically designed to challenge the exploration vs. exploitation dilemma and the credit-assignment problem. The results empirically demonstrate that agents using the PI-MAEX reward with PIMAEX-Communication outperform those that do not.},
+  pdf          = {https://www.scitepress.org/Papers/2025/132600/132600.pdf}
+}
 
+@conference{Rohe2025Optimization,
+  author       = {Tobias Rohe and Michael Kölle and Jan Matheis and Rüdiger Höpfl and Leo Sünkel and Claudia Linnhoff-Popien},
+  title        = {Optimization of Link Configuration for Satellite Communication Using Reinforcement Learning},
+  booktitle    = {Proceedings of the 17th International Conference on Agents and Artificial Intelligence - Volume 2: ICAART},
+  year         = {2025},
+  pages        = {704-713},
+  publisher    = {SciTePress},
+  organization = {INSTICC},
+  doi          = {10.5220/0013313000003890},
+  isbn         = {978-989-758-737-5},
+  preprint     = {https://arxiv.org/abs/2501.08220},
+  pdf          = {https://www.scitepress.org/Papers/2025/133130/133130.pdf},
+  abstract     = {Satellite communication is a key technology in our modern connected world. With increasingly complex hardware, one challenge is to efficiently configure links (connections) on a satellite transponder. Planning an optimal link configuration is extremely complex and depends on many parameters and metrics. The optimal use of the limited resources, bandwidth and power of the transponder is crucial. Such an optimization problem can be approximated using metaheuristic methods such as simulated annealing, but recent research results also show that reinforcement learning can achieve comparable or even better performance in optimization methods. However, there have not yet been any studies on link configuration on satellite transponders. In order to close this research gap, a transponder environment was developed as part of this work. For this environment, the performance of the reinforcement learning algorithm PPO was compared with the metaheuristic simulated annealing in two experiments. The results show that Simulated Annealing delivers better results for this static problem than the PPO algorithm, however, the research in turn also underlines the potential of reinforcement learning for optimization problems.}
+}
 
+@conference{Rohe2025Investigating,
+  author       = {Tobias Rohe and Florian Burger and Michael Kölle and Sebastian Wölckert and Maximilian Zorn and Claudia Linnhoff-Popien},
+  title        = {Investigating Parameter-Efficiency of Hybrid QuGANs Based on Geometric Properties of Generated Sea Route Graphs},
+  booktitle    = {Proceedings of the 17th International Conference on Agents and Artificial Intelligence - Volume 1: QAIO},
+  year         = {2025},
+  pages        = {724-730},
+  publisher    = {SciTePress},
+  organization = {INSTICC},
+  doi          = {10.5220/0013350200003890},
+  isbn         = {978-989-758-737-5},
+  preprint     = {https://arxiv.org/abs/2501.08678},
+  pdf          = {https://www.scitepress.org/Papers/2025/133502/133502.pdf},
+  abstract     = {The demand for artificially generated data for the development, training and testing of new algorithms is omnipresent. Quantum computing (QC), does offer the hope that its inherent probabilistic functionality can be utilised in this field of generative artificial intelligence. In this study, we use quantum-classical hybrid generative adversarial networks (QuGANs) to artificially generate graphs of shipping routes. We create a training dataset based on real shipping data and investigate to what extent QuGANs are able to learn and reproduce inherent distributions and geometric features of this data. We compare hybrid QuGANs with classical Generative Adversarial Networks (GANs), with a special focus on their parameter efficiency. Our results indicate that QuGANs are indeed able to quickly learn and represent underlying geometric properties and distributions, although they seem to have difficulties in introducing variance into the sampled data. Compared to classical GANs of greater size, measured in the number of parameters used, some QuGANs show similar result quality. Our reference to concrete use cases, such as the generation of shipping data, provides an illustrative example and demonstrate the potential and diversity in which QC can be used.}
+}
+
+@conference{Altmann2024MEDIATE,
+  author       = {Philipp Altmann and Katharina Winter and Michael Kölle and Maximilian Zorn and Claudia Linnhoff-Popien},
+  title        = {MEDIATE: Mutually Endorsed Distributed Incentive Acknowledgment Token Exchange},
+  booktitle    = {Proceedings of the 17th International Conference on Agents and Artificial Intelligence - Volume 1: ICAART},
+  year         = {2025},
+  pages        = {33-44},
+  publisher    = {SciTePress},
+  organization = {INSTICC},
+  doi          = {10.5220/0013091900003890},
+  isbn         = {978-989-758-737-5},
+  preprint     = {https://arxiv.org/abs/2404.03431},
+  pdf          = {https://www.scitepress.org/Papers/2025/130919/130919.pdf},
+  code         = {https://github.com/KathiWinter/emergent-cooperation},
+  abstract     = {Recent advances in multi-agent systems (MAS) have shown that incorporating peer incentivization (PI) mechanisms vastly improves cooperation. Especially in social dilemmas, communication between the agents helps to overcome sub-optimal Nash equilibria. However, incentivization tokens need to be carefully selected. Furthermore, real-world applications might yield increased privacy requirements and limited exchange. Therefore, we extend the PI protocol for mutual acknowledgment token exchange (MATE) and provide additional analysis on the impact of the chosen tokens. Building upon those insights, we propose mutually endorsed distributed incentive acknowledgment token exchange (MEDIATE), an extended PI architecture employing automatic token derivation via decentralized consensus. Empirical results show the stable agreement on appropriate tokens yielding superior performance compared to static tokens and state-of-the-art approaches in different social dilemma environments with various reward distributions.}
+}
+
+@conference{Stenzel2025QMamba,
+  author       = {Gerhard Stenzel and Michael Kölle and Tobias Rohe and Maximilian Mansky and Jonas Nüßlein and Thomas Gabor},
+  title        = {QMamba: Quantum Selective State Space Models for Text Generation},
+  booktitle    = {Proceedings of the 17th International Conference on Agents and Artificial Intelligence - Volume 1: QAIO},
+  year         = {2025},
+  pages        = {742-750},
+  publisher    = {SciTePress},
+  organization = {INSTICC},
+  doi          = {10.5220/0013378300003890},
+  isbn         = {978-989-758-737-5},
+  issn         = {2184-433X},
+  pdf          = {https://www.scitepress.org/Papers/2025/133783/133783.pdf}
+}
 
 
 
@@ -659,67 +760,6 @@
   abstract      = {Quantum one-class support vector machines leverage the advantage of quantum kernel methods for semi-supervised anomaly detection. However, their quadratic time complexity with respect to data size poses challenges when dealing with large datasets. In recent work, quantum randomized measurements kernels and variable subsampling were proposed, as two independent methods to address this problem. The former achieves higher average precision, but suffers from variance, while the latter achieves linear complexity to data size and has lower variance. The current work focuses instead on combining these two methods, along with rotated feature bagging, to achieve linear time complexity both to data size and to number of features. Despite their instability, the resulting models exhibit considerably higher performance and faster training and testing times.}
 }
 
-@misc{Rohe2024Coconut,
-  title         = {Coconut Palm Tree Counting on Drone Images with Deep Object Detection and Synthetic Training Data},
-  author        = {Tobias Rohe and Barbara Böhm and Michael Kölle and Jonas Stein and Robert Müller and Claudia Linnhoff-Popien},
-  year          = {2024},
-  eprint        = {2412.11949},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.CV},
-  preprint      = {https://arxiv.org/abs/2412.11949},
-  keywords      = {toappear},
-  abstract      = {Drones have revolutionized various domains, including agriculture. Recent advances in deep learning have propelled among other things object detection in computer vision. This study utilized YOLO, a real-time object detector, to identify and count coconut palm trees in Ghanaian farm drone footage. The farm presented has lost track of its trees due to different planting phases. While manual counting would be very tedious and error-prone, accurately determining the number of trees is crucial for efficient planning and management of agricultural processes, especially for optimizing yields and predicting production. We assessed YOLO for palm detection within a semi-automated framework, evaluated accuracy augmentations, and pondered its potential for farmers. Data was captured in September 2022 via drones. To optimize YOLO with scarce data, synthetic images were created for model training and validation. The YOLOv7 model, pretrained on the COCO dataset (excluding coconut palms), was adapted using tailored data. Trees from footage were repositioned on synthetic images, with testing on distinct authentic images. In our experiments, we adjusted hyperparameters, improving YOLO's mean average precision (mAP). We also tested various altitudes to determine the best drone height. From an initial mAP@.5 of 0.65, we achieved 0.88, highlighting the value of synthetic images in agricultural scenarios.}
-}
-
-@misc{Koelle2025PIMAEX,
-  title         = {PIMAEX: Multi-Agent Exploration through Peer Incentivization},
-  author        = {Michael Kölle and Johannes Tochtermann and Julian Schönberger and Gerhard Stenzel and Philipp Altmann and Claudia Linnhoff-Popien},
-  year          = {2025},
-  eprint        = {2501.01266},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.MA},
-  preprint      = {https://arxiv.org/abs/2501.01266},
-  keywords      = {toappear},
-  abstract      = {While exploration in single-agent reinforcement learning has been studied extensively in recent years, considerably less work has focused on its counterpart in multi-agent reinforcement learning. To address this issue, this work proposes a peer-incentivized reward function inspired by previous research on intrinsic curiosity and influence-based rewards. The \textit{PIMAEX} reward, short for Peer-Incentivized Multi-Agent Exploration, aims to improve exploration in the multi-agent setting by encouraging agents to exert influence over each other to increase the likelihood of encountering novel states. We evaluate the \textit{PIMAEX} reward in conjunction with \textit{PIMAEX-Communication}, a multi-agent training algorithm that employs a communication channel for agents to influence one another. The evaluation is conducted in the \textit{Consume/Explore} environment, a partially observable environment with deceptive rewards, specifically designed to challenge the exploration vs.\ exploitation dilemma and the credit-assignment problem. The results empirically demonstrate that agents using the \textit{PIMAEX} reward with \textit{PIMAEX-Communication} outperform those that do not.}
-}
-
-@misc{Rohe2025Optimization,
-  title         = {Optimization of Link Configuration for Satellite Communication Using Reinforcement Learning},
-  author        = {Tobias Rohe and Michael Kölle and Jan Matheis and Rüdiger Höpfl and Leo Sünkel and Claudia Linnhoff-Popien},
-  year          = {2025},
-  eprint        = {2501.08220},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.AI},
-  preprint      = {https://arxiv.org/abs/2501.08220},
-  keywords      = {toappear},
-  abstract      = {Satellite communication is a key technology in our modern connected world. With increasingly complex hardware, one challenge is to efficiently configure links (connections) on a satellite transponder. Planning an optimal link configuration is extremely complex and depends on many parameters and metrics. The optimal use of the limited resources, bandwidth and power of the transponder is crucial. Such an optimization problem can be approximated using metaheuristic methods such as simulated annealing, but recent research results also show that reinforcement learning can achieve comparable or even better performance in optimization methods. However, there have not yet been any studies on link configuration on satellite transponders. In order to close this research gap, a transponder environment was developed as part of this work. For this environment, the performance of the reinforcement learning algorithm PPO was compared with the metaheuristic simulated annealing in two experiments. The results show that Simulated Annealing delivers better results for this static problem than the PPO algorithm, however, the research in turn also underlines the potential of reinforcement learning for optimization problems.}
-}
-
-@misc{Rohe2025Investigating,
-  title         = {Investigating Parameter-Efficiency of Hybrid QuGANs Based on Geometric Properties of Generated Sea Route Graphs},
-  author        = {Tobias Rohe and Florian Burger and Michael Kölle and Sebastian Wölckert and Maximilian Zorn and Claudia Linnhoff-Popien},
-  year          = {2025},
-  eprint        = {2501.08678},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.LG},
-  preprint      = {https://arxiv.org/abs/2501.08678},
-  keywords      = {insubmission},
-  abstract      = {The demand for artificially generated data for the development, training and testing of new algorithms is omnipresent. Quantum computing (QC), does offer the hope that its inherent probabilistic functionality can be utilised in this field of generative artificial intelligence. In this study, we use quantum-classical hybrid generative adversarial networks (QuGANs) to artificially generate graphs of shipping routes. We create a training dataset based on real shipping data and investigate to what extent QuGANs are able to learn and reproduce inherent distributions and geometric features of this data. We compare hybrid QuGANs with classical Generative Adversarial Networks (GANs), with a special focus on their parameter efficiency. Our results indicate that QuGANs are indeed able to quickly learn and represent underlying geometric properties and distributions, although they seem to have difficulties in introducing variance into the sampled data. Compared to classical GANs of greater size, measured in the number of parameters used, some QuGANs show similar result quality. Our reference to concrete use cases, such as the generation of shipping data, provides an illustrative example and demonstrate the potential and diversity in which QC can be used.}
-}
-
-@misc{Altmann2024MEDIATE,
-  title         = {MEDIATE: Mutually Endorsed Distributed Incentive Acknowledgment Token Exchange},
-  author        = {Philipp Altmann and Katharina Winter and Michael Kölle and Maximilian Zorn and Thomy Phan and Claudia Linnhoff-Popien},
-  year          = {2024},
-  eprint        = {2404.03431},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.MA},
-  preprint      = {https://arxiv.org/abs/2404.03431},
-  keywords      = {toappear},
-  code          = {https://github.com/KathiWinter/emergent-cooperation},
-  abstract      = {Recent advances in multi-agent systems (MAS) have shown that incorporating peer incentivization (PI) mechanisms vastly improves cooperation. Especially in social dilemmas, communication between the agents helps to overcome sub-optimal Nash equilibria. However, incentivization tokens need to be carefully selected. Furthermore, real-world applications might yield increased privacy requirements and limited exchange. Therefore, we extend the PI protocol for mutual acknowledgment token exchange (MATE) and provide additional analysis on the impact of the chosen tokens. Building upon those insights, we propose mutually endorsed distributed incentive acknowledgment token exchange (MEDIATE), an extended PI architecture employing automatic token derivation via decentralized consensus. Empirical results show the stable agreement on appropriate tokens yielding superior performance compared to static tokens and state-of-the-art approaches in different social dilemma environments with various reward distributions.}
-}
-
 @inproceedings{Suenkel2024QuantumImpact,
   author    = {Sünkel, Leo and Altmann, Philipp and Kölle, Michael and Gabor, Thomas},
   booktitle = {2024 IEEE International Conference on Quantum Computing and Engineering (QCE)},
@@ -734,20 +774,6 @@
   issn      = {},
   month     = {Sep.},
   pdf       = {https://ieeexplore.ieee.org/document/10821359}
-}
-
-
-@misc{Stenzel2024Qandle,
-  title         = {Qandle: Accelerating State Vector Simulation Using Gate-Matrix Caching and Circuit Splitting},
-  author        = {Gerhard Stenzel and Sebastian Zielinski and Michael Kölle and Philipp Altmann and Jonas Nüßlein and Thomas Gabor},
-  year          = {2024},
-  eprint        = {2404.09213},
-  archiveprefix = {arXiv},
-  primaryclass  = {quant-ph},
-  preprint      = {https://arxiv.org/abs/2404.09213},
-  keywords      = {toappear},
-  code          = {https://github.com/gstenzel/qandle},
-  abstract      = {To address the computational complexity associated with state-vector simulation for quantum circuits, we propose a combination of advanced techniques to accelerate circuit execution. Quantum gate matrix caching reduces the overhead of repeated applications of the Kronecker product when applying a gate matrix to the state vector by storing decomposed partial matrices for each gate. Circuit splitting divides the circuit into sub-circuits with fewer gates by constructing a dependency graph, enabling parallel or sequential execution on disjoint subsets of the state vector. These techniques are implemented using the PyTorch machine learning framework. We demonstrate the performance of our approach by comparing it to other PyTorch-compatible quantum state-vector simulators. Our implementation, named Qandle, is designed to seamlessly integrate with existing machine learning workflows, providing a user-friendly API and compatibility with the OpenQASM format. Qandle is an open-source project hosted on GitHub this https://github.com/gstenzel/qandle and PyPI this https://pypi.org/project/qandle/.}
 }
 
 @misc{Koelle2024QuantumTransfer,
