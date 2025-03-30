@@ -92,95 +92,6 @@
   abstract     = {{The ubiquitous availability of mobile devices capable of location tracking led to a significant rise in the collection of GPS data. Several compression methods have been developed in order to reduce the amount of storage needed while keeping the important information. In this paper, we present an lstm-autoencoder based approach in order to compress and reconstruct GPS trajectories, which is evaluated on both a gaming and real-world dataset. We consider various compression ratios and trajectory lengths. The performance is compared to other trajectory compression algorithms, i.e., Douglas-Peucker. Overall, the results indicate that our approach outperforms Douglas-Peucker significantly in terms of the discrete Fréchet distance and dynamic time warping. Furthermore, by reconstructing every point lossy, the proposed methodology offers multiple advantages over traditional methods.}}
 }
 
-@inproceedings{Sedlmeier2022Quantifying,
-  author       = {Andreas Sedlmeier and Michael Kölle and Robert Müller and Leo Baudrexel and Claudia Linnhoff-Popien},
-  title        = {{Quantifying Multimodality in World Models}},
-  booktitle    = {Proceedings of the 14th International Conference on Agents and Artificial Intelligence - Volume 1: ICAART},
-  year         = {2022},
-  pages        = {367-374},
-  publisher    = {SciTePress},
-  organization = {INSTICC},
-  doi          = {10.5220/0010898500003116},
-  isbn         = {978-989-758-547-0},
-  preprint     = {https://arxiv.org/abs/2112.07263},
-  pdf          = {https://www.scitepress.org/Papers/2022/108985/108985.pdf},
-  keywords     = {uncertainty, multimodality, world models, model-based deep reinforcement learning, mixture-density networks},
-  abstract     = {{Model-based Deep Reinforcement Learning (RL) assumes the availability of a model of an environment’s underlying transition dynamics. This model can be used to predict future effects of an agent’s possible actions. When no such model is available, it is possible to learn an approximation of the real environment, e.g. by using generative neural networks, sometimes also called World Models. As most real-world environments are stochastic in nature and the transition dynamics are oftentimes multimodal, it is important to use a modelling technique that is able to reflect this multimodal uncertainty. In order to safely deploy such learning systems in the real world, especially in an industrial context, it is paramount to consider these uncertainties. In this work, we analyze existing and propose new metrics for the detection and quantification of multimodal uncertainty in RL based World Models. The correct modelling & detection of uncertain future states lays the foundation for handling critical situations in a safe way, which is a prerequisite for deploying RL systems in real-world settings.}}
-}
-
-@inproceedings{Illium2022Constructing,
-  author    = {Illium, Steffen and Zorn, Maximilian and Lenta, Cristian and Kölle, Michael and Linnhoff-Popien, Claudia and Gabor, Thomas},
-  booktitle = {2022 IEEE Symposium Series on Computational Intelligence (SSCI)},
-  title     = {{Constructing Organism Networks from Collaborative Self-Replicators}},
-  year      = {2022},
-  volume    = {},
-  number    = {},
-  pages     = {1268-1275},
-  keywords  = {Neural networks;Collaboration;Computer architecture;Organisms;Task analysis;Computational intelligence;Arithmetic},
-  doi       = {10.1109/SSCI51031.2022.10022216},
-  preprint  = {https://arxiv.org/abs/2212.10078},
-  pdf       = {https://ieeexplore.ieee.org/document/10022216},
-  code      = {https://github.com/illiumst/self-replicating-neural-networks},
-  abstract  = {{We introduce organism networks, which function like a single neural network but are composed of several neural particle networks; while each particle network fulfils the role of a single weight application within the organism network, it is also trained to self-replicate its own weights. As organism networks feature vastly more parameters than simpler architectures, we perform our initial experiments on an arithmetic task as well as on simplified MNIST-dataset classification as a collective. We observe that individual particle networks tend to specialise in either of the tasks and that the ones fully specialised in the secondary task may be dropped from the network without hindering the computational accuracy of the primary task. This leads to the discovery of a novel pruning-strategy for sparse neural networks.}}
-}
-
-@inproceedings{Illium2023VoronoiPatches,
-  author       = {Steffen Illium and Gretchen Griffin and Michael Kölle and Maximilian Zorn and Jonas Nüßlein and Claudia Linnhoff{-}Popien},
-  title        = {{VoronoiPatches: Evaluating a New Data Augmentation Method}},
-  booktitle    = {Proceedings of the 15th International Conference on Agents and Artificial Intelligence - Volume 3: ICAART},
-  year         = {2023},
-  pages        = {350-357},
-  publisher    = {SciTePress},
-  organization = {INSTICC},
-  doi          = {10.5220/0011670000003393},
-  isbn         = {978-989-758-623-1},
-  issn         = {2184-433X},
-  preprint     = {https://arxiv.org/abs/2212.10054},
-  pdf          = {https://www.scitepress.org/Papers/2023/116700/116700.pdf},
-  abstract     = {{Overfitting is a problem in Convolutional Neural Networks (CNN) that causes poor generalization of models on unseen data. To remediate this problem, many new and diverse data augmentation (DA) methods have been proposed to supplement or generate more training data, and thereby increase its quality. In this work, we propose a new DA algorithm: VoronoiPatches (VP). We primarily utilize non-linear re-combination of information within an image, fragmenting and occluding small information patches. Unlike other DA methods, VP uses small convex polygon-shaped patches in a random layout to transport information around within an image. In our experiments, VP outperformed current DA methods regarding model variance and overfitting tendencies. We demonstrate DA utilizing non-linear re-combination of information within images, and non-orthogonal shapes and structures improves CNN model robustness on unseen data.}}
-}
-
-@inproceedings{Phan2023AttentionBased,
-  author    = {Phan, Thomy and Ritz, Fabian and Nüßlein, Jonas and Kölle, Michael and Gabor, Thomas and Linnhoff-Popien, Claudia},
-  title     = {{Attention-Based Recurrency for Multi-Agent Reinforcement Learning under State Uncertainty}},
-  year      = {2023},
-  isbn      = {9781450394321},
-  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
-  address   = {Richland, SC},
-  abstract  = {{State uncertainty poses a major challenge for decentralized coordination. However, state uncertainty is largely neglected in multi-agent reinforcement learning research due to a strong focus on state-based centralized training for decentralized execution (CTDE) and benchmarks that lack sufficient stochasticity like StarCraft Multi-Agent Challenge (SMAC). In this work, we propose Attention-based Embeddings of Recurrence In multi-Agent Learning (AERIAL) to approximate value functions under agent-wise state uncertainty. AERIAL uses a learned representation of multi-agent recurrence, considering more accurate information about decentralized agent decisions than state-based CTDE. We then introduce MessySMAC, a modified version of SMAC with stochastic observations and higher variance in initial states, to provide a more general and configurable benchmark. We evaluate AERIAL in a variety of MessySMAC maps, and compare the results with state-based CTDE.}},
-  booktitle = {Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems},
-  pages     = {2839–2841},
-  numpages  = {3},
-  keywords  = {dec-pomdp, multi-agent learning, recurrence, state uncertainty},
-  location  = {London, United Kingdom},
-  series    = {AAMAS '23},
-  preprint  = {https://arxiv.org/abs/2301.01649},
-  doi       = {10.5555/3545946.3599096},
-  url       = {https://dl.acm.org/doi/10.5555/3545946.3599096},
-  pdf       = {https://dl.acm.org/doi/pdf/10.5555/3545946.3599096},
-  code      = {https://github.com/thomyphan/messy_smac}
-}
-
-@inproceedings{Stein2023Evidence,
-  author    = {Stein, Jonas and Chamanian, Farbod and Zorn, Maximilian and Nüßlein, Jonas and Zielinski, Sebastian and Kölle, Michael and Linnhoff-Popien, Claudia},
-  title     = {{Evidence that PUBO outperforms QUBO when solving continuous optimization problems with the QAOA}},
-  year      = {2023},
-  isbn      = {9798400701207},
-  publisher = {Association for Computing Machinery},
-  address   = {New York, NY, USA},
-  url       = {https://doi.org/10.1145/3583133.3596358},
-  doi       = {10.1145/3583133.3596358},
-  abstract  = {{Quantum computing provides powerful algorithmic tools that have been shown to outperform established classical solvers in specific optimization tasks. A core step in solving optimization problems with known quantum algorithms such as the Quantum Approximate Optimization Algorithm (QAOA) is the problem formulation. While quantum optimization has historically centered around Quadratic Unconstrained Optimization (QUBO) problems, recent studies show, that many combinatorial problems such as the TSP can be solved more efficiently in their native Polynomial Unconstrained Optimization (PUBO) forms. As many optimization problems in practice also contain continuous variables, our contribution investigates the performance of the QAOA in solving continuous optimization problems when using PUBO and QUBO formulations. Our extensive evaluation on suitable benchmark functions, shows that PUBO formulations generally yield better results, while requiring less qubits. As the multi-qubit interactions needed for the PUBO variant have to be decomposed using the hardware gates available, i.e., currently single- and two-qubit gates, the circuit depth of the PUBO approach outscales its QUBO alternative roughly linearly in the order of the objective function. However, incorporating the planned addition of native multi-qubit gates such as the global M\o{}lmer-S\o{}renson gate, our experiments indicate that PUBO outperforms QUBO for higher order continuous optimization problems in general.}},
-  booktitle = {Proceedings of the Companion Conference on Genetic and Evolutionary Computation},
-  pages     = {2254–2262},
-  numpages  = {9},
-  keywords  = {quantum computing, continuous optimization, quantum approximate optimization algorithm, quadratic unconstrained binary optimization, polynomial unconstrained binary optimization},
-  location  = {Lisbon, Portugal},
-  series    = {GECCO '23 Companion},
-  preprint  = {https://arxiv.org/abs/2305.03390},
-  pdf       = {https://dl.acm.org/doi/pdf/10.1145/3583133.3596358}
-}
-
 @inproceedings{Koelle2024Aquarium,
   author       = {Michael Kölle and Yannick Erpelding and Fabian Ritz and Thomy Phan and Steffen Illium and Claudia Linnhoff-Popien},
   title        = {{Aquarium: A Comprehensive Framework for Exploring Predator-Prey Dynamics Through Multi-Agent Reinforcement Learning Algorithms}},
@@ -321,6 +232,25 @@
   code      = {https://github.com/michaelkoelle/vqc-opt-rl}
 }
 
+@inproceedings{Koelle2024Optimizing,
+  author    = { Kölle, Michael and Seidl, Daniel and Zorn, Maximilian and Altmann, Philipp and Stein, Jonas and Gabor, Thomas },
+  booktitle = { 2024 IEEE International Conference on Quantum Computing and Engineering (QCE) },
+  title     = {{ Optimizing Variational Quantum Circuits Using Metaheuristic Strategies in Reinforcement Learning }},
+  year      = {2024},
+  volume    = {},
+  issn      = {},
+  pages     = {323-328},
+  abstract  = {{Quantum Reinforcement Learning (QRL) offers potential advantages over classical Reinforcement Learning, such as compact state space representation and faster convergence in certain scenarios. However, practical benefits require further validation. QRL faces challenges like flat solution landscapes, where traditional gradient-based methods are inefficient, necessitating the use of gradient-free algorithms. This work explores the integration of metaheuristic algorithms — Particle Swarm Optimization, Ant Colony Optimization, Tabu Search, Genetic Algorithm, Simulated Annealing, and Harmony Search — into QRL. These algorithms provide flexibility and efficiency in parameter optimization. Evaluations in $5\times 5$ MiniGrid Reinforcement Learning environments show that, all algorithms yield nearoptimal results, with Simulated Annealing and Particle Swarm Optimization performing best. In the Cart Pole environment, Simulated Annealing, Genetic Algorithms, and Particle Swarm Optimization achieve optimal results, while the others perform slightly better than random action selection. These findings demonstrate the potential of Particle Swarm Optimization and Simulated Annealing for efficient QRL learning, emphasizing the need for careful algorithm selection and adaptation. }},
+  keywords  = {Metaheuristics;Stability criteria;Reinforcement learning;Simulated annealing;Circuit stability;Particle swarm optimization;Quantum circuit;Robots;Genetic algorithms;Testing},
+  doi       = {10.1109/QCE60285.2024.10300},
+  url       = {https://www.computer.org/csdl/proceedings-article/qce/2024/413702a323/23oqmUz6JjO},
+  publisher = {IEEE Computer Society},
+  address   = {Los Alamitos, CA, USA},
+  month     = sep,
+  preprint  = {https://arxiv.org/abs/2408.01187},
+  code      = {https://github.com/michaelkoelle/metaheuristic-vis}
+}
+
 @conference{Koelle2025PIMAEX,
   author       = {Michael Kölle and Johannes Tochtermann and Julian Schönberger and Gerhard Stenzel and Philipp Altmann and Claudia Linnhoff-Popien},
   title        = {{PIMAEX: Multi-Agent Exploration Through Peer Incentivization}},
@@ -336,6 +266,94 @@
   pdf          = {https://www.scitepress.org/Papers/2025/132600/132600.pdf}
 }
 
+@inproceedings{Sedlmeier2022Quantifying,
+  author       = {Andreas Sedlmeier and Michael Kölle and Robert Müller and Leo Baudrexel and Claudia Linnhoff-Popien},
+  title        = {{Quantifying Multimodality in World Models}},
+  booktitle    = {Proceedings of the 14th International Conference on Agents and Artificial Intelligence - Volume 1: ICAART},
+  year         = {2022},
+  pages        = {367-374},
+  publisher    = {SciTePress},
+  organization = {INSTICC},
+  doi          = {10.5220/0010898500003116},
+  isbn         = {978-989-758-547-0},
+  preprint     = {https://arxiv.org/abs/2112.07263},
+  pdf          = {https://www.scitepress.org/Papers/2022/108985/108985.pdf},
+  keywords     = {uncertainty, multimodality, world models, model-based deep reinforcement learning, mixture-density networks},
+  abstract     = {{Model-based Deep Reinforcement Learning (RL) assumes the availability of a model of an environment’s underlying transition dynamics. This model can be used to predict future effects of an agent’s possible actions. When no such model is available, it is possible to learn an approximation of the real environment, e.g. by using generative neural networks, sometimes also called World Models. As most real-world environments are stochastic in nature and the transition dynamics are oftentimes multimodal, it is important to use a modelling technique that is able to reflect this multimodal uncertainty. In order to safely deploy such learning systems in the real world, especially in an industrial context, it is paramount to consider these uncertainties. In this work, we analyze existing and propose new metrics for the detection and quantification of multimodal uncertainty in RL based World Models. The correct modelling & detection of uncertain future states lays the foundation for handling critical situations in a safe way, which is a prerequisite for deploying RL systems in real-world settings.}}
+}
+
+@inproceedings{Illium2022Constructing,
+  author    = {Illium, Steffen and Zorn, Maximilian and Lenta, Cristian and Kölle, Michael and Linnhoff-Popien, Claudia and Gabor, Thomas},
+  booktitle = {2022 IEEE Symposium Series on Computational Intelligence (SSCI)},
+  title     = {{Constructing Organism Networks from Collaborative Self-Replicators}},
+  year      = {2022},
+  volume    = {},
+  number    = {},
+  pages     = {1268-1275},
+  keywords  = {Neural networks;Collaboration;Computer architecture;Organisms;Task analysis;Computational intelligence;Arithmetic},
+  doi       = {10.1109/SSCI51031.2022.10022216},
+  preprint  = {https://arxiv.org/abs/2212.10078},
+  pdf       = {https://ieeexplore.ieee.org/document/10022216},
+  code      = {https://github.com/illiumst/self-replicating-neural-networks},
+  abstract  = {{We introduce organism networks, which function like a single neural network but are composed of several neural particle networks; while each particle network fulfils the role of a single weight application within the organism network, it is also trained to self-replicate its own weights. As organism networks feature vastly more parameters than simpler architectures, we perform our initial experiments on an arithmetic task as well as on simplified MNIST-dataset classification as a collective. We observe that individual particle networks tend to specialise in either of the tasks and that the ones fully specialised in the secondary task may be dropped from the network without hindering the computational accuracy of the primary task. This leads to the discovery of a novel pruning-strategy for sparse neural networks.}}
+}
+
+@inproceedings{Illium2023VoronoiPatches,
+  author       = {Steffen Illium and Gretchen Griffin and Michael Kölle and Maximilian Zorn and Jonas Nüßlein and Claudia Linnhoff{-}Popien},
+  title        = {{VoronoiPatches: Evaluating a New Data Augmentation Method}},
+  booktitle    = {Proceedings of the 15th International Conference on Agents and Artificial Intelligence - Volume 3: ICAART},
+  year         = {2023},
+  pages        = {350-357},
+  publisher    = {SciTePress},
+  organization = {INSTICC},
+  doi          = {10.5220/0011670000003393},
+  isbn         = {978-989-758-623-1},
+  issn         = {2184-433X},
+  preprint     = {https://arxiv.org/abs/2212.10054},
+  pdf          = {https://www.scitepress.org/Papers/2023/116700/116700.pdf},
+  abstract     = {{Overfitting is a problem in Convolutional Neural Networks (CNN) that causes poor generalization of models on unseen data. To remediate this problem, many new and diverse data augmentation (DA) methods have been proposed to supplement or generate more training data, and thereby increase its quality. In this work, we propose a new DA algorithm: VoronoiPatches (VP). We primarily utilize non-linear re-combination of information within an image, fragmenting and occluding small information patches. Unlike other DA methods, VP uses small convex polygon-shaped patches in a random layout to transport information around within an image. In our experiments, VP outperformed current DA methods regarding model variance and overfitting tendencies. We demonstrate DA utilizing non-linear re-combination of information within images, and non-orthogonal shapes and structures improves CNN model robustness on unseen data.}}
+}
+
+@inproceedings{Phan2023AttentionBased,
+  author    = {Phan, Thomy and Ritz, Fabian and Nüßlein, Jonas and Kölle, Michael and Gabor, Thomas and Linnhoff-Popien, Claudia},
+  title     = {{Attention-Based Recurrency for Multi-Agent Reinforcement Learning under State Uncertainty}},
+  year      = {2023},
+  isbn      = {9781450394321},
+  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+  address   = {Richland, SC},
+  abstract  = {{State uncertainty poses a major challenge for decentralized coordination. However, state uncertainty is largely neglected in multi-agent reinforcement learning research due to a strong focus on state-based centralized training for decentralized execution (CTDE) and benchmarks that lack sufficient stochasticity like StarCraft Multi-Agent Challenge (SMAC). In this work, we propose Attention-based Embeddings of Recurrence In multi-Agent Learning (AERIAL) to approximate value functions under agent-wise state uncertainty. AERIAL uses a learned representation of multi-agent recurrence, considering more accurate information about decentralized agent decisions than state-based CTDE. We then introduce MessySMAC, a modified version of SMAC with stochastic observations and higher variance in initial states, to provide a more general and configurable benchmark. We evaluate AERIAL in a variety of MessySMAC maps, and compare the results with state-based CTDE.}},
+  booktitle = {Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems},
+  pages     = {2839–2841},
+  numpages  = {3},
+  keywords  = {dec-pomdp, multi-agent learning, recurrence, state uncertainty},
+  location  = {London, United Kingdom},
+  series    = {AAMAS '23},
+  preprint  = {https://arxiv.org/abs/2301.01649},
+  doi       = {10.5555/3545946.3599096},
+  url       = {https://dl.acm.org/doi/10.5555/3545946.3599096},
+  pdf       = {https://dl.acm.org/doi/pdf/10.5555/3545946.3599096},
+  code      = {https://github.com/thomyphan/messy_smac}
+}
+
+@inproceedings{Stein2023Evidence,
+  author    = {Stein, Jonas and Chamanian, Farbod and Zorn, Maximilian and Nüßlein, Jonas and Zielinski, Sebastian and Kölle, Michael and Linnhoff-Popien, Claudia},
+  title     = {{Evidence that PUBO outperforms QUBO when solving continuous optimization problems with the QAOA}},
+  year      = {2023},
+  isbn      = {9798400701207},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3583133.3596358},
+  doi       = {10.1145/3583133.3596358},
+  abstract  = {{Quantum computing provides powerful algorithmic tools that have been shown to outperform established classical solvers in specific optimization tasks. A core step in solving optimization problems with known quantum algorithms such as the Quantum Approximate Optimization Algorithm (QAOA) is the problem formulation. While quantum optimization has historically centered around Quadratic Unconstrained Optimization (QUBO) problems, recent studies show, that many combinatorial problems such as the TSP can be solved more efficiently in their native Polynomial Unconstrained Optimization (PUBO) forms. As many optimization problems in practice also contain continuous variables, our contribution investigates the performance of the QAOA in solving continuous optimization problems when using PUBO and QUBO formulations. Our extensive evaluation on suitable benchmark functions, shows that PUBO formulations generally yield better results, while requiring less qubits. As the multi-qubit interactions needed for the PUBO variant have to be decomposed using the hardware gates available, i.e., currently single- and two-qubit gates, the circuit depth of the PUBO approach outscales its QUBO alternative roughly linearly in the order of the objective function. However, incorporating the planned addition of native multi-qubit gates such as the global M\o{}lmer-S\o{}renson gate, our experiments indicate that PUBO outperforms QUBO for higher order continuous optimization problems in general.}},
+  booktitle = {Proceedings of the Companion Conference on Genetic and Evolutionary Computation},
+  pages     = {2254–2262},
+  numpages  = {9},
+  keywords  = {quantum computing, continuous optimization, quantum approximate optimization algorithm, quadratic unconstrained binary optimization, polynomial unconstrained binary optimization},
+  location  = {Lisbon, Portugal},
+  series    = {GECCO '23 Companion},
+  preprint  = {https://arxiv.org/abs/2305.03390},
+  pdf       = {https://dl.acm.org/doi/pdf/10.1145/3583133.3596358}
+}
 @inproceedings{Phan2023AttentionBasedRecurrence,
   author    = {Phan, Thomy and Ritz, Fabian and Altmann, Philipp and Zorn, Maximilian and Nüßlein, Jonas and Kölle, Michael and Gabor, Thomas and Linnhoff-Popien, Claudia},
   title     = {{Attention-based recurrence for multi-agent reinforcement learning under stochastic partial observability}},
@@ -524,25 +542,6 @@
   url       = {https://link.springer.com/chapter/10.1007/978-3-031-75434-0_8},
   pdf       = {https://link.springer.com/content/pdf/10.1007/978-3-031-75434-0.pdf},
   code      = {https://github.com/gstenzel/SEGym}
-}
-
-@inproceedings{Koelle2024Optimizing,
-  author    = { Kölle, Michael and Seidl, Daniel and Zorn, Maximilian and Altmann, Philipp and Stein, Jonas and Gabor, Thomas },
-  booktitle = { 2024 IEEE International Conference on Quantum Computing and Engineering (QCE) },
-  title     = {{ Optimizing Variational Quantum Circuits Using Metaheuristic Strategies in Reinforcement Learning }},
-  year      = {2024},
-  volume    = {},
-  issn      = {},
-  pages     = {323-328},
-  abstract  = {{Quantum Reinforcement Learning (QRL) offers potential advantages over classical Reinforcement Learning, such as compact state space representation and faster convergence in certain scenarios. However, practical benefits require further validation. QRL faces challenges like flat solution landscapes, where traditional gradient-based methods are inefficient, necessitating the use of gradient-free algorithms. This work explores the integration of metaheuristic algorithms — Particle Swarm Optimization, Ant Colony Optimization, Tabu Search, Genetic Algorithm, Simulated Annealing, and Harmony Search — into QRL. These algorithms provide flexibility and efficiency in parameter optimization. Evaluations in $5\times 5$ MiniGrid Reinforcement Learning environments show that, all algorithms yield nearoptimal results, with Simulated Annealing and Particle Swarm Optimization performing best. In the Cart Pole environment, Simulated Annealing, Genetic Algorithms, and Particle Swarm Optimization achieve optimal results, while the others perform slightly better than random action selection. These findings demonstrate the potential of Particle Swarm Optimization and Simulated Annealing for efficient QRL learning, emphasizing the need for careful algorithm selection and adaptation. }},
-  keywords  = {Metaheuristics;Stability criteria;Reinforcement learning;Simulated annealing;Circuit stability;Particle swarm optimization;Quantum circuit;Robots;Genetic algorithms;Testing},
-  doi       = {10.1109/QCE60285.2024.10300},
-  url       = {https://www.computer.org/csdl/proceedings-article/qce/2024/413702a323/23oqmUz6JjO},
-  publisher = {IEEE Computer Society},
-  address   = {Los Alamitos, CA, USA},
-  month     = sep,
-  preprint  = {https://arxiv.org/abs/2408.01187},
-  code      = {https://github.com/michaelkoelle/metaheuristic-vis}
 }
 
 @inproceedings{Stenzel2024SelfReplicating,
