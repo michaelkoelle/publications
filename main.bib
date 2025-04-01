@@ -363,6 +363,7 @@
   abstract  = {{Stochastic partial observability poses a major challenge for decentralized coordination in multiagent reinforcement learning but is largely neglected in state-of-the-art research due to a strong focus on state-based centralized training for decentralized execution (CTDE) and benchmarks that lack sufficient stochasticity like StarCraft Multi-Agent Challenge (SMAC). In this paper, we propose Attention-based Embeddings of Recurrence In multi-Agent Learning (AERIAL) to approximate value functions under stochastic partial observability. AERIAL replaces the true state with a learned representation of multi-agent recurrence, considering more accurate information about decentralized agent decisions than state-based CTDE. We then introduce MessySMAC, a modified version of SMAC with stochastic observations and higher variance in initial states, to provide a more general and configurable benchmark regarding stochastic partial observability. We evaluate AERIAL in Dec-Tiger as well as in a variety of SMAC and MessySMAC maps, and compare the results with state-based CTDE. Furthermore, we evaluate the robustness of AERIAL and state-based CTDE against various stochasticity configurations in MessySMAC.}},
   booktitle = {Proceedings of the 40th International Conference on Machine Learning},
   articleno = {1157},
+  doi       = {10.5555/3618408.3619565},
   numpages  = {14},
   location  = {Honolulu, Hawaii, USA},
   series    = {ICML'23},
@@ -535,6 +536,7 @@
   title     = {{SEGym: Optimizing Large Language Model Assisted Software Engineering Agents with Reinforcement Learning}},
   booktitle = {Bridging the Gap Between AI and Reality},
   year      = {2025},
+  doi       = {10.1007/978-3-031-75434-0_8},
   publisher = {Springer Nature Switzerland},
   address   = {Cham},
   pages     = {107--124},
@@ -714,17 +716,87 @@
   abstract     = {{Quantum machine learning offers novel paradigms to address limitations in traditional natural language processing models, such as fixed context lengths and computational inefficiencies. In this work, we propose QMamba, the first quantum adaptation of the Mamba architecture, integrating selective state space models with quantum computation for efficient and scalable text generation. QMamba leverages quantum principles like superposition and entanglement to enable unbounded context sizes and reduced computational complexity. Our contributions include the development of a quantum generative model optimized for hardware constraints, advancements in encoding, embedding, and measurement techniques, and the demonstration of its performance on pattern reproduction and context-challenging tasks like ”Needle in a Haystack.” Experimental results confirm QMamba’s potential to maintain high efficiency and performance across varying sequence lengths, laying the groundwork for future explorations in quantum-enhanced natural language processing.}}
 }
 
-
-
-@misc{Rohe2024Pipeline,
-  title    = {{From Problem to Solution: A general Pipeline to Solve Optimisation Problems on Quantum Hardware}},
-  author   = {Tobias Rohe and Simon Grätz and Michael Kölle and Sebastian Zielinski and Jonas Stein and Claudia Linnhoff-Popien},
-  year     = {2024},
-  eprint   = {2406.19876},
-  abstract = {{With constant improvements of quantum hardware and quantum algorithms, quantum advantage comes within reach. Parallel to the development of the computer at the end of the twentieth century, quantum software development will now also rapidly gain in importance and scale. On account of the inherent complexity and novelty of quantum computing (QC), as well as the expected lack of expertise of many of the stakeholders involved in its development, QC software development projects are exposed to the risk of being conducted in a crowded and unstructured way, lacking clear guidance and understanding. This paper presents a comprehensive quantum optimisation development pipeline, novel in its depth of 22 activities across multiple stages, coupled with project management insights, uniquely targeted to the late noisy intermediate-scale quantum (NISQ) [1] and early post-NISQ eras. We have extensively screened literature and use-cases, interviewed experts, and brought in our own expertise to develop this general quantum pipeline. The proposed solution pipeline is divided into five stages: Use-case Identification, Solution Draft, Pre-Processing, Execution and Post-Processing. Additionally, the pipeline contains two review points to address the project management view, the inherent risk of the project and the current technical maturity of QC technology. This work is intended as an orientation aid for all stakeholders involved in the development of QC applications and should therefore increase the chances of success of quantum software projects. We encourage researchers to adapt and extend the model where appropriate, as technological development also continues.}},
-  preprint = {https://arxiv.org/abs/2406.19876},
-  keywords = {toapprear}
+@inproceedings{Rohe2024Pipeline,
+  author    = {{Tobias Rohe and Simon Grätz and Michael Kölle and Sebastian Zielinski and Jonas Stein and Claudia Linnhoff-Popien}},
+  editor    = {Kohei Arai},
+  title     = {{From Problem to Solution: A General Pipeline to Solve Optimisation Problems on Quantum Hardware}},
+  booktitle = {Advances in Information and Communication},
+  year      = {2025},
+  publisher = {Springer Nature Switzerland},
+  address   = {Cham},
+  pages     = {21--41},
+  abstract  = {{On account of the inherent complexity and novelty of quantum computing (QC), as well as the expected lack of expertise of many of the stakeholders involved in its development, QC software development projects are exposed to the risk of being conducted in a crowded and unstructured way, lacking clear guidance and understanding. This paper presents a comprehensive quantum optimisation development pipeline, novel in its depth of 22 activities across multiple stages, coupled with project management insights, uniquely targeted to the late noisy intermediate-scale quantum (NISQ) and early post-NISQ eras. We have extensively screened literature and use-cases, interviewed experts, and brought in our own expertise to develop this general quantum pipeline. The proposed solution pipeline is divided into five stages: Use-case Identification, Solution Draft, Pre-Processing, Execution and Post-Processing. Additionally, the pipeline contains two review points to address the project management view, the inherent risk of the project and the current technical maturity of QC technology. This work is intended as an orientation aid and should therefore increase the chances of success of quantum software projects.}},
+  isbn      = {978-3-031-84460-7},
+  preprint  = {https://arxiv.org/abs/2406.19876},
+  doi       = {10.1007/978-3-031-84460-7_2}
 }
+
+
+
+
+
+@inproceedings{Zorn2025QualityDiversity,
+  title     = {{Quality Diversity for Variational Quantum Circuit Optimization}},
+  author    = {Maximilian Zorn and Jonas Stein and Maximilian Balthasar Mansky and Philipp Altmann and Michael Kölle and Claudia Linnhoff-Popien},
+  year      = {2025},
+  booktitle = {ICAPS '25: Proceedings of the Thirty-Fifth International Conference on Automated Planning and Scheduling},
+  publisher = {AAAI Press},
+  volume    = {35},
+  keywords  = {toappear}
+}
+
+@inproceedings{Koelle2025EvaluatingMutation,
+  title     = {{Evaluating Mutation Techniques in Genetic Algorithm-Based Quantum Circuit Synthesis}},
+  author    = {Michael Kölle and Tom Bintener and Maximilian Zorn and Gerhard Stenzel and Leo Sünkel and Thomas Gabor and Claudia Linnhoff-Popien},
+  publisher = {Association for Computing Machinery},
+  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
+  address   = {New York, NY, USA},
+  year      = {2025},
+  doi       = {10.1145/3712256.3726402},
+  pdf       = {https://doi.org/10.1145/3712256.3726402},
+  keywords  = {toappear},
+  series    = {GECCO '25},
+  abstract  = {{Quantum computing leverages the unique properties of qubits and quantum parallelism to solve problems intractable for classical systems, offering unparalleled computational potential. However, the optimization of quantum circuits remains critical, especially for noisy intermediate-scale quantum (NISQ) devices with limited qubits and high error rates. Genetic algorithms (GAs) provide a promising approach for efficient quantum circuit synthesis by automating optimization tasks. This work examines the impact of various mutation strategies within a GA framework for quantum circuit synthesis. By analyzing how different mutations transform circuits, it identifies strategies that enhance efficiency and performance. Experiments utilized a fitness function emphasizing fidelity, while accounting for circuit depth and T operations, to optimize circuits with four to six qubits. Comprehensive hyperparameter testing revealed that combining delete and swap strategies outperformed other approaches, demonstrating their effectiveness in developing robust GA-based quantum circuit optimizers.}}
+}
+
+@inproceedings{Suenkel2025QuantumCircuit,
+  title     = {{Quantum Circuit Construction and Optimization through Hybrid Evolutionary Algorithms}},
+  author    = {Leo Sünkel and Philipp Altmann and Michael Kölle and Gerhard Stenzel and Thomas Gabor and Claudia Linnhoff-Popien},
+  year      = {2025},
+  publisher = {Association for Computing Machinery},
+  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
+  address   = {New York, NY, USA},
+  keywords  = {toappear},
+  abstract  = {{We apply a hybrid evolutionary algorithm to minimize the depth of circuits in quantum computing. More specifically, we evaluate two different variants of the algorithm. In the first approach, we combine the evolutionary algorithm with an optimization subroutine to optimize the parameters of the rotation gates present in the quantum circuit. In the second, the algorithm solely relies on evolutionary operations (i.e., mutations and crossover). We approach the problem from two sides: (1) constructing circuits from the ground up by starting with random initializations and (2) initializing individuals with the target in order to optimize it according to the fitness function. We run experiments on random circuits with 4 and 6 qubits varying in circuit depth. Our results show that the proposed methods are able to significantly reduce the depth of circuits while still retaining a high fidelity to the target state.}}
+}
+
+@inproceedings{Stenzel2025GeneralGenetic,
+  title     = {{A General Genetic Algorithm Using Natural Language Evolutionary Operators}},
+  author    = {Gerhard Stenzel and Sarah Gerner and Michael Kölle and Maximilian Zorn and Thomas Gabor},
+  year      = {2025},
+  publisher = {Association for Computing Machinery},
+  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
+  address   = {New York, NY, USA},
+  keywords  = {toappear},
+  abstract  = {{By employing large language models (LLMs) we build a general genetic algorithm, i.e., a genetic algorithm (GA) that can solve various domains without any changes to its algorithmic components. Our approach requires only a problem description in natural language and a black-box fitness function and can then handle any type of data via natural-language-based evolutionary operators that call an LLM to compute their application. The relevant prompts for the operators can be human-designed or self-optimized with similar performance results. Compared to the only other generalist GA approach, i.e., asking an LLM to write a new specific GA, our natural-language-based genetic algorithm (NaLaGA) offers not only a better class of safety (since no LLM-generated code is executed by NaLaGA) but also greatly improved results in the two example domains ``Schwefel'' and ``grid world maze''.}}
+}
+
+@inproceedings{Rohe2025AcceleratedVQE,
+  title     = {{Accelerated VQE: Parameter Recycling for Similar Recurring Problem Instances}},
+  author    = {Tobias Rohe and Maximilian Balthasar Mansky and Michael Kölle and Jonas Stein and Leo Sünkel and Claudia Linnhoff-Popien},
+  year      = {2025},
+  keywords  = {toappear},
+  preprint  = {https://arxiv.org/abs/2503.22590},
+  abstract  = {{Training the Variational Quantum Eigensolver (VQE) is a task that requires substantial compute. We propose the use of concepts from transfer learning to considerably reduce the training time when solving similar problem instances. We demonstrate that its utilisation leads to accelerated convergence and provides a similar quality of results compared to circuits with parameters initialised around zero. Further, transfer learning works better when the distance between the source-solution is close to that of the target-solution. Based on these findings, we present an accelerated VQE approach tested on the MaxCut problem with a problem size of 12 nodes solved with two different circuits utilised. We compare our results against a random baseline and non transfer learning trained circuits. Our experiments demonstrate that transfer learning can reduce training time by around 93\% in post-training, relative to identical circuits without the use of transfer learning. The accelerated VQE approach beats the standard approach by seven, respectively nine percentage points in terms of solution quality, if the early-stopping is considered. In settings where time-to-solution or computational costs are critical, this approach provides a significant advantage, having an improved trade-off between training effort and solution quality.}},
+  publisher = {Springer Nature Switzerland},
+  address   = {Cham},
+  booktitle = {Innovations for Community Services}
+}
+
+
+
+
+
 
 @misc{Koelle2022Decentralized,
   title    = {{Decentralized scheduling through an adaptive, trading-based multi-agent system}},
@@ -784,36 +856,6 @@
   abstract = {{Quantum computing promises performance advantages, especially for data-intensive and complex computations. However, the current limitations of quantum hardware impose significant constraints on input sizes. To mitigate this, hybrid transfer learning solutions have been developed, which combine pre-trained classical models capable of managing large inputs with variational quantum circuits. Despite these advancements, the individual contributions of the classical and quantum components to the model's overall performance remain unclear. We propose a novel hybrid architecture that, instead of using a pre-trained network for data compression, employs an autoencoder to generate a compressed version of the input data. This compressed data is then passed to the quantum component. To evaluate our model's classification performance, we compare it against two state-of-the-art hybrid transfer learning architectures, two purely classical architectures, and one quantum architecture. Additionally, we check our compression method with the autoencoder against a Principal Component Analysis (PCA) and Gaussian Mixture Model (GMM). Finally we train our model with another technique where the autoencoder and variational quantum circuit are trained in parallel. The accuracy of each model is tested on four datasets: Banknote Authentication, Breast Cancer Wisconsin, MNIST digits, and AudioMNIST. Our findings indicate that the classical components play a significant role in classification within hybrid transfer learning models, a contribution that is often incorrectly attributed to the quantum component. The performance of our proposed model is comparable to that of a variational quantum circuit utilizing amplitude embedding, and also to a variational quantum circuit which uses compressed data through a PCA or a GMM, suggesting that our approach is a viable alternative.}}
 }
 
-@misc{Suenkel2025QuantumCircuit,
-  title    = {{Quantum Circuit Construction and Optimization through Hybrid Evolutionary Algorithms}},
-  author   = {Leo Sünkel and Philipp Altmann and Michael Kölle and Gerhard Stenzel and Thomas Gabor and Claudia Linnhoff-Popien},
-  year     = {2025},
-  keywords = {insubmission},
-  abstract = {{We apply a hybrid evolutionary algorithm to minimize the depth of circuits in quantum computing. More specifically, we evaluate two different variants of the algorithm. In the first approach, we combine the evolutionary algorithm with an optimization subroutine to optimize the parameters of the rotation gates present in the quantum circuit. In the second, the algorithm solely relies on evolutionary operations (i.e., mutations and crossover). We approach the problem from two sides: (1) constructing circuits from the ground up by starting with random initializations and (2) initializing individuals with the target in order to optimize it according to the fitness function. We run experiments on random circuits with 4 and 6 qubits varying in circuit depth. Our results show that the proposed methods are able to significantly reduce the depth of circuits while still retaining a high fidelity to the target state.}}
-}
-
-@inproceedings{Koelle2025EvaluatingMutation,
-  title     = {{Evaluating Mutation Techniques in Genetic Algorithm-Based Quantum Circuit Synthesis}},
-  author    = {Michael Kölle and Tom Bintener and Maximilian Zorn and Gerhard Stenzel and Leo Sünkel and Thomas Gabor and Claudia Linnhoff-Popien},
-  publisher = {Association for Computing Machinery},
-  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
-  address   = {New York, NY, USA},
-  year      = {2025},
-  doi       = {10.1145/3712256.3726402},
-  pdf       = {https://doi.org/10.1145/3712256.3726402},
-  keywords  = {toappear},
-  series    = {GECCO '25},
-  abstract  = {{Quantum computing leverages the unique properties of qubits and quantum parallelism to solve problems intractable for classical systems, offering unparalleled computational potential. However, the optimization of quantum circuits remains critical, especially for noisy intermediate-scale quantum (NISQ) devices with limited qubits and high error rates. Genetic algorithms (GAs) provide a promising approach for efficient quantum circuit synthesis by automating optimization tasks. This work examines the impact of various mutation strategies within a GA framework for quantum circuit synthesis. By analyzing how different mutations transform circuits, it identifies strategies that enhance efficiency and performance. Experiments utilized a fitness function emphasizing fidelity, while accounting for circuit depth and T operations, to optimize circuits with four to six qubits. Comprehensive hyperparameter testing revealed that combining delete and swap strategies outperformed other approaches, demonstrating their effectiveness in developing robust GA-based quantum circuit optimizers.}}
-}
-
-@misc{Stenzel2025GeneralGenetic,
-  title    = {{A General Genetic Algorithm Using Natural Language Evolutionary Operators}},
-  author   = {Gerhard Stenzel and Sarah Gerner and Michael Kölle and Maximilian Zorn and Thomas Gabor},
-  year     = {2025},
-  keywords = {insubmission},
-  abstract = {{By employing large language models (LLMs) we build a general genetic algorithm, i.e., a genetic algorithm (GA) that can solve various domains without any changes to its algorithmic components. Our approach requires only a problem description in natural language and a black-box fitness function and can then handle any type of data via natural-language-based evolutionary operators that call an LLM to compute their application. The relevant prompts for the operators can be human-designed or self-optimized with similar performance results. Compared to the only other generalist GA approach, i.e., asking an LLM to write a new specific GA, our natural-language-based genetic algorithm (NaLaGA) offers not only a better class of safety (since no LLM-generated code is executed by NaLaGA) but also greatly improved results in the two example domains ``Schwefel'' and ``grid world maze''.}}
-}
-
 @misc{Koelle2025LotteryTicket,
   title    = {{Investigating the Lottery Ticket Hypothesis for Variational Quantum Circuits}},
   author   = {Michael Kölle and Leonhard Klingert and Julian Schönberger and Philipp Altmann and Maximilian Mansky and Claudia Linnhoff-Popien},
@@ -831,16 +873,6 @@
   code     = {https://github.com/alexander-feist/nn-vqc-params}
 }
 
-@inproceedings{Zorn2025QualityDiversity,
-  title     = {{Quality Diversity for Variational Quantum Circuit Optimization}},
-  author    = {Maximilian Zorn and Jonas Stein and Maximilian Balthasar Mansky and Philipp Altmann and Michael Kölle and Claudia Linnhoff-Popien},
-  year      = {2025},
-  journal   = {ICAPS '25: Proceedings of the Thirty-Fifth International Conference on Automated Planning and Scheduling},
-  publisher = {AAAI Press},
-  volume    = {35},
-  keywords  = {toapprear}
-}
-
 @misc{Suenkel2025EvolutionaryCircuit,
   title    = {{Evolutionary-Based Circuit Optimization for Distributed Quantum Computing}},
   author   = {Leo Sünkel and Jonas Stein and Gerhard Stenzel and Michael Kölle and Thomas Gabor and Claudia Linnhoff-Popien},
@@ -848,11 +880,3 @@
   keywords = {insubmission}
 }
 
-@misc{Rohe2025AcceleratedVQE,
-  title    = {{Accelerated VQE: Parameter Recycling for Similar Recurring Problem Instances}},
-  author   = {Tobias Rohe and Maximilian Balthasar Mansky and Michael Kölle and Jonas Stein and Leo Sünkel and Claudia Linnhoff-Popien},
-  year     = {2025},
-  keywords = {insubmission},
-  preprint = {https://arxiv.org/abs/2503.22590},
-  abstract = {{Training the Variational Quantum Eigensolver (VQE) is a task that requires substantial compute. We propose the use of concepts from transfer learning to considerably reduce the training time when solving similar problem instances. We demonstrate that its utilisation leads to accelerated convergence and provides a similar quality of results compared to circuits with parameters initialised around zero. Further, transfer learning works better when the distance between the source-solution is close to that of the target-solution. Based on these findings, we present an accelerated VQE approach tested on the MaxCut problem with a problem size of 12 nodes solved with two different circuits utilised. We compare our results against a random baseline and non transfer learning trained circuits. Our experiments demonstrate that transfer learning can reduce training time by around 93\% in post-training, relative to identical circuits without the use of transfer learning. The accelerated VQE approach beats the standard approach by seven, respectively nine percentage points in terms of solution quality, if the early-stopping is considered. In settings where time-to-solution or computational costs are critical, this approach provides a significant advantage, having an improved trade-off between training effort and solution quality.}}
-}
