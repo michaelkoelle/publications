@@ -761,6 +761,18 @@
   abstract  = {{Quantum computing leverages the unique properties of qubits and quantum parallelism to solve problems intractable for classical systems, offering unparalleled computational potential. However, the optimization of quantum circuits remains critical, especially for noisy intermediate-scale quantum (NISQ) devices with limited qubits and high error rates. Genetic algorithms (GAs) provide a promising approach for efficient quantum circuit synthesis by automating optimization tasks. This work examines the impact of various mutation strategies within a GA framework for quantum circuit synthesis. By analyzing how different mutations transform circuits, it identifies strategies that enhance efficiency and performance. Experiments utilized a fitness function emphasizing fidelity, while accounting for circuit depth and T operations, to optimize circuits with four to six qubits. Comprehensive hyperparameter testing revealed that combining delete and swap strategies outperformed other approaches, demonstrating their effectiveness in developing robust GA-based quantum circuit optimizers.}}
 }
 
+@inproceedings{Koelle2025ParameterBased,
+  title     = {{Evaluating Parameter-Based Training Performance of Neural Networks and Variational Quantum Circuits}},
+  author    = {Michael Kölle and Alexander Feist and Jonas Stein and Claudia Linnhoff-Popien},
+  year      = {2025},
+  booktitle = {Computational Science -- ICCS 2025},
+  publisher = {Springer Nature Switzerland},
+  keywords  = {toappear},
+  abstract  = {{In recent years, neural networks (NNs) have driven significant advances in machine learning. However, as tasks grow more complex, NNs often require large numbers of trainable parameters, which increases computational and energy demands. Variational quantum circuits (VQCs) offer a promising alternative: they leverage quantum mechanics to capture intricate relationships and typically need fewer parameters. In this work, we evaluate NNs and VQCs on simple supervised and reinforcement learning tasks, examining models with different parameter sizes. We simulate VQCs and execute selected parts of the training process on real quantum hardware to approximate actual training times. Our results show that VQCs can match NNs in performance while using significantly fewer parameters, despite longer training durations. As quantum technology and algorithms advance, and VQC architectures improve, we posit that VQCs could become advantageous for certain machine learning tasks.}},
+  code      = {https://github.com/alexander-feist/nn-vqc-params},
+  preprint  = {https://arxiv.org/abs/2504.07273}
+}
+
 @inproceedings{Suenkel2025QuantumCircuit,
   title     = {{Quantum Circuit Construction and Optimization through Hybrid Evolutionary Algorithms}},
   author    = {Leo Sünkel and Philipp Altmann and Michael Kölle and Gerhard Stenzel and Thomas Gabor and Claudia Linnhoff-Popien},
@@ -866,14 +878,7 @@
   abstract = {{Quantum computing is an emerging field in computer science that has seen considerable progress in recent years, especially in machine learning. By harnessing the principles of quantum physics, it can surpass the limitations of classical algorithms. However, variational quantum circuits (VQCs), which rely on adjustable parameters, often face the barren plateau phenomenon, hindering optimization. The Lottery Ticket Hypothesis (LTH) is a recent concept in classical machine learning that has led to notable improvements in parameter efficiency for neural networks. It posits that within a large network, a smaller, more efficient subnetwork, or “winning ticket,” can achieve comparable performance, potentially circumventing plateau challenges. In this work, we investigate whether this idea can apply to VQCs. We show that the weak LTH holds for VQCs, revealing winning tickets that retain just 26.0\% of the original parameters. For the strong LTH, where a pruning mask is learned without any training, we discovered a winning ticket in a binary VQC, achieving 100\% accuracy with only 45\% of the weights. These findings indicate that LTH may mitigate barren plateaus by reducing parameter counts while preserving performance, thus enhancing the efficiency of VQCs in quantum machine learning tasks.}}
 }
 
-@misc{Koelle2025ParameterBased,
-  title    = {{Evaluating Parameter-Based Training Performance of Neural Networks and Variational Quantum Circuits}},
-  author   = {Michael Kölle and Alexander Feist and Jonas Stein and Claudia Linnhoff-Popien},
-  year     = {2025},
-  keywords = {insubmission},
-  abstract = {{In recent years, neural networks (NNs) have driven significant advances in machine learning. However, as tasks grow more complex, NNs often require large numbers of trainable parameters, which increases computational and energy demands. Variational quantum circuits (VQCs) offer a promising alternative: they leverage quantum mechanics to capture intricate relationships and typically need fewer parameters. In this work, we evaluate NNs and VQCs on simple supervised and reinforcement learning tasks, examining models with different parameter sizes. We simulate VQCs and execute selected parts of the training process on real quantum hardware to approximate actual training times. Our results show that VQCs can match NNs in performance while using significantly fewer parameters, despite longer training durations. As quantum technology and algorithms advance, and VQC architectures improve, we posit that VQCs could become advantageous for certain machine learning tasks.}},
-  code     = {https://github.com/alexander-feist/nn-vqc-params}
-}
+
 
 @misc{Suenkel2025EvolutionaryCircuit,
   title    = {{Evolutionary-Based Circuit Optimization for Distributed Quantum Computing}},
