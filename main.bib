@@ -733,6 +733,60 @@
   doi       = {10.1007/978-3-031-84460-7_2}
 }
 
+@inproceedings{Roshani2025Sequential,
+  author    = {{Navid Roshani and Jonas Stein and Maximilian Zorn and Michael Kölle and Philipp Altmann and Claudia Linnhoff-Popien }},
+  editor    = {Rocha, Ana Paula
+               and Steels, Luc
+               and van den Herik, Jaap},
+  title     = {{Sequential Hamiltonian Assembly: Enhancing the Training of Combinatorial Optimization Problems on Quantum Computers}},
+  booktitle = {Agents and Artificial Intelligence},
+  year      = {2025},
+  publisher = {Springer Nature Switzerland},
+  address   = {Cham},
+  pages     = {252--271},
+  keywords  = {Quantum machine learning, Parameterized quantum circuits, Combinatorial optimization},
+  abstract  = {{A central challenge in quantum machine learning is the design and training of parameterized quantum circuits (PQCs). Much like in deep learning, vanishing gradients pose significant obstacles to the trainability of PQCs, arising from various sources. One such source is the presence of non-local loss functions, which require the measurement of a large subset of qubits involved. To address this issue and facilitate parameter training for quantum applications using global loss functions, we propose Sequential Hamiltonian Assembly (SHA). SHA iteratively approximates the loss by assembling it from local components. To further demonstrate the feasibility of our approach, we extend our previous case study by introducing a new partitioning strategy, a new merger between QAOA and SHA, and an evaluation of SHA onto the Max-Cut optimization problem. Simulation results show that SHA outperforms conventional parameter training by 43.89{\%} and the empirical state-of-the-art, Layer-VQE by 29.08{\%} in the mean accuracy for Max-Cut. This paves the way for locality-aware learning techniques, mitigating vanishing gradients for a large class of practically relevant problems.}},
+  isbn      = {978-3-031-87327-0},
+  doi       = {10.1007/978-3-031-87327-0_13},
+  code      = {https://github.com/jonas-stein/sha}
+}
+
+@inproceedings{Koelle2025Architectural,
+  title     = {{Architectural Influence on Variational Quantum Circuits in Multi-Agent Reinforcement Learning: Evolutionary Strategies for Optimization}},
+  author    = {Michael Kölle and Karola Schneider and Sabrina Egger and Felix Topp and Thomy Phan and Philipp Altmann and Jonas Nüßlein and Claudia Linnhoff-Popien},
+  editor    = {Rocha, Ana Paula
+               and Steels, Luc
+               and van den Herik, Jaap},
+  publisher = {Springer Nature Switzerland},
+  address   = {Cham},
+  pages     = {50--79},
+  year      = {2025},
+  eprint    = {2407.20739},
+  isbn      = {978-3-031-87327-0},
+  doi       = {10.1007/978-3-031-87327-0_12},
+  keywords  = {Quantum reinforcement learning, Multi-agent systems, Evolutionary optimization, Variational quantum circuits, Architecture search},
+  preprint  = {https://arxiv.org/abs/2407.20739},
+  code      = {https://github.com/karolaschneider/vqc-opt-arch-evo},
+  abstract  = {{In recent years, Multi-Agent Reinforcement Learning (MARL) has found application in numerous areas of science and industry, such as autonomous driving, telecommunications, and global health. Nevertheless, MARL suffers from, for instance, an exponential growth of dimensions. Inherent properties of quantum mechanics help to overcome these limitations, e.g., by significantly reducing the number of trainable parameters. Previous studies have developed an approach that uses gradient-free quantum Reinforcement Learning and evolutionary optimization for variational quantum circuits (VQCs) to reduce the trainable parameters and avoid barren plateaus as well as vanishing gradients. This leads to a significantly better performance of VQCs compared to classical neural networks with a similar number of trainable parameters and a reduction in the number of parameters by more than 97\% compared to similarly good neural networks. We extend an approach of Kölle et al. by proposing a Gate-Based, a Layer-Based, and a Prototype-Based concept to mutate and recombine VQCs. Our results show the best performance for mutation-only strategies and the Gate-Based approach. In particular, we observe a significantly better score, higher total and own collected coins, as well as a superior own coin rate for the best agent when evaluated in the Coin Game environment.}}
+}
+
+@inproceedings{Koelle2025QuantumTransfer,
+  title     = {{Quantum Transfer Learning: The Impact of Classical Preprocessing}},
+  author    = {Michael Kölle and Jonas Maurer and Philipp Altmann and Leo Sünkel and Jonas Stein and Julian Hager and Sebastian Zielinski and Claudia Linnhoff-Popien},
+  year      = {2025},
+  editor    = {Rocha, Ana Paula
+               and Steels, Luc
+               and van den Herik, Jaap},
+  code      = {https://github.com/javajonny/AE-and-VQC},
+  publisher = {Springer Nature Switzerland},
+  address   = {Cham},
+  pages     = {368--403},
+  keywords  = {Quantum transfer learning, Variational quantum circuits, Autoencoder, Dimensionality reduction},
+  isbn      = {978-3-031-87327-0},
+  doi       = {10.1007/978-3-031-87327-0_18},
+  abstract  = {{Quantum computing promises performance advantages, especially for data-intensive and complex computations. However, the current limitations of quantum hardware impose significant constraints on input sizes. To mitigate this, hybrid transfer learning solutions have been developed, which combine pre-trained classical models capable of managing large inputs with variational quantum circuits. Despite these advancements, the individual contributions of the classical and quantum components to the model's overall performance remain unclear. We propose a novel hybrid architecture that, instead of using a pre-trained network for data compression, employs an autoencoder to generate a compressed version of the input data. This compressed data is then passed to the quantum component. To evaluate our model's classification performance, we compare it against two state-of-the-art hybrid transfer learning architectures, two purely classical architectures, and one quantum architecture. Additionally, we check our compression method with the autoencoder against a Principal Component Analysis (PCA) and Gaussian Mixture Model (GMM). Finally we train our model with another technique where the autoencoder and variational quantum circuit are trained in parallel. The accuracy of each model is tested on four datasets: Banknote Authentication, Breast Cancer Wisconsin, MNIST digits, and AudioMNIST. Our findings indicate that the classical components play a significant role in classification within hybrid transfer learning models, a contribution that is often incorrectly attributed to the quantum component. The performance of our proposed model is comparable to that of a variational quantum circuit utilizing amplitude embedding, and also to a variational quantum circuit which uses compressed data through a PCA or a GMM, suggesting that our approach is a viable alternative.}}
+}
+
 
 
 
@@ -827,16 +881,7 @@
   abstract = {{In multi-agent reinforcement learning systems, the actions of one agent can have a negative impact on the rewards of other agents. One way to combat this problem is to let agents trade their rewards amongst each other. Motivated by this, this work applies a trading approach to a simulated scheduling environment, where the agents are responsible for the assignment of incoming jobs to compute cores. In this environment, reinforcement learning agents learn to trade successfully. The agents can trade the usage right of computational cores to process high-priority, high-reward jobs faster than low-priority, low-reward jobs. However, due to combinatorial effects, the action and observation spaces of a simple reinforcement learning agent in this environment scale exponentially with key parameters of the problem size. However, the exponential scaling behavior can be transformed into a linear one if the agent is split into several independent sub-units. We further improve this distributed architecture using agent-internal parameter sharing. Moreover, it can be extended to set the exchange prices autonomously. We show that in our scheduling environment, the advantages of a distributed agent architecture clearly outweigh more aggregated approaches. We demonstrate that the distributed agent architecture becomes even more performant using agent-internal parameter sharing. Finally, we investigate how two different reward functions affect autonomous pricing and the corresponding scheduling.}}
 }
 
-@misc{Koelle2024Architectural,
-  title    = {{Architectural Influence on Variational Quantum Circuits in Multi-Agent Reinforcement Learning: Evolutionary Strategies for Optimization}},
-  author   = {Michael Kölle and Karola Schneider and Sabrina Egger and Felix Topp and Thomy Phan and Philipp Altmann and Jonas Nüßlein and Claudia Linnhoff-Popien},
-  year     = {2024},
-  eprint   = {2407.20739},
-  preprint = {https://arxiv.org/abs/2407.20739},
-  keywords = {insubmission},
-  code     = {https://github.com/karolaschneider/vqc-opt-arch-evo},
-  abstract = {{In recent years, Multi-Agent Reinforcement Learning (MARL) has found application in numerous areas of science and industry, such as autonomous driving, telecommunications, and global health. Nevertheless, MARL suffers from, for instance, an exponential growth of dimensions. Inherent properties of quantum mechanics help to overcome these limitations, e.g., by significantly reducing the number of trainable parameters. Previous studies have developed an approach that uses gradient-free quantum Reinforcement Learning and evolutionary optimization for variational quantum circuits (VQCs) to reduce the trainable parameters and avoid barren plateaus as well as vanishing gradients. This leads to a significantly better performance of VQCs compared to classical neural networks with a similar number of trainable parameters and a reduction in the number of parameters by more than 97\% compared to similarly good neural networks. We extend an approach of Kölle et al. by proposing a Gate-Based, a Layer-Based, and a Prototype-Based concept to mutate and recombine VQCs. Our results show the best performance for mutation-only strategies and the Gate-Based approach. In particular, we observe a significantly better score, higher total and own collected coins, as well as a superior own coin rate for the best agent when evaluated in the Coin Game environment.}}
-}
+
 
 @misc{Koelle2024Efficient,
   title    = {{Efficient Quantum One-Class Support Vector Machines for Anomaly Detection Using Randomized Measurements and Variable Subsampling}},
@@ -863,15 +908,6 @@
   issn      = {},
   month     = sep,
   pdf       = {https://ieeexplore.ieee.org/document/10821359}
-}
-
-@misc{Koelle2024QuantumTransfer,
-  title    = {{Quantum Transfer Learning: The Impact of Classical Preprocessing}},
-  author   = {Michael Kölle and Jonas Maurer and Philipp Altmann and Leo Sünkel and Jonas Stein and Julian Hager and Sebastian Zielinski and Claudia Linnhoff-Popien},
-  year     = {2024},
-  code     = {https://github.com/javajonny/AE-and-VQC},
-  keywords = {insubmission},
-  abstract = {{Quantum computing promises performance advantages, especially for data-intensive and complex computations. However, the current limitations of quantum hardware impose significant constraints on input sizes. To mitigate this, hybrid transfer learning solutions have been developed, which combine pre-trained classical models capable of managing large inputs with variational quantum circuits. Despite these advancements, the individual contributions of the classical and quantum components to the model's overall performance remain unclear. We propose a novel hybrid architecture that, instead of using a pre-trained network for data compression, employs an autoencoder to generate a compressed version of the input data. This compressed data is then passed to the quantum component. To evaluate our model's classification performance, we compare it against two state-of-the-art hybrid transfer learning architectures, two purely classical architectures, and one quantum architecture. Additionally, we check our compression method with the autoencoder against a Principal Component Analysis (PCA) and Gaussian Mixture Model (GMM). Finally we train our model with another technique where the autoencoder and variational quantum circuit are trained in parallel. The accuracy of each model is tested on four datasets: Banknote Authentication, Breast Cancer Wisconsin, MNIST digits, and AudioMNIST. Our findings indicate that the classical components play a significant role in classification within hybrid transfer learning models, a contribution that is often incorrectly attributed to the quantum component. The performance of our proposed model is comparable to that of a variational quantum circuit utilizing amplitude embedding, and also to a variational quantum circuit which uses compressed data through a PCA or a GMM, suggesting that our approach is a viable alternative.}}
 }
 
 @misc{Koelle2025LotteryTicket,
