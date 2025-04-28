@@ -269,6 +269,42 @@
   pdf          = {https://www.scitepress.org/Papers/2025/132600/132600.pdf}
 }
 
+@inproceedings{Koelle2025Architectural,
+  title     = {{Architectural Influence on Variational Quantum Circuits in Multi-Agent Reinforcement Learning: Evolutionary Strategies for Optimization}},
+  author    = {Michael Kölle and Karola Schneider and Sabrina Egger and Felix Topp and Thomy Phan and Philipp Altmann and Jonas Nüßlein and Claudia Linnhoff-Popien},
+  editor    = {Rocha, Ana Paula
+               and Steels, Luc
+               and van den Herik, Jaap},
+  publisher = {Springer Nature Switzerland},
+  address   = {Cham},
+  pages     = {50--79},
+  year      = {2025},
+  eprint    = {2407.20739},
+  isbn      = {978-3-031-87327-0},
+  doi       = {10.1007/978-3-031-87327-0_12},
+  keywords  = {Quantum reinforcement learning, Multi-agent systems, Evolutionary optimization, Variational quantum circuits, Architecture search},
+  preprint  = {https://arxiv.org/abs/2407.20739},
+  code      = {https://github.com/karolaschneider/vqc-opt-arch-evo},
+  abstract  = {{In recent years, Multi-Agent Reinforcement Learning (MARL) has found application in numerous areas of science and industry, such as autonomous driving, telecommunications, and global health. Nevertheless, MARL suffers from, for instance, an exponential growth of dimensions. Inherent properties of quantum mechanics help to overcome these limitations, e.g., by significantly reducing the number of trainable parameters. Previous studies have developed an approach that uses gradient-free quantum Reinforcement Learning and evolutionary optimization for variational quantum circuits (VQCs) to reduce the trainable parameters and avoid barren plateaus as well as vanishing gradients. This leads to a significantly better performance of VQCs compared to classical neural networks with a similar number of trainable parameters and a reduction in the number of parameters by more than 97\% compared to similarly good neural networks. We extend an approach of Kölle et al. by proposing a Gate-Based, a Layer-Based, and a Prototype-Based concept to mutate and recombine VQCs. Our results show the best performance for mutation-only strategies and the Gate-Based approach. In particular, we observe a significantly better score, higher total and own collected coins, as well as a superior own coin rate for the best agent when evaluated in the Coin Game environment.}}
+}
+
+@inproceedings{Koelle2025QuantumTransfer,
+  title     = {{Quantum Transfer Learning: The Impact of Classical Preprocessing}},
+  author    = {Michael Kölle and Jonas Maurer and Philipp Altmann and Leo Sünkel and Jonas Stein and Julian Hager and Sebastian Zielinski and Claudia Linnhoff-Popien},
+  year      = {2025},
+  editor    = {Rocha, Ana Paula
+               and Steels, Luc
+               and van den Herik, Jaap},
+  code      = {https://github.com/javajonny/AE-and-VQC},
+  publisher = {Springer Nature Switzerland},
+  address   = {Cham},
+  pages     = {368--403},
+  keywords  = {Quantum transfer learning, Variational quantum circuits, Autoencoder, Dimensionality reduction},
+  isbn      = {978-3-031-87327-0},
+  doi       = {10.1007/978-3-031-87327-0_18},
+  abstract  = {{Quantum computing promises performance advantages, especially for data-intensive and complex computations. However, the current limitations of quantum hardware impose significant constraints on input sizes. To mitigate this, hybrid transfer learning solutions have been developed, which combine pre-trained classical models capable of managing large inputs with variational quantum circuits. Despite these advancements, the individual contributions of the classical and quantum components to the model's overall performance remain unclear. We propose a novel hybrid architecture that, instead of using a pre-trained network for data compression, employs an autoencoder to generate a compressed version of the input data. This compressed data is then passed to the quantum component. To evaluate our model's classification performance, we compare it against two state-of-the-art hybrid transfer learning architectures, two purely classical architectures, and one quantum architecture. Additionally, we check our compression method with the autoencoder against a Principal Component Analysis (PCA) and Gaussian Mixture Model (GMM). Finally we train our model with another technique where the autoencoder and variational quantum circuit are trained in parallel. The accuracy of each model is tested on four datasets: Banknote Authentication, Breast Cancer Wisconsin, MNIST digits, and AudioMNIST. Our findings indicate that the classical components play a significant role in classification within hybrid transfer learning models, a contribution that is often incorrectly attributed to the quantum component. The performance of our proposed model is comparable to that of a variational quantum circuit utilizing amplitude embedding, and also to a variational quantum circuit which uses compressed data through a PCA or a GMM, suggesting that our approach is a viable alternative.}}
+}
+
 @inproceedings{Sedlmeier2022Quantifying,
   author       = {Andreas Sedlmeier and Michael Kölle and Robert Müller and Leo Baudrexel and Claudia Linnhoff-Popien},
   title        = {{Quantifying Multimodality in World Models}},
@@ -749,42 +785,6 @@
   isbn      = {978-3-031-87327-0},
   doi       = {10.1007/978-3-031-87327-0_13},
   code      = {https://github.com/jonas-stein/sha}
-}
-
-@inproceedings{Koelle2025Architectural,
-  title     = {{Architectural Influence on Variational Quantum Circuits in Multi-Agent Reinforcement Learning: Evolutionary Strategies for Optimization}},
-  author    = {Michael Kölle and Karola Schneider and Sabrina Egger and Felix Topp and Thomy Phan and Philipp Altmann and Jonas Nüßlein and Claudia Linnhoff-Popien},
-  editor    = {Rocha, Ana Paula
-               and Steels, Luc
-               and van den Herik, Jaap},
-  publisher = {Springer Nature Switzerland},
-  address   = {Cham},
-  pages     = {50--79},
-  year      = {2025},
-  eprint    = {2407.20739},
-  isbn      = {978-3-031-87327-0},
-  doi       = {10.1007/978-3-031-87327-0_12},
-  keywords  = {Quantum reinforcement learning, Multi-agent systems, Evolutionary optimization, Variational quantum circuits, Architecture search},
-  preprint  = {https://arxiv.org/abs/2407.20739},
-  code      = {https://github.com/karolaschneider/vqc-opt-arch-evo},
-  abstract  = {{In recent years, Multi-Agent Reinforcement Learning (MARL) has found application in numerous areas of science and industry, such as autonomous driving, telecommunications, and global health. Nevertheless, MARL suffers from, for instance, an exponential growth of dimensions. Inherent properties of quantum mechanics help to overcome these limitations, e.g., by significantly reducing the number of trainable parameters. Previous studies have developed an approach that uses gradient-free quantum Reinforcement Learning and evolutionary optimization for variational quantum circuits (VQCs) to reduce the trainable parameters and avoid barren plateaus as well as vanishing gradients. This leads to a significantly better performance of VQCs compared to classical neural networks with a similar number of trainable parameters and a reduction in the number of parameters by more than 97\% compared to similarly good neural networks. We extend an approach of Kölle et al. by proposing a Gate-Based, a Layer-Based, and a Prototype-Based concept to mutate and recombine VQCs. Our results show the best performance for mutation-only strategies and the Gate-Based approach. In particular, we observe a significantly better score, higher total and own collected coins, as well as a superior own coin rate for the best agent when evaluated in the Coin Game environment.}}
-}
-
-@inproceedings{Koelle2025QuantumTransfer,
-  title     = {{Quantum Transfer Learning: The Impact of Classical Preprocessing}},
-  author    = {Michael Kölle and Jonas Maurer and Philipp Altmann and Leo Sünkel and Jonas Stein and Julian Hager and Sebastian Zielinski and Claudia Linnhoff-Popien},
-  year      = {2025},
-  editor    = {Rocha, Ana Paula
-               and Steels, Luc
-               and van den Herik, Jaap},
-  code      = {https://github.com/javajonny/AE-and-VQC},
-  publisher = {Springer Nature Switzerland},
-  address   = {Cham},
-  pages     = {368--403},
-  keywords  = {Quantum transfer learning, Variational quantum circuits, Autoencoder, Dimensionality reduction},
-  isbn      = {978-3-031-87327-0},
-  doi       = {10.1007/978-3-031-87327-0_18},
-  abstract  = {{Quantum computing promises performance advantages, especially for data-intensive and complex computations. However, the current limitations of quantum hardware impose significant constraints on input sizes. To mitigate this, hybrid transfer learning solutions have been developed, which combine pre-trained classical models capable of managing large inputs with variational quantum circuits. Despite these advancements, the individual contributions of the classical and quantum components to the model's overall performance remain unclear. We propose a novel hybrid architecture that, instead of using a pre-trained network for data compression, employs an autoencoder to generate a compressed version of the input data. This compressed data is then passed to the quantum component. To evaluate our model's classification performance, we compare it against two state-of-the-art hybrid transfer learning architectures, two purely classical architectures, and one quantum architecture. Additionally, we check our compression method with the autoencoder against a Principal Component Analysis (PCA) and Gaussian Mixture Model (GMM). Finally we train our model with another technique where the autoencoder and variational quantum circuit are trained in parallel. The accuracy of each model is tested on four datasets: Banknote Authentication, Breast Cancer Wisconsin, MNIST digits, and AudioMNIST. Our findings indicate that the classical components play a significant role in classification within hybrid transfer learning models, a contribution that is often incorrectly attributed to the quantum component. The performance of our proposed model is comparable to that of a variational quantum circuit utilizing amplitude embedding, and also to a variational quantum circuit which uses compressed data through a PCA or a GMM, suggesting that our approach is a viable alternative.}}
 }
 
 
