@@ -791,8 +791,44 @@
   code      = {https://github.com/jonas-stein/sha}
 }
 
+@inproceedings{Koelle2025EvaluatingMutation,
+  title     = {{Evaluating Mutation Techniques in Genetic Algorithm-Based Quantum Circuit Synthesis}},
+  author    = {Michael Kölle and Tom Bintener and Maximilian Zorn and Gerhard Stenzel and Leo Sünkel and Thomas Gabor and Claudia Linnhoff-Popien},
+  publisher = {Association for Computing Machinery},
+  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
+  address   = {New York, NY, USA},
+  year      = {2025},
+  isbn      = {9798400714658},
+  month     = jul,
+  url       = {https://doi.org/10.1145/3712256.3726402},
+  doi       = {10.1145/3712256.3726402},
+  pdf       = {https://doi.org/10.1145/3712256.3726402},
+  preprint  = {https://arxiv.org/abs/2504.06413},
+  pages     = {907–915},
+  numpages  = {9},
+  keywords  = {variational quantum circuits, automated circuit design, mutation},
+  location  = {NH Malaga Hotel, Malaga, Spain},
+  series    = {GECCO '25},
+  abstract  = {{Quantum computing leverages the unique properties of qubits and quantum parallelism to solve problems intractable for classical systems, offering unparalleled computational potential. However, the optimization of quantum circuits remains critical, especially for noisy intermediate-scale quantum (NISQ) devices with limited qubits and high error rates. Genetic algorithms (GAs) provide a promising approach for efficient quantum circuit synthesis by automating optimization tasks. This work examines the impact of various mutation strategies within a GA framework for quantum circuit synthesis. By analyzing how different mutations transform circuits, it identifies strategies that enhance efficiency and performance. Experiments utilized a fitness function emphasizing fidelity, while accounting for circuit depth and T operations, to optimize circuits with four to six qubits. Comprehensive hyperparameter testing revealed that combining delete and swap strategies outperformed other approaches, demonstrating their effectiveness in developing robust GA-based quantum circuit optimizers.}}
+}
 
-
+@inbook{Suenkel2025QuantumCircuit,
+  title     = {{Quantum Circuit Construction and Optimization through Hybrid Evolutionary Algorithms}},
+  author    = {Leo Sünkel and Philipp Altmann and Michael Kölle and Gerhard Stenzel and Thomas Gabor and Claudia Linnhoff-Popien},
+  year      = {2025},
+  isbn      = {9798400714658},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3712256.3726392},
+  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
+  pages     = {934–942},
+  numpages  = {9},
+  doi       = {10.1145/3712256.3726392},
+  address   = {New York, NY, USA},
+  preprint  = {https://arxiv.org/pdf/2504.17561},
+  keywords  = {Quantum Circuit Construction},
+  abstract  = {{We apply a hybrid evolutionary algorithm to minimize the depth of circuits in quantum computing. More specifically, we evaluate two different variants of the algorithm. In the first approach, we combine the evolutionary algorithm with an optimization subroutine to optimize the parameters of the rotation gates present in the quantum circuit. In the second, the algorithm solely relies on evolutionary operations (i.e., mutations and crossover). We approach the problem from two sides: (1) constructing circuits from the ground up by starting with random initializations and (2) initializing individuals with the target in order to optimize it according to the fitness function. We run experiments on random circuits with 4 and 6 qubits varying in circuit depth. Our results show that the proposed methods are able to significantly reduce the depth of circuits while still retaining a high fidelity to the target state.}}
+}
 
 
 @inproceedings{Zorn2025QualityDiversity,
@@ -803,22 +839,6 @@
   publisher = {AAAI Press},
   volume    = {35},
   keywords  = {toappear}
-}
-
-@inproceedings{Koelle2025EvaluatingMutation,
-  title     = {{Evaluating Mutation Techniques in Genetic Algorithm-Based Quantum Circuit Synthesis}},
-  author    = {Michael Kölle and Tom Bintener and Maximilian Zorn and Gerhard Stenzel and Leo Sünkel and Thomas Gabor and Claudia Linnhoff-Popien},
-  publisher = {Association for Computing Machinery},
-  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
-  address   = {New York, NY, USA},
-  year      = {2025},
-  month     = jul,
-  doi       = {10.1145/3712256.3726402},
-  pdf       = {https://doi.org/10.1145/3712256.3726402},
-  preprint  = {https://arxiv.org/abs/2504.06413},
-  keywords  = {toappear},
-  series    = {GECCO '25},
-  abstract  = {{Quantum computing leverages the unique properties of qubits and quantum parallelism to solve problems intractable for classical systems, offering unparalleled computational potential. However, the optimization of quantum circuits remains critical, especially for noisy intermediate-scale quantum (NISQ) devices with limited qubits and high error rates. Genetic algorithms (GAs) provide a promising approach for efficient quantum circuit synthesis by automating optimization tasks. This work examines the impact of various mutation strategies within a GA framework for quantum circuit synthesis. By analyzing how different mutations transform circuits, it identifies strategies that enhance efficiency and performance. Experiments utilized a fitness function emphasizing fidelity, while accounting for circuit depth and T operations, to optimize circuits with four to six qubits. Comprehensive hyperparameter testing revealed that combining delete and swap strategies outperformed other approaches, demonstrating their effectiveness in developing robust GA-based quantum circuit optimizers.}}
 }
 
 @inproceedings{Koelle2025ParameterBased,
@@ -832,18 +852,6 @@
   abstract  = {{In recent years, neural networks (NNs) have driven significant advances in machine learning. However, as tasks grow more complex, NNs often require large numbers of trainable parameters, which increases computational and energy demands. Variational quantum circuits (VQCs) offer a promising alternative: they leverage quantum mechanics to capture intricate relationships and typically need fewer parameters. In this work, we evaluate NNs and VQCs on simple supervised and reinforcement learning tasks, examining models with different parameter sizes. We simulate VQCs and execute selected parts of the training process on real quantum hardware to approximate actual training times. Our results show that VQCs can match NNs in performance while using significantly fewer parameters, despite longer training durations. As quantum technology and algorithms advance, and VQC architectures improve, we posit that VQCs could become advantageous for certain machine learning tasks.}},
   code      = {https://github.com/alexander-feist/nn-vqc-params},
   preprint  = {https://arxiv.org/abs/2504.07273}
-}
-
-@inproceedings{Suenkel2025QuantumCircuit,
-  title     = {{Quantum Circuit Construction and Optimization through Hybrid Evolutionary Algorithms}},
-  author    = {Leo Sünkel and Philipp Altmann and Michael Kölle and Gerhard Stenzel and Thomas Gabor and Claudia Linnhoff-Popien},
-  year      = {2025},
-  publisher = {Association for Computing Machinery},
-  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
-  address   = {New York, NY, USA},
-  preprint  = {https://arxiv.org/pdf/2504.17561},
-  keywords  = {toappear},
-  abstract  = {{We apply a hybrid evolutionary algorithm to minimize the depth of circuits in quantum computing. More specifically, we evaluate two different variants of the algorithm. In the first approach, we combine the evolutionary algorithm with an optimization subroutine to optimize the parameters of the rotation gates present in the quantum circuit. In the second, the algorithm solely relies on evolutionary operations (i.e., mutations and crossover). We approach the problem from two sides: (1) constructing circuits from the ground up by starting with random initializations and (2) initializing individuals with the target in order to optimize it according to the fitness function. We run experiments on random circuits with 4 and 6 qubits varying in circuit depth. Our results show that the proposed methods are able to significantly reduce the depth of circuits while still retaining a high fidelity to the target state.}}
 }
 
 @inproceedings{Stenzel2025GeneralGenetic,
