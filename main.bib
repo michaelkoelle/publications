@@ -921,11 +921,27 @@
 }
 
 @misc{Koelle2025LotteryTicket,
-  title    = {{Investigating the Lottery Ticket Hypothesis for Variational Quantum Circuits}},
-  author   = {Michael Kölle and Leonhard Klingert and Julian Schönberger and Philipp Altmann and Maximilian Mansky and Claudia Linnhoff-Popien},
-  year     = {2025},
-  keywords = {insubmission},
-  abstract = {{Quantum computing is an emerging field in computer science that has seen considerable progress in recent years, especially in machine learning. By harnessing the principles of quantum physics, it can surpass the limitations of classical algorithms. However, variational quantum circuits (VQCs), which rely on adjustable parameters, often face the barren plateau phenomenon, hindering optimization. The Lottery Ticket Hypothesis (LTH) is a recent concept in classical machine learning that has led to notable improvements in parameter efficiency for neural networks. It posits that within a large network, a smaller, more efficient subnetwork, or “winning ticket,” can achieve comparable performance, potentially circumventing plateau challenges. In this work, we investigate whether this idea can apply to VQCs. We show that the weak LTH holds for VQCs, revealing winning tickets that retain just 26.0\% of the original parameters. For the strong LTH, where a pruning mask is learned without any training, we discovered a winning ticket in a binary VQC, achieving 100\% accuracy with only 45\% of the weights. These findings indicate that LTH may mitigate barren plateaus by reducing parameter counts while preserving performance, thus enhancing the efficiency of VQCs in quantum machine learning tasks.}}
+  title         = {{Investigating the Lottery Ticket Hypothesis for Variational Quantum Circuits}},
+  author        = {Michael Kölle and Leonhard Klingert and Julian Schönberger and Philipp Altmann and Tobias Rohe and Claudia Linnhoff-Popien},
+  year          = {2025},
+  eprint        = {2509.11190},
+  archiveprefix = {arXiv},
+  primaryclass  = {quant-ph},
+  url           = {https://arxiv.org/abs/2509.11190},
+  keywords      = {insubmission},
+  abstract      = {{Quantum computing is an emerging field in computer science that has seen considerable progress in recent years, especially in machine learning. By harnessing the principles of quantum physics, it can surpass the limitations of classical algorithms. However, variational quantum circuits (VQCs), which rely on adjustable parameters, often face the barren plateau phenomenon, hindering optimization. The Lottery Ticket Hypothesis (LTH) is a recent concept in classical machine learning that has led to notable improvements in parameter efficiency for neural networks. It posits that within a large network, a smaller, more efficient subnetwork, or “winning ticket,” can achieve comparable performance, potentially circumventing plateau challenges. In this work, we investigate whether this idea can apply to VQCs. We show that the weak LTH holds for VQCs, revealing winning tickets that retain just 26.0\% of the original parameters. For the strong LTH, where a pruning mask is learned without any training, we discovered a winning ticket in a binary VQC, achieving 100\% accuracy with only 45\% of the weights. These findings indicate that LTH may mitigate barren plateaus by reducing parameter counts while preserving performance, thus enhancing the efficiency of VQCs in quantum machine learning tasks.}}
+}
+
+@misc{Koelle2025QASRL,
+  title         = {{Quantum Architecture Search for Solving Quantum Machine Learning Tasks}},
+  author        = {Michael Kölle and Simon Salfer and Tobias Rohe and Philipp Altmann and Claudia Linnhoff-Popien},
+  year          = {2025},
+  eprint        = {2509.11198},
+  archiveprefix = {arXiv},
+  primaryclass  = {quant-ph},
+  url           = {https://arxiv.org/abs/2509.11198},
+  keywords      = {insubmission},
+  abstract      = {{Quantum computing leverages quantum mechanics to address computational problems in ways that differ fundamentally from classical approaches. While current quantum hardware remains error-prone and limited in scale, Variational Quantum Circuits offer a noise-resilient framework suitable for today’s devices. The performance of these circuits strongly depends on the underlying architecture of their parameterized quantum components. Identifying efficient, hardware-compatible quantum circuit architectures—known as Quantum Architecture Search (QAS)—is therefore essential. Manual QAS is complex and error-prone, motivating efforts to automate it. Among various automated strategies, Reinforcement Learning (RL) remains underexplored, particularly in Quantum Machine Learning contexts. This work introduces RL-QAS, a framework that applies RL to discover effective circuit architectures for classification tasks. We evaluate RL-QAS using the Iris and binary MNIST datasets. The agent autonomously discovers low-complexity circuit designs that achieve high test accuracy. Our results show that RL is a viable approach for automated architecture search in quantum machine learning. However, applying RL-QAS to more complex tasks will require further refinement of the search strategy and performance evaluation mechanisms.}}
 }
 
 @misc{Suenkel2025EvolutionaryCircuit,
