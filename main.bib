@@ -320,7 +320,7 @@
   preprint     = {https://arxiv.org/abs/2112.07263},
   pdf          = {https://www.scitepress.org/Papers/2022/108985/108985.pdf},
   keywords     = {uncertainty, multimodality, world models, model-based deep reinforcement learning, mixture-density networks},
-  abstract     = {{Model-based Deep Reinforcement Learning (RL) assumes the availability of a model of an environment’s underlying transition dynamics. This model can be used to predict future effects of an agent’s possible actions. When no such model is available, it is possible to learn an approximation of the real environment, e.g. by using generative neural networks, sometimes also called World Models. As most real-world environments are stochastic in nature and the transition dynamics are oftentimes multimodal, it is important to use a modelling technique that is able to reflect this multimodal uncertainty. In order to safely deploy such learning systems in the real world, especially in an industrial context, it is paramount to consider these uncertainties. In this work, we analyze existing and propose new metrics for the detection and quantification of multimodal uncertainty in RL based World Models. The correct modelling & detection of uncertain future states lays the foundation for handling critical situations in a safe way, which is a prerequisite for deploying RL systems in real-world settings.}}
+  abstract     = {{Model-based Deep Reinforcement Learning (RL) assumes the availability of a model of an environment’s underlying transition dynamics. This model can be used to predict future effects of an agent’s possible actions. When no such model is available, it is possible to learn an approximation of the real environment, e.g. by using generative neural networks, sometimes also called World Models. As most real-world environments are stochastic in nature and the transition dynamics are oftentimes multimodal, it is important to use a modelling technique that is able to reflect this multimodal uncertainty. In order to safely deploy such learning systems in the real world, especially in an industrial context, it is paramount to consider these uncertainties. In this work, we analyze existing and propose new metrics for the detection and quantification of multimodal uncertainty in RL based World Models. The correct modelling \& detection of uncertain future states lays the foundation for handling critical situations in a safe way, which is a prerequisite for deploying RL systems in real-world settings.}}
 }
 
 @inproceedings{Illium2022Constructing,
@@ -462,6 +462,7 @@
   keywords  = {architecture search, circuit optimization, quantum computing, reinforcement learning},
   location  = {Auckland, New Zealand},
   series    = {AAMAS '24},
+  doi       = {10.5555/3635637.3663081},
   preprint  = {https://arxiv.org/abs/2312.11337},
   pdf       = {https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p2123.pdf},
   url       = {https://dl.acm.org/doi/10.5555/3635637.3663081},
@@ -843,15 +844,29 @@
 
 @inproceedings{Koelle2025ParameterBased,
   title     = {{Evaluating Parameter-Based Training Performance of Neural Networks and Variational Quantum Circuits}},
-  author    = {Michael Kölle and Alexander Feist and Jonas Stein and Claudia Linnhoff-Popien},
+  author    = {Kölle, Michael
+               and Feist, Alexander
+               and Stein, Jonas
+               and Wölckert, Sebastian
+               and Linnhoff-Popien, Claudia},
+  editor    = {Lees, Michael H.
+               and Cai, Wentong
+               and Cheong, Siew Ann
+               and Su, Yi
+               and Abramson, David
+               and Dongarra, Jack J.
+               and Sloot, Peter M. A.},
+  title     = {Evaluating Parameter-Based Training Performance of Neural Networks and Variational Quantum Circuits},
+  booktitle = {Computational Science -- ICCS 2025},
   year      = {2025},
-  month     = jul,
-  booktitle = {Computational Science -- ICCS},
   publisher = {Springer Nature Switzerland},
-  keywords  = {toappear},
+  address   = {Cham},
+  pages     = {275--282},
   abstract  = {{In recent years, neural networks (NNs) have driven significant advances in machine learning. However, as tasks grow more complex, NNs often require large numbers of trainable parameters, which increases computational and energy demands. Variational quantum circuits (VQCs) offer a promising alternative: they leverage quantum mechanics to capture intricate relationships and typically need fewer parameters. In this work, we evaluate NNs and VQCs on simple supervised and reinforcement learning tasks, examining models with different parameter sizes. We simulate VQCs and execute selected parts of the training process on real quantum hardware to approximate actual training times. Our results show that VQCs can match NNs in performance while using significantly fewer parameters, despite longer training durations. As quantum technology and algorithms advance, and VQC architectures improve, we posit that VQCs could become advantageous for certain machine learning tasks.}},
   code      = {https://github.com/alexander-feist/nn-vqc-params},
-  preprint  = {https://arxiv.org/abs/2504.07273}
+  preprint  = {https://arxiv.org/abs/2504.07273},
+  doi       = {10.1007/978-3-031-97635-3_33},
+  pdf       = {https://link.springer.com/content/pdf/10.1007/978-3-031-97635-3.pdf}
 }
 
 @inproceedings{Stenzel2025GeneralGenetic,
@@ -921,26 +936,26 @@
 }
 
 @misc{Koelle2025LotteryTicket,
-  title         = {{Investigating the Lottery Ticket Hypothesis for Variational Quantum Circuits}},
+  title         = {Investigating the Lottery Ticket Hypothesis for Variational Quantum Circuits},
   author        = {Michael Kölle and Leonhard Klingert and Julian Schönberger and Philipp Altmann and Tobias Rohe and Claudia Linnhoff-Popien},
   year          = {2025},
   eprint        = {2509.11190},
   archiveprefix = {arXiv},
   primaryclass  = {quant-ph},
   url           = {https://arxiv.org/abs/2509.11190},
-  keywords      = {insubmission},
+  keywords      = {toappear},
   abstract      = {{Quantum computing is an emerging field in computer science that has seen considerable progress in recent years, especially in machine learning. By harnessing the principles of quantum physics, it can surpass the limitations of classical algorithms. However, variational quantum circuits (VQCs), which rely on adjustable parameters, often face the barren plateau phenomenon, hindering optimization. The Lottery Ticket Hypothesis (LTH) is a recent concept in classical machine learning that has led to notable improvements in parameter efficiency for neural networks. It posits that within a large network, a smaller, more efficient subnetwork, or “winning ticket,” can achieve comparable performance, potentially circumventing plateau challenges. In this work, we investigate whether this idea can apply to VQCs. We show that the weak LTH holds for VQCs, revealing winning tickets that retain just 26.0\% of the original parameters. For the strong LTH, where a pruning mask is learned without any training, we discovered a winning ticket in a binary VQC, achieving 100\% accuracy with only 45\% of the weights. These findings indicate that LTH may mitigate barren plateaus by reducing parameter counts while preserving performance, thus enhancing the efficiency of VQCs in quantum machine learning tasks.}}
 }
 
 @misc{Koelle2025QASRL,
-  title         = {{Quantum Architecture Search for Solving Quantum Machine Learning Tasks}},
+  title         = {Quantum Architecture Search for Solving Quantum Machine Learning Tasks},
   author        = {Michael Kölle and Simon Salfer and Tobias Rohe and Philipp Altmann and Claudia Linnhoff-Popien},
   year          = {2025},
   eprint        = {2509.11198},
   archiveprefix = {arXiv},
   primaryclass  = {quant-ph},
   url           = {https://arxiv.org/abs/2509.11198},
-  keywords      = {insubmission},
+  keywords      = {toappear},
   abstract      = {{Quantum computing leverages quantum mechanics to address computational problems in ways that differ fundamentally from classical approaches. While current quantum hardware remains error-prone and limited in scale, Variational Quantum Circuits offer a noise-resilient framework suitable for today’s devices. The performance of these circuits strongly depends on the underlying architecture of their parameterized quantum components. Identifying efficient, hardware-compatible quantum circuit architectures—known as Quantum Architecture Search (QAS)—is therefore essential. Manual QAS is complex and error-prone, motivating efforts to automate it. Among various automated strategies, Reinforcement Learning (RL) remains underexplored, particularly in Quantum Machine Learning contexts. This work introduces RL-QAS, a framework that applies RL to discover effective circuit architectures for classification tasks. We evaluate RL-QAS using the Iris and binary MNIST datasets. The agent autonomously discovers low-complexity circuit designs that achieve high test accuracy. Our results show that RL is a viable approach for automated architecture search in quantum machine learning. However, applying RL-QAS to more complex tasks will require further refinement of the search strategy and performance evaluation mechanisms.}}
 }
 
