@@ -833,13 +833,19 @@
 
 
 @inproceedings{Zorn2025QualityDiversity,
-  title     = {{Quality Diversity for Variational Quantum Circuit Optimization}},
-  author    = {Maximilian Zorn and Jonas Stein and Maximilian Balthasar Mansky and Philipp Altmann and Michael Kölle and Claudia Linnhoff-Popien},
+  author    = {Zorn, Maximilian and Stein, Jonas and Mansky, Maximilian Balthasar and Altmann, Philipp and Kölle, Michael and Linnhoff-Popien, Claudia},
+  title     = {Quality diversity for variational quantum circuit optimization},
   year      = {2025},
-  booktitle = {ICAPS '25: Proceedings of the Thirty-Fifth International Conference on Automated Planning and Scheduling},
+  isbn      = {1-57735-903-8},
   publisher = {AAAI Press},
-  volume    = {35},
-  keywords  = {toappear}
+  url       = {https://doi.org/10.1609/icaps.v35i1.36139},
+  doi       = {10.1609/icaps.v35i1.36139},
+  abstract  = {Optimizing the architecture of variational quantum circuits (VQCs) is crucial for advancing quantum computing (QC) towards practical applications. Current methods range from static ansatz design and evolutionary methods to machine learned VQC optimization, but are either slow, sample inefficient or require infeasible circuit depth to realize advantages. Quality diversity (QD) search methods combine diversity-driven optimization with user-specified features that offer insight into the optimization quality of circuit solution candidates. However, the choice of quality measures and the representational modeling of the circuits to allow for optimization with the current state-of-the-art QD methods like covariance matrix adaptation (CMA), is currently still an open problem. In this work we introduce a directly matrix-based circuit engineering, that can be readily optimized with QD-CMA methods and evaluate heuristic circuit quality properties like expressivity and gate-diversity as quality measures. We empirically show superior circuit optimization of our QD optimization w.r.t. speed and solution score against a set of robust benchmark algorithms from the literature on a selection of NP-hard combinatorial optimization problems.},
+  booktitle = {Proceedings of the Thirty-Fifth International Conference on Automated Planning and Scheduling},
+  articleno = {45},
+  numpages  = {9},
+  location  = {Melbourne, Victoria, Australia},
+  series    = {ICAPS '25}
 }
 
 @inproceedings{Koelle2025ParameterBased,
@@ -876,24 +882,23 @@
   publisher = {Association for Computing Machinery},
   booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
   address   = {New York, NY, USA},
-  keywords  = {toappear},
-  abstract  = {{By employing large language models (LLMs) we build a general genetic algorithm, i.e., a genetic algorithm (GA) that can solve various domains without any changes to its algorithmic components. Our approach requires only a problem description in natural language and a black-box fitness function and can then handle any type of data via natural-language-based evolutionary operators that call an LLM to compute their application. The relevant prompts for the operators can be human-designed or self-optimized with similar performance results. Compared to the only other generalist GA approach, i.e., asking an LLM to write a new specific GA, our natural-language-based genetic algorithm (NaLaGA) offers not only a better class of safety (since no LLM-generated code is executed by NaLaGA) but also greatly improved results in the two example domains ``Schwefel'' and ``grid world maze''.}}
+  abstract  = {{By employing large language models (LLMs) we build a general genetic algorithm, i.e., a genetic algorithm (GA) that can solve various domains without any changes to its algorithmic components. Our approach requires only a problem description in natural language and a black-box fitness function and can then handle any type of data via natural-language-based evolutionary operators that call an LLM to compute their application. The relevant prompts for the operators can be human-designed or self-optimized with similar performance results. Compared to the only other generalist GA approach, i.e., asking an LLM to write a new specific GA, our natural-language-based genetic algorithm (NaLaGA) offers not only a better class of safety (since no LLM-generated code is executed by NaLaGA) but also greatly improved results in the two example domains ``Schwefel'' and ``grid world maze''.}},
+  url       = {https://dl.acm.org/doi/10.1145/3712255.3726695},
+  doi       = {10.1145/3712255.3726695}
 }
 
 @inproceedings{Rohe2025AcceleratedVQE,
   title     = {{Accelerated VQE: Parameter Recycling for Similar Recurring Problem Instances}},
   author    = {Tobias Rohe and Maximilian Balthasar Mansky and Michael Kölle and Jonas Stein and Leo Sünkel and Claudia Linnhoff-Popien},
   year      = {2025},
-  keywords  = {toappear},
   preprint  = {https://arxiv.org/abs/2503.22590},
   abstract  = {{Training the Variational Quantum Eigensolver (VQE) is a task that requires substantial compute. We propose the use of concepts from transfer learning to considerably reduce the training time when solving similar problem instances. We demonstrate that its utilisation leads to accelerated convergence and provides a similar quality of results compared to circuits with parameters initialised around zero. Further, transfer learning works better when the distance between the source-solution is close to that of the target-solution. Based on these findings, we present an accelerated VQE approach tested on the MaxCut problem with a problem size of 12 nodes solved with two different circuits utilised. We compare our results against a random baseline and non transfer learning trained circuits. Our experiments demonstrate that transfer learning can reduce training time by around 93\% in post-training, relative to identical circuits without the use of transfer learning. The accelerated VQE approach beats the standard approach by seven, respectively nine percentage points in terms of solution quality, if the early-stopping is considered. In settings where time-to-solution or computational costs are critical, this approach provides a significant advantage, having an improved trade-off between training effort and solution quality.}},
   publisher = {Springer Nature Switzerland},
   address   = {Cham},
-  booktitle = {Innovations for Community Services}
+  booktitle = {Innovations for Community Services},
+  url       = {https://doi.org/10.1007/978-3-031-94263-1_5},
+  doi       = {10.1007/978-3-031-94263-1_5}
 }
-
-
-
 
 
 
