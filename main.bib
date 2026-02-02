@@ -938,7 +938,6 @@
 @inproceedings{Koelle2025LotteryTicket,
   title        = {Investigating the Lottery Ticket Hypothesis for Variational Quantum Circuits},
   author       = {Michael Kölle and Leonhard Klingert and Julian Schönberger and Philipp Altmann and Tobias Rohe and Claudia Linnhoff-Popien},
-  year         = {2025},
   booktitle    = {Proceedings of the 17th International Conference on Agents and Artificial Intelligence: ICAART},
   year         = {2026},
   publisher    = {SciTePress},
@@ -953,7 +952,6 @@
 @inproceedings{Koelle2025QASRL,
   title        = {Quantum Architecture Search for Solving Quantum Machine Learning Tasks},
   author       = {Michael Kölle and Simon Salfer and Tobias Rohe and Philipp Altmann and Claudia Linnhoff-Popien},
-  year         = {2025},
   booktitle    = {Proceedings of the 17th International Conference on Agents and Artificial Intelligence: ICAART},
   year         = {2026},
   publisher    = {SciTePress},
@@ -973,7 +971,7 @@
 }
 
 @inproceedings{Suenkel2026Evaluation,
-  title     = {An Evaluation of the Remote CX Protocol under Noise in Distributed Quantum Computing},
+  title     = {{An Evaluation of the Remote CX Protocol under Noise in Distributed Quantum Computing}},
   author    = {Leo Sünkel and Michael Kölle and Tobias Rohe and Claudia Linnhoff-Popien},
   booktitle = {ICC 2026 - IEEE International Conference on Communications},
   year      = {2026},
@@ -981,7 +979,8 @@
 }
 
 @inproceedings{Koelle2026EmergentCooperation,
-  title     = {Emergent Cooperation in Quantum Multi-Agent Reinforcement Learning Using Communication},
+  title     = {{Emergent Cooperation in Quantum Multi-Agent Reinforcement Learning Using Communication}},
+  abstract  = {{Emergent cooperation in classical Multi-Agent Reinforcement Learning has gained significant attention, particularly in the context of Sequential Social Dilemmas (SSDs). While classical reinforcement learning approaches have demonstrated capability for emergent cooperation, research on extending these methods to Quantum Multi-Agent Reinforcement Learning remains limited, particularly through communication. In this paper, we apply communication approaches to quantum Q-Learning agents: the Mutual Acknowledgment Token Exchange (MATE) protocol, its extension Mutually Endorsed Distributed Incentive Acknowledgment Token Exchange (MEDIATE), the peer rewarding mechanism Gifting, and Reinforced Inter-Agent Learning (RIAL). We evaluate these approaches in three SSDs: the Iterated Prisoner's Dilemma, Iterated Stag Hunt, and Iterated Game of Chicken. Our experimental results show that approaches using MATE with temporal-difference measure (MATE\textsubscript{TD}), AutoMATE, MEDIATE-I, and MEDIATE-S achieved high cooperation levels across all dilemmas, demonstrating that communication is a viable mechanism for fostering emergent cooperation in Quantum Multi-Agent Reinforcement Learning.}},
   author    = {Michael Kölle and Christian Reff and Leo Sünkel and Julian Hager and Gerhard Stenzel and Claudia Linnhoff-Popien},
   booktitle = {ICC 2026 - IEEE International Conference on Communications},
   year      = {2026},
@@ -989,3 +988,24 @@
   preprint  = {https://www.arxiv.org/abs/2601.18419}
 }
 
+@inproceedings{Stenzel2026QuantumKingRing,
+  title        = {{Quantum King-Ring Domination in Chess: A QAOA Approach}},
+  abstract     = {{The Quantum Approximate Optimization Algorithm (QAOA) is extensively benchmarked on synthetic random instances such as MaxCut, TSP, and SAT problems, but these lack semantic structure and human interpretability, offering limited insight into performance on real-world problems with meaningful constraints. We introduce Quantum King-Ring Domination (QKRD), a NISQ-scale benchmark derived from chess tactical positions that provides 5,000 structured instances with one-hot constraints, spatial locality, and 10–40 qubit scale. Using QKRD, we systematically evaluate QAOA design choices and find that constraint-preserving mixers (XY, domain-wall) converge approximately 13 steps faster than standard mixers (p < 10−7, d ≈ 0.5)while eliminating penalty tuning, warm-start strategies reduce convergence by 45 steps (p < 10−127, d = 3.35) with energy improvements exceeding d = 8, and CVaR optimization yields an informative negative result with worse energy (p < 10−40, d = 1.21) and no coverage benefit. Intrinsic validation shows QAOA outperforms greedy heuristics by 12.6% and random selection by 80.1%. Our results demonstrate that structured benchmarks reveal advantages of problem-informed QAOA techniques obscured in random instances. We release all code, data, and experimental artifacts for reproducible NISQ algorithm research.}},
+  author       = {Gerhard Stenzel and Michael Kölle and Tobias Rohe and Julian Hager and Leo Sünkel and Claudia Linnhoff-Popien},
+  booktitle    = {Proceedings of the 17th International Conference on Agents and Artificial Intelligence: ICAART},
+  year         = {2026},
+  publisher    = {SciTePress},
+  organization = {INSTICC},
+  keywords     = {toappear, Quantum Approximate Optimization Algorithm, Chess, King-Ring Domination, QUBO, Mixers, Warm-Start, CVaR, NISQ}
+}
+
+@inproceedings{Stenzel2026Reinforcement,
+  title        = {{Reinforcement Learning for Parameterized Quantum State Preparation: A Comparative Study}},
+  abstract     = {{We extend directed quantum circuit synthesis (DQCS) with reinforcement learning from purely discrete gate selection to parameterized quantum state preparation with continuous single-qubit rotations Rx, Ry, and Rz. We compare two training regimes: a one-stage agent that jointly selects the gate type, the affected qubit(s), and the rotation angle; and a two-stage variant that first proposes a discrete circuit and subsequently optimizes the rotation angles with Adam using parameter-shift gradients. Using Gymnasium and PennyLane, we evaluate Proximal Policy Optimization (PPO) and Advantage Actor–Critic (A2C) on systems comprising two to ten qubits and on targets of increasing complexity with λ ranging from one to five. Whereas A2C does not learn effective policies in this setting, PPO succeeds under stable hyperparameters (one-stage: learning rate approximately 5 × 10−4 with a self-fidelity-error threshold of 0.01; two-stage: learning rate approximately 10−4). Both approaches reliably reconstruct computational basis states (between 83% and 99% success) and Bell states (between 61% and 77% success). However, scalability saturates for λ of approximately three to four and does not extend to ten-qubit targets even at λ = 2. The two-stage method offers only marginal accuracy gains while requiring around three times the runtime. For practicality under a fixed compute budget, we therefore recommend the one-stage PPO policy and outline avenues to improve scalability.}},
+  author       = {Gerhard Stenzel and Michael Kölle and Tobias Rohe and Julian Hager and Leo Sünkel and Maximilian Zorn and Claudia Linnhoff-Popien},
+  booktitle    = {Proceedings of the 17th International Conference on Agents and Artificial Intelligence: ICAART},
+  year         = {2026},
+  publisher    = {SciTePress},
+  organization = {INSTICC},
+  keywords     = {toappear, Quantum State Preparation, Reinforcement Learning, Directed Quantum Circuit Synthesis, Parameterized Gates, Proximal Policy Optimization}
+}
