@@ -999,7 +999,8 @@
   booktitle = {ICC 2026 - IEEE International Conference on Communications},
   year      = {2026},
   keywords  = {toappear},
-  preprint  = {https://arxiv.org/abs/2602.03536}
+  preprint  = {https://arxiv.org/abs/2602.03536},
+  abstract  = {{Quantum computers connected through classical and quantum communication channels can be combined to function as a single unit to run large quantum circuits that each device is unable to execute on their own. The distributed quantum computing paradigm is therefore often seen as a potential pathway to scaling quantum computing to capacities necessary for practical and large-scale applications. Whether connecting multiple quantum processing units (QPUs) in clusters or over networks, quantum communication requires entanglement to be generated and distributed over distances. Using entanglement, the remote CX protocol can be performed, which allows the application of the CX gate involving qubits located in different QPUs. In this work, we use a specialized simulation framework for a high-level evaluation of the impact of the protocol when executed under noise in various network configurations using different number of QPUs. We compare naive and graph partitioning qubit assignment strategies and how they affect the fidelity in experiments run on Grover, GHZ, VQC, and random circuits. The results provide insights on how QPU and network configurations or naive scheduling can degrade performance.}}
 }
 
 @inproceedings{Koelle2026EmergentCooperation,
@@ -1021,7 +1022,7 @@
   month        = mar,
   publisher    = {SciTePress},
   organization = {INSTICC},
-  keywords     = {toappear, Quantum State Preparation, Reinforcement Learning, Directed Quantum Circuit Synthesis, Parameterized Gates, Proximal Policy Optimization}
+  keywords     = {Quantum State Preparation, Reinforcement Learning, Directed Quantum Circuit Synthesis, Parameterized Gates, Proximal Policy Optimization}
 }
 
 @inproceedings{Stenzel2026BarrenPlateaus,
@@ -1082,16 +1083,4 @@
   url           = {https://arxiv.org/abs/2601.18351},
   preprint      = {https://arxiv.org/abs/2601.18351},
   abstract      = {{Efficient entanglement distribution is a cornerstone of the Quantum Internet. However, physical link parameters such as photon loss, memory coherence time, and gate error rates fluctuate dynamically, rendering static purification strategies suboptimal. In this paper, we propose an Adaptive Purification Controller (APC) that automatically optimizes the entanglement distillation sequence to maximize the goodput, i.e., the rate of delivered pairs meeting a strict fidelity threshold. By treating protocol selection as a resource allocation problem, the APC dynamically switches between purification depths and protocols (BBPSSW vs. DEJMPS) to navigate the trade-off between generation rate and state quality. Using a dynamic programming planner with Pareto pruning, simulation results show that our approach mitigates the "fidelity cliffs" inherent in static protocols and reduces resource wastage in high-noise regimes. Furthermore, we extend the controller to heterogeneous scenarios, and evaluate it for both multipartite GHZ state generation and continuous-variable systems using effective noiseless linear amplification models. We benchmark its computational overhead, showing decision latencies in the millisecond range per link in our implementation.}}
-}
-
-@misc{Sünkel2026RemoteCX,
-  title         = {An Evaluation of the Remote CX Protocol under Noise in Distributed Quantum Computing},
-  author        = {Leo Sünkel and Michael Kölle and Tobias Rohe and Claudia Linnhoff-Popien},
-  year          = {2026},
-  eprint        = {2602.03536},
-  archiveprefix = {arXiv},
-  primaryclass  = {quant-ph},
-  url           = {https://arxiv.org/abs/2602.03536},
-  preprint      = {https://arxiv.org/abs/2602.03536},
-  abstract      = {{Quantum computers connected through classical and quantum communication channels can be combined to function as a single unit to run large quantum circuits that each device is unable to execute on their own. The distributed quantum computing paradigm is therefore often seen as a potential pathway to scaling quantum computing to capacities necessary for practical and large-scale applications. Whether connecting multiple quantum processing units (QPUs) in clusters or over networks, quantum communication requires entanglement to be generated and distributed over distances. Using entanglement, the remote CX protocol can be performed, which allows the application of the CX gate involving qubits located in different QPUs. In this work, we use a specialized simulation framework for a high-level evaluation of the impact of the protocol when executed under noise in various network configurations using different number of QPUs. We compare naive and graph partitioning qubit assignment strategies and how they affect the fidelity in experiments run on Grover, GHZ, VQC, and random circuits. The results provide insights on how QPU and network configurations or naive scheduling can degrade performance.}}
 }
