@@ -1013,18 +1013,6 @@
   preprint  = {https://www.arxiv.org/abs/2601.18419}
 }
 
-@inproceedings{Stenzel2026Reinforcement,
-  title        = {{Reinforcement Learning for Parameterized Quantum State Preparation: A Comparative Study}},
-  abstract     = {{We extend directed quantum circuit synthesis (DQCS) with reinforcement learning from purely discrete gate selection to parameterized quantum state preparation with continuous single-qubit rotations Rx, Ry, and Rz. We compare two training regimes: a one-stage agent that jointly selects the gate type, the affected qubit(s), and the rotation angle; and a two-stage variant that first proposes a discrete circuit and subsequently optimizes the rotation angles with Adam using parameter-shift gradients. Using Gymnasium and PennyLane, we evaluate Proximal Policy Optimization (PPO) and Advantage Actor–Critic (A2C) on systems comprising two to ten qubits and on targets of increasing complexity with λ ranging from one to five. Whereas A2C does not learn effective policies in this setting, PPO succeeds under stable hyperparameters (one-stage: learning rate approximately 5 × 10-4 with a self-fidelity-error threshold of 0.01; two-stage: learning rate approximately 10-4). Both approaches reliably reconstruct computational basis states (between 83\% and 99\% success) and Bell states (between 61\% and 77\% success). However, scalability saturates for λ of approximately three to four and does not extend to ten-qubit targets even at λ = 2. The two-stage method offers only marginal accuracy gains while requiring around three times the runtime. For practicality under a fixed compute budget, we therefore recommend the one-stage PPO policy and outline avenues to improve scalability.}},
-  author       = {Gerhard Stenzel and Michael Kölle and Tobias Rohe and Julian Hager and Leo Sünkel and Maximilian Zorn and Claudia Linnhoff-Popien},
-  booktitle    = {Proceedings of the 17th International Conference on Agents and Artificial Intelligence: ICAART},
-  year         = {2026},
-  month        = mar,
-  publisher    = {SciTePress},
-  organization = {INSTICC},
-  keywords     = {Quantum State Preparation, Reinforcement Learning, Directed Quantum Circuit Synthesis, Parameterized Gates, Proximal Policy Optimization}
-}
-
 @inproceedings{Stenzel2026BarrenPlateaus,
   author       = {Gerhard Stenzel and Tobias Rohe and Michael Kölle and Leo Sünkel and Jonas Stein and Claudia Linnhoff-Popien},
   title        = {Illustration of Barren Plateaus in Quantum Computing},
@@ -1051,6 +1039,7 @@
   doi          = {10.5220/0014395600004052},
   isbn         = {978-989-758-796-2},
   issn         = {2184-433X},
+  keywords     = {Quantum State Preparation, Reinforcement Learning, Directed Quantum Circuit Synthesis, Parameterized Gates, Proximal Policy Optimization},
   url          = {https://www.scitepress.org/Link.aspx?doi=10.5220/0014395600004052},
   preprint     = {https://arxiv.org/abs/2602.16523},
   abstract     = {{We extend directed quantum circuit synthesis (DQCS) with reinforcement learning from purely discrete gate selection to parameterized quantum state preparation with continuous single-qubit rotations \(R_x\), \(R_y\), and \(R_z\). We compare two training regimes: a one-stage agent that jointly selects the gate type, the affected qubit(s), and the rotation angle; and a two-stage variant that first proposes a discrete circuit and subsequently optimizes the rotation angles with Adam using parameter-shift gradients. Using Gymnasium and PennyLane, we evaluate Proximal Policy Optimization (PPO) and Advantage Actor--Critic (A2C) on systems comprising two to ten qubits and on targets of increasing complexity with \(\lambda\) ranging from one to five. Whereas A2C does not learn effective policies in this setting, PPO succeeds under stable hyperparameters (one-stage: learning rate approximately \(5\times10^{-4}\) with a self-fidelity-error threshold of 0.01; two-stage: learning rate approximately \(10^{-4}\)). Both approaches reliably reconstruct computational basis states (between 83\% and 99\% success) and Bell states (between 61\% and 77\% success). However, scalability saturates for \(\lambda\) of approximately three to four and does not extend to ten-qubit targets even at \(\lambda=2\). The two-stage method offers only marginal accuracy gains while requiring around three times the runtime. For practicality under a fixed compute budget, we therefore recommend the one-stage PPO policy, provide explicit synthesized circuits, and contrast with a classical variational baseline to outline avenues for improved scalability.}}
