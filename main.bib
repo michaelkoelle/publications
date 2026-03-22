@@ -940,31 +940,39 @@
   pdf       = {https://ieeexplore.ieee.org/document/10821359}
 }
 
+
+
 @inproceedings{Koelle2025LotteryTicket,
-  title        = {Investigating the Lottery Ticket Hypothesis for Variational Quantum Circuits},
   author       = {Michael Kölle and Leonhard Klingert and Julian Schönberger and Philipp Altmann and Tobias Rohe and Claudia Linnhoff-Popien},
-  booktitle    = {Proceedings of the 17th International Conference on Agents and Artificial Intelligence: ICAART},
+  title        = {Investigating the Lottery Ticket Hypothesis for Variational Quantum Circuits},
+  booktitle    = {Proceedings of the 18th International Conference on Agents and Artificial Intelligence - Volume 3: ICAART},
   year         = {2026},
+  pages        = {2433-2440},
   publisher    = {SciTePress},
   organization = {INSTICC},
-  keywords     = {toappear},
+  doi          = {10.5220/0014247600004052},
+  isbn         = {978-989-758-796-2},
+  issn         = {2184-433X},
   abstract     = {{Quantum computing is an emerging field in computer science that has seen considerable progress in recent years, especially in machine learning. By harnessing the principles of quantum physics, it can surpass the limitations of classical algorithms. However, variational quantum circuits (VQCs), which rely on adjustable parameters, often face the barren plateau phenomenon, hindering optimization. The Lottery Ticket Hypothesis (LTH) is a recent concept in classical machine learning that has led to notable improvements in parameter efficiency for neural networks. It posits that within a large network, a smaller, more efficient subnetwork, or “winning ticket,” can achieve comparable performance, potentially circumventing plateau challenges. In this work, we investigate whether this idea can apply to VQCs. We show that the weak LTH holds for VQCs, revealing winning tickets that retain just 26.0\% of the original parameters. For the strong LTH, where a pruning mask is learned without any training, we discovered a winning ticket in a binary VQC, achieving 100\% accuracy with only 45\% of the weights. These findings indicate that LTH may mitigate barren plateaus by reducing parameter counts while preserving performance, thus enhancing the efficiency of VQCs in quantum machine learning tasks.}},
   preprint     = {https://arxiv.org/abs/2509.11190},
-  url          = {https://arxiv.org/abs/2509.11190},
+  url          = {https://www.scitepress.org/Link.aspx?doi=10.5220/0014247600004052},
   code         = {https://github.com/916750/lottery-ticket-vqc}
 }
 
 @inproceedings{Koelle2025QASRL,
-  title        = {Quantum Architecture Search for Solving Quantum Machine Learning Tasks},
   author       = {Michael Kölle and Simon Salfer and Tobias Rohe and Philipp Altmann and Claudia Linnhoff-Popien},
-  booktitle    = {Proceedings of the 17th International Conference on Agents and Artificial Intelligence: ICAART},
+  title        = {Quantum Architecture Search for Solving Quantum Machine Learning Tasks},
+  booktitle    = {Proceedings of the 18th International Conference on Agents and Artificial Intelligence - Volume 2: ICAART},
   year         = {2026},
+  pages        = {1254-1263},
   publisher    = {SciTePress},
   organization = {INSTICC},
-  keywords     = {toappear},
+  doi          = {10.5220/0014247700004052},
+  isbn         = {978-989-758-796-2},
+  issn         = {2184-433X},
   abstract     = {{Quantum computing leverages quantum mechanics to address computational problems in ways that differ fundamentally from classical approaches. While current quantum hardware remains error-prone and limited in scale, Variational Quantum Circuits offer a noise-resilient framework suitable for today’s devices. The performance of these circuits strongly depends on the underlying architecture of their parameterized quantum components. Identifying efficient, hardware-compatible quantum circuit architectures—known as Quantum Architecture Search (QAS)—is therefore essential. Manual QAS is complex and error-prone, motivating efforts to automate it. Among various automated strategies, Reinforcement Learning (RL) remains underexplored, particularly in Quantum Machine Learning contexts. This work introduces RL-QAS, a framework that applies RL to discover effective circuit architectures for classification tasks. We evaluate RL-QAS using the Iris and binary MNIST datasets. The agent autonomously discovers low-complexity circuit designs that achieve high test accuracy. Our results show that RL is a viable approach for automated architecture search in quantum machine learning. However, applying RL-QAS to more complex tasks will require further refinement of the search strategy and performance evaluation mechanisms.}},
   preprint     = {https://arxiv.org/abs/2509.11198},
-  url          = {https://arxiv.org/abs/2509.11198},
+  url          = {https://www.scitepress.org/Link.aspx?doi=10.5220/0014247700004052},
   code         = {https://github.com/916750/qas4ml}
 }
 
@@ -1022,4 +1030,70 @@
   publisher    = {SciTePress},
   organization = {INSTICC},
   keywords     = {toappear, Quantum State Preparation, Reinforcement Learning, Directed Quantum Circuit Synthesis, Parameterized Gates, Proximal Policy Optimization}
+}
+
+@inproceedings{Stenzel2026BarrenPlateaus,
+  author       = {Gerhard Stenzel and Tobias Rohe and Michael Kölle and Leo Sünkel and Jonas Stein and Claudia Linnhoff-Popien},
+  title        = {Illustration of Barren Plateaus in Quantum Computing},
+  booktitle    = {Proceedings of the 18th International Conference on Agents and Artificial Intelligence - Volume 1: QAIO},
+  year         = {2026},
+  pages        = {731-742},
+  publisher    = {SciTePress},
+  organization = {INSTICC},
+  doi          = {10.5220/0014310300004052},
+  isbn         = {978-989-758-796-2}
+}
+
+@inproceedings{Stenzel2026ReinforcementParameterized,
+  author       = {Gerhard Stenzel and Michael Kölle and Tobias Rohe and Leo Sünkel and Julian Hager and Claudia Linnhoff{-}Popien},
+  title        = {Reinforcement Learning for Parameterized Quantum State Preparation: A Comparative Study},
+  booktitle    = {Proceedings of the 18th International Conference on Agents and Artificial Intelligence - Volume 4: ICAART},
+  year         = {2026},
+  pages        = {3127-3133},
+  publisher    = {SciTePress},
+  organization = {INSTICC},
+  doi          = {10.5220/0014395600004052},
+  isbn         = {978-989-758-796-2},
+  issn         = {2184-433X},
+  url          = {https://www.scitepress.org/Link.aspx?doi=10.5220/0014395600004052},
+  preprint     = {https://arxiv.org/abs/2602.16523},
+  abstract     = {{We extend directed quantum circuit synthesis (DQCS) with reinforcement learning from purely discrete gate selection to parameterized quantum state preparation with continuous single-qubit rotations \(R_x\), \(R_y\), and \(R_z\). We compare two training regimes: a one-stage agent that jointly selects the gate type, the affected qubit(s), and the rotation angle; and a two-stage variant that first proposes a discrete circuit and subsequently optimizes the rotation angles with Adam using parameter-shift gradients. Using Gymnasium and PennyLane, we evaluate Proximal Policy Optimization (PPO) and Advantage Actor--Critic (A2C) on systems comprising two to ten qubits and on targets of increasing complexity with \(\lambda\) ranging from one to five. Whereas A2C does not learn effective policies in this setting, PPO succeeds under stable hyperparameters (one-stage: learning rate approximately \(5\times10^{-4}\) with a self-fidelity-error threshold of 0.01; two-stage: learning rate approximately \(10^{-4}\)). Both approaches reliably reconstruct computational basis states (between 83\% and 99\% success) and Bell states (between 61\% and 77\% success). However, scalability saturates for \(\lambda\) of approximately three to four and does not extend to ten-qubit targets even at \(\lambda=2\). The two-stage method offers only marginal accuracy gains while requiring around three times the runtime. For practicality under a fixed compute budget, we therefore recommend the one-stage PPO policy, provide explicit synthesized circuits, and contrast with a classical variational baseline to outline avenues for improved scalability.}}
+}
+
+@inproceedings{Stenzel2026KingRing,
+  author       = {Gerhard Stenzel and Michael Kölle and Tobias Rohe and Julian Hager and Leo Sünkel and Maximilian Zorn and Claudia Linnhoff{-}Popien},
+  title        = {Quantum King-Ring Domination in Chess: A QAOA Approach},
+  booktitle    = {Proceedings of the 18th International Conference on Agents and Artificial Intelligence - Volume 2: ICAART},
+  year         = {2026},
+  pages        = {1847-1855},
+  publisher    = {SciTePress},
+  organization = {INSTICC},
+  doi          = {10.5220/0014447700004052},
+  isbn         = {978-989-758-796-2},
+  issn         = {2184-433X},
+  url          = {https://www.scitepress.org/Link.aspx?doi=10.5220/0014447700004052},
+  preprint     = {https://arxiv.org/abs/2601.00318},
+  abstract     = {{The Quantum Approximate Optimization Algorithm (QAOA) is extensively benchmarked on synthetic random instances such as MaxCut, TSP, and SAT problems, but these lack semantic structure and human interpretability, offering limited insight into performance on real-world problems with meaningful constraints. We introduce Quantum King-Ring Domination (QKRD), a NISQ-scale benchmark derived from chess tactical positions that provides 5,000 structured instances with one-hot constraints, spatial locality, and 10--40 qubit scale. The benchmark pairs human-interpretable coverage metrics with intrinsic validation against classical heuristics, enabling algorithmic conclusions without external oracles. Using QKRD, we systematically evaluate QAOA design choices and find that constraint-preserving mixers (XY, domain-wall) converge approximately 13 steps faster than standard mixers (p<10^{-7}, d\approx0.5) while eliminating penalty tuning, warm-start strategies reduce convergence by 45 steps (p<10^{-127}, d=3.35) with energy improvements exceeding d=8, and Conditional Value-at-Risk (CVaR) optimization yields an informative negative result with worse energy (p<10^{-40}, d=1.21) and no coverage benefit. Intrinsic validation shows QAOA outperforms greedy heuristics by 12.6\% and random selection by 80.1\%. Our results demonstrate that structured benchmarks reveal advantages of problem-informed QAOA techniques obscured in random instances. We release all code, data, and experimental artifacts for reproducible NISQ algorithm research.}}
+}
+
+@misc{Kulkarni2026Adaptive,
+  title         = {An Adaptive Purification Controller for Quantum Networks: Dynamic Protocol Selection and Multipartite Distillation},
+  author        = {Pranav Kulkarni and Leo Sünkel and Michael Kölle},
+  year          = {2026},
+  eprint        = {2601.18351},
+  archiveprefix = {arXiv},
+  primaryclass  = {quant-ph},
+  url           = {https://arxiv.org/abs/2601.18351},
+  abstract      = {{Efficient entanglement distribution is a cornerstone of the Quantum Internet. However, physical link parameters such as photon loss, memory coherence time, and gate error rates fluctuate dynamically, rendering static purification strategies suboptimal. In this paper, we propose an Adaptive Purification Controller (APC) that automatically optimizes the entanglement distillation sequence to maximize the goodput, i.e., the rate of delivered pairs meeting a strict fidelity threshold. By treating protocol selection as a resource allocation problem, the APC dynamically switches between purification depths and protocols (BBPSSW vs. DEJMPS) to navigate the trade-off between generation rate and state quality. Using a dynamic programming planner with Pareto pruning, simulation results show that our approach mitigates the "fidelity cliffs" inherent in static protocols and reduces resource wastage in high-noise regimes. Furthermore, we extend the controller to heterogeneous scenarios, and evaluate it for both multipartite GHZ state generation and continuous-variable systems using effective noiseless linear amplification models. We benchmark its computational overhead, showing decision latencies in the millisecond range per link in our implementation.}}
+}
+
+@misc{Sünkel2026RemoteCX,
+  title         = {An Evaluation of the Remote CX Protocol under Noise in Distributed Quantum Computing},
+  author        = {Leo Sünkel and Michael Kölle and Tobias Rohe and Claudia Linnhoff-Popien},
+  year          = {2026},
+  eprint        = {2602.03536},
+  archiveprefix = {arXiv},
+  primaryclass  = {quant-ph},
+  url           = {https://arxiv.org/abs/2602.03536},
+  abstract      = {{Quantum computers connected through classical and quantum communication channels can be combined to function as a single unit to run large quantum circuits that each device is unable to execute on their own. The distributed quantum computing paradigm is therefore often seen as a potential pathway to scaling quantum computing to capacities necessary for practical and large-scale applications. Whether connecting multiple quantum processing units (QPUs) in clusters or over networks, quantum communication requires entanglement to be generated and distributed over distances. Using entanglement, the remote CX protocol can be performed, which allows the application of the CX gate involving qubits located in different QPUs. In this work, we use a specialized simulation framework for a high-level evaluation of the impact of the protocol when executed under noise in various network configurations using different number of QPUs. We compare naive and graph partitioning qubit assignment strategies and how they affect the fidelity in experiments run on Grover, GHZ, VQC, and random circuits. The results provide insights on how QPU and network configurations or naive scheduling can degrade performance.}}
 }
