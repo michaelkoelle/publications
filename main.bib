@@ -1092,7 +1092,8 @@
   pages     = {1600-1610},
   doi       = {10.1109/QCE60285.2024.00187},
   preprint  = {https://arxiv.org/abs/2312.11337},
-  url       = {https://doi.org/10.1109/QCE60285.2024.00187}
+  url       = {https://doi.org/10.1109/QCE60285.2024.00187},
+  abstract  = {{Quantum computing (QC) in the current NISQ era is still limited in size and precision. Hybrid applications mitigating those shortcomings are prevalent to gain early insight and advantages. Hybrid quantum machine learning (QML) comprises both the application of QC to improve machine learning (ML) and ML to improve QC architectures. This work considers the latter, leveraging reinforcement learning (RL) to improve quantum circuit design (QCD), which we formalize by a set of generic objectives. Furthermore, we propose qcd-gym, a concrete framework formalized as a Markov decision process, to enable learning policies capable of controlling a universal set of continuously parameterized quantum gates. Finally, we provide benchmark comparisons to assess the shortcomings and strengths of current state-of-the-art RL algorithms.}}
 }
 
 @misc{Hager2026Transformer,
@@ -1102,7 +1103,8 @@
   eprint        = {2609.18565},
   archiveprefix = {arXiv},
   url           = {https://arxiv.org/abs/2609.18565},
-  preprint      = {https://arxiv.org/abs/2609.18565}
+  preprint      = {https://arxiv.org/abs/2609.18565},
+  abstract      = {{We propose a compact NISQ-compatible quantum transformer architecture for synthetic QNLP sequence modelling. The model preserves the autoregressive next-token interface of a classical transformer, but replaces attention and feed-forward sublayers with variational quantum encoder blocks, connector circuits, decoder blocks and a direct two-qubit measurement readout. Token contexts are angle-encoded into small quantum registers, processed by parallel variational heads and encoder integration circuits and conditioned through decoder ancillae to produce a distribution over a four-token vocabulary. We evaluate several architecture variants on deterministic and lexicographic grammar-generation tasks against a compact classical transformer baseline. The quantum models are trainable end-to-end and learn nontrivial grammar structure, including perfect deterministic generation in individual runs and high lexicographic validity in the strongest variant. The classical baseline remains more accurate and stable and the quantum models are sensitive to initialization. The contribution is therefore not a claim of quantum advantage, but a concrete architecture and evaluation of transformer-inspired QNLP sequence modelling under near-term quantum constraints.}}
 }
 
 @phdthesis{Koelle2026Thesis,
@@ -1111,5 +1113,6 @@
   school    = {Ludwig-Maximilians-Universität München},
   year      = {2026},
   url       = {https://edoc.ub.uni-muenchen.de/37436/},
-  urn       = {urn:nbn:de:bvb:19-374364}
+  urn       = {urn:nbn:de:bvb:19-374364},
+  abstract  = {{In recent years, the progress of artificial intelligence (AI) has been largely driven by scaling the size and complexity of its models. This strategy, however, has led to ever-increasing parameter counts and unsustainable resource demands, raising questions about the future scalability of classical architectures and creating a clear need for more parameter-efficient approaches. Quantum computing offers a promising alternative, capable of creating powerful models with significantly fewer parameters. In the current noisy intermediate-scale quantum (NISQ) era, variational quantum algorithms (VQAs) have emerged as the leading strategy to realize this potential on near-term hardware. However, several foundational challenges limit the practical use of VQAs: unstable training dynamics, the barren plateau phenomenon, which inhibits scalability, and the manual, heuristic-based process of circuit design. In this thesis, we address these challenges by developing a systematic framework for the entire VQA development lifecycle. We introduce robust training and optimization techniques---including weight re-mapping, exponential learning rate decay, structural pruning, and metaheuristic optimization---to ensure stable convergence and mitigate barren plateaus. Furthermore, we establish methods for automated circuit architecture search using reinforcement learning and evolutionary algorithms to reduce the reliance on manual design. We demonstrate the practical value of this framework in several demanding AI domains. We use VQAs to create highly parameter-efficient quantum reinforcement learning agents and introduce novel quantum models for generative AI and anomaly detection. Beyond these applications, we provide an analysis of the models' real-world trade-offs, establishing a method to fairly assess hybrid systems and quantifying the balance between parameter efficiency and training time. Taken together, these contributions provide a set of validated, systematic approaches that advance VQAs from theoretical concepts toward robust, practical tools for near-term quantum AI.}}
 }
