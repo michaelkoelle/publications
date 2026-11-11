@@ -275,6 +275,7 @@
   editor    = {Rocha, Ana Paula
                and Steels, Luc
                and van den Herik, Jaap},
+  booktitle = {Agents and Artificial Intelligence},
   publisher = {Springer Nature Switzerland},
   address   = {Cham},
   pages     = {50--79},
@@ -298,6 +299,7 @@
                and Steels, Luc
                and van den Herik, Jaap},
   code      = {https://github.com/javajonny/AE-and-VQC},
+  booktitle = {Agents and Artificial Intelligence},
   publisher = {Springer Nature Switzerland},
   address   = {Cham},
   pages     = {368--403},
@@ -402,6 +404,7 @@
   publisher = {JMLR.org},
   abstract  = {{Stochastic partial observability poses a major challenge for decentralized coordination in multiagent reinforcement learning but is largely neglected in state-of-the-art research due to a strong focus on state-based centralized training for decentralized execution (CTDE) and benchmarks that lack sufficient stochasticity like StarCraft Multi-Agent Challenge (SMAC). In this paper, we propose Attention-based Embeddings of Recurrence In multi-Agent Learning (AERIAL) to approximate value functions under stochastic partial observability. AERIAL replaces the true state with a learned representation of multi-agent recurrence, considering more accurate information about decentralized agent decisions than state-based CTDE. We then introduce MessySMAC, a modified version of SMAC with stochastic observations and higher variance in initial states, to provide a more general and configurable benchmark regarding stochastic partial observability. We evaluate AERIAL in Dec-Tiger as well as in a variety of SMAC and MessySMAC maps, and compare the results with state-based CTDE. Furthermore, we evaluate the robustness of AERIAL and state-based CTDE against various stochasticity configurations in MessySMAC.}},
   booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+  pages     = {27840--27853},
   articleno = {1157},
   doi       = {10.5555/3618408.3619565},
   numpages  = {14},
@@ -445,7 +448,6 @@
   pages    = {34},
   pdf      = {https://www.ifaamas.org/Proceedings/aamas2022/pdfs/p1047.pdf},
   code     = {https://github.com/thomyphan/emergent-cooperation},
-  abstract = {{Peer incentivization (PI) is a recent approach where all agents learn to reward or penalize each other in a distributed fashion, which often leads to emergent cooperation. Current PI mechanisms implicitly assume a flawless communication channel in order to exchange rewards. These rewards are directly incorporated into the learning process without any chance to respond with feedback. Furthermore, most PI approaches rely on global information, which limits scalability and applicability to real-world scenarios where only local information is accessible. In this paper, we propose Mutual Acknowledgment Token Exchange (MATE), a PI approach defined by a two-phase communication protocol to exchange acknowledgment tokens as incentives to shape individual rewards mutually. All agents condition their token transmissions on the locally estimated quality of their own situations based on environmental rewards and received tokens. MATE is completely decentralized and only requires local communication and information. We evaluate MATE in three social dilemma domains. Our results show that MATE is able to achieve and maintain significantly higher levels of cooperation than previous PI approaches. In addition, we evaluate the robustness of MATE in more realistic scenarios, where agents can deviate from the protocol and communication failures can occur. We also evaluate the sensitivity of MATE w.r.t. the choice of token values.}}
 }
 
 @inproceedings{Altmann2024Quantum,
@@ -591,7 +593,7 @@
 @inproceedings{Stenzel2024SelfReplicating,
   author   = {Stenzel, Gerhard and Zorn, Maximilian and Altmann, Philipp and Mansky, Maximilian Balthasar and Kölle, Michael and Gabor, Thomas},
   title    = {{Self-Replicating Prompts for Large Language Models: Towards Artificial Culture}},
-  volume   = {ALIFE 2024: Proceedings of the 2024 Artificial Life Conference},
+  booktitle = {ALIFE 2024: Proceedings of the 2024 Artificial Life Conference},
   series   = {Artificial Life Conference Proceedings},
   pages    = {110},
   year     = {2024},
@@ -606,7 +608,7 @@
 @inproceedings{Zorn2024SelfAdaptive,
   author   = {Zorn, Maximilian and Altmann, Philipp and Stenzel, Gerhard and Kölle, Michael and Linnhoff-Popien, Claudia and Gabor, Thomas},
   title    = {{Self-Adaptive Robustness of Applied Neural-Network-Soups}},
-  volume   = {ALIFE 2024: Proceedings of the 2024 Artificial Life Conference},
+  booktitle = {ALIFE 2024: Proceedings of the 2024 Artificial Life Conference},
   series   = {Artificial Life Conference Proceedings},
   pages    = {74},
   year     = {2024},
@@ -653,6 +655,8 @@
   doi      = {10.1007/s00521-024-10512-8},
   abstract = {{We propose discriminative reward co-training (DIRECT) as an extension to deep reinforcement learning algorithms. Building upon the concept of self-imitation learning (SIL), we introduce an imitation buffer to store beneficial trajectories generated by the policy, determined by their return. A discriminator network is trained concurrently to the policy to distinguish between trajectories generated by the current policy and beneficial trajectories generated by previous policies. The discriminator’s verdict is used to construct a reward signal for optimizing the policy. By interpolating prior experience, DIRECT is able to act as a reward surrogate, steering policy optimization toward more valuable regions of the reward landscape, thus, toward learning an optimal policy. In this article, we formally introduce the additional components, their intended purpose and parameterization, and define a unified training procedure. To reveal insights into the mechanics of the proposed architecture, we provide evaluations of the introduced hyperparameters. Further benchmark evaluations in various discrete and continuous control environments provide evidence that DIRECT is especially beneficial in environments possessing sparse rewards, hard exploration tasks, and shifting circumstances. Our results show that DIRECT outperforms state-of-the-art algorithms in those challenging scenarios by providing a surrogate reward to the policy and direct the optimization toward valuable areas.}},
   journal  = {Neural Computing and Applications},
+  volume   = {37},
+  pages    = {18793--18809},
   author   = {Altmann, Philipp and Ritz, Fabian and Zorn, Maximilian and Kölle, Michael and Phan, Thomy and Gabor, Thomas and Linnhoff-Popien, Claudia},
   month    = dec,
   year     = {2024},
@@ -788,7 +792,7 @@
   keywords  = {Quantum machine learning, Parameterized quantum circuits, Combinatorial optimization},
   abstract  = {{A central challenge in quantum machine learning is the design and training of parameterized quantum circuits (PQCs). Much like in deep learning, vanishing gradients pose significant obstacles to the trainability of PQCs, arising from various sources. One such source is the presence of non-local loss functions, which require the measurement of a large subset of qubits involved. To address this issue and facilitate parameter training for quantum applications using global loss functions, we propose Sequential Hamiltonian Assembly (SHA). SHA iteratively approximates the loss by assembling it from local components. To further demonstrate the feasibility of our approach, we extend our previous case study by introducing a new partitioning strategy, a new merger between QAOA and SHA, and an evaluation of SHA onto the Max-Cut optimization problem. Simulation results show that SHA outperforms conventional parameter training by 43.89{\%} and the empirical state-of-the-art, Layer-VQE by 29.08{\%} in the mean accuracy for Max-Cut. This paves the way for locality-aware learning techniques, mitigating vanishing gradients for a large class of practically relevant problems.}},
   isbn      = {978-3-031-87327-0},
-  doi       = {10.1007/978-3-031-87327-0_13},
+  doi       = {10.1007/978-3-031-87327-0_12},
   code      = {https://github.com/jonas-stein/sha}
 }
 
@@ -825,7 +829,6 @@
   pages     = {934–942},
   numpages  = {9},
   doi       = {10.1145/3712256.3726392},
-  address   = {New York, NY, USA},
   preprint  = {https://arxiv.org/pdf/2504.17561},
   keywords  = {Quantum Circuit Construction},
   abstract  = {{We apply a hybrid evolutionary algorithm to minimize the depth of circuits in quantum computing. More specifically, we evaluate two different variants of the algorithm. In the first approach, we combine the evolutionary algorithm with an optimization subroutine to optimize the parameters of the rotation gates present in the quantum circuit. In the second, the algorithm solely relies on evolutionary operations (i.e., mutations and crossover). We approach the problem from two sides: (1) constructing circuits from the ground up by starting with random initializations and (2) initializing individuals with the target in order to optimize it according to the fitness function. We run experiments on random circuits with 4 and 6 qubits varying in circuit depth. Our results show that the proposed methods are able to significantly reduce the depth of circuits while still retaining a high fidelity to the target state.}}
@@ -842,6 +845,7 @@
   doi       = {10.1609/icaps.v35i1.36139},
   abstract  = {Optimizing the architecture of variational quantum circuits (VQCs) is crucial for advancing quantum computing (QC) towards practical applications. Current methods range from static ansatz design and evolutionary methods to machine learned VQC optimization, but are either slow, sample inefficient or require infeasible circuit depth to realize advantages. Quality diversity (QD) search methods combine diversity-driven optimization with user-specified features that offer insight into the optimization quality of circuit solution candidates. However, the choice of quality measures and the representational modeling of the circuits to allow for optimization with the current state-of-the-art QD methods like covariance matrix adaptation (CMA), is currently still an open problem. In this work we introduce a directly matrix-based circuit engineering, that can be readily optimized with QD-CMA methods and evaluate heuristic circuit quality properties like expressivity and gate-diversity as quality measures. We empirically show superior circuit optimization of our QD optimization w.r.t. speed and solution score against a set of robust benchmark algorithms from the literature on a selection of NP-hard combinatorial optimization problems.},
   booktitle = {Proceedings of the Thirty-Fifth International Conference on Automated Planning and Scheduling},
+  pages     = {367--375},
   articleno = {45},
   numpages  = {9},
   location  = {Melbourne, Victoria, Australia},
@@ -862,7 +866,6 @@
                and Abramson, David
                and Dongarra, Jack J.
                and Sloot, Peter M. A.},
-  title     = {Evaluating Parameter-Based Training Performance of Neural Networks and Variational Quantum Circuits},
   booktitle = {Computational Science -- ICCS 2025},
   year      = {2025},
   publisher = {Springer Nature Switzerland},
@@ -880,8 +883,9 @@
   author    = {Gerhard Stenzel and Sarah Gerner and Michael Kölle and Maximilian Zorn and Thomas Gabor},
   year      = {2025},
   publisher = {Association for Computing Machinery},
-  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
+  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference Companion},
   address   = {New York, NY, USA},
+  pages     = {699--702},
   abstract  = {{By employing large language models (LLMs) we build a general genetic algorithm, i.e., a genetic algorithm (GA) that can solve various domains without any changes to its algorithmic components. Our approach requires only a problem description in natural language and a black-box fitness function and can then handle any type of data via natural-language-based evolutionary operators that call an LLM to compute their application. The relevant prompts for the operators can be human-designed or self-optimized with similar performance results. Compared to the only other generalist GA approach, i.e., asking an LLM to write a new specific GA, our natural-language-based genetic algorithm (NaLaGA) offers not only a better class of safety (since no LLM-generated code is executed by NaLaGA) but also greatly improved results in the two example domains ``Schwefel'' and ``grid world maze''.}},
   url       = {https://dl.acm.org/doi/10.1145/3712255.3726695},
   doi       = {10.1145/3712255.3726695}
@@ -896,6 +900,7 @@
   publisher = {Springer Nature Switzerland},
   address   = {Cham},
   booktitle = {Innovations for Community Services},
+  pages     = {63--78},
   url       = {https://doi.org/10.1007/978-3-031-94263-1_5},
   doi       = {10.1007/978-3-031-94263-1_5}
 }
@@ -998,7 +1003,9 @@
   author    = {Leo Sünkel and Michael Kölle and Tobias Rohe and Claudia Linnhoff-Popien},
   booktitle = {ICC 2026 - IEEE International Conference on Communications},
   year      = {2026},
-  keywords  = {toappear},
+  pages     = {1--6},
+  doi       = {10.1109/ICC59461.2026.11588132},
+  url       = {https://doi.org/10.1109/ICC59461.2026.11588132},
   preprint  = {https://arxiv.org/abs/2602.03536},
   abstract  = {{Quantum computers connected through classical and quantum communication channels can be combined to function as a single unit to run large quantum circuits that each device is unable to execute on their own. The distributed quantum computing paradigm is therefore often seen as a potential pathway to scaling quantum computing to capacities necessary for practical and large-scale applications. Whether connecting multiple quantum processing units (QPUs) in clusters or over networks, quantum communication requires entanglement to be generated and distributed over distances. Using entanglement, the remote CX protocol can be performed, which allows the application of the CX gate involving qubits located in different QPUs. In this work, we use a specialized simulation framework for a high-level evaluation of the impact of the protocol when executed under noise in various network configurations using different number of QPUs. We compare naive and graph partitioning qubit assignment strategies and how they affect the fidelity in experiments run on Grover, GHZ, VQC, and random circuits. The results provide insights on how QPU and network configurations or naive scheduling can degrade performance.}}
 }
@@ -1009,7 +1016,9 @@
   author    = {Michael Kölle and Christian Reff and Leo Sünkel and Julian Hager and Gerhard Stenzel and Claudia Linnhoff-Popien},
   booktitle = {ICC 2026 - IEEE International Conference on Communications},
   year      = {2026},
-  keywords  = {toappear},
+  pages     = {1--6},
+  doi       = {10.1109/ICC59461.2026.11587352},
+  url       = {https://doi.org/10.1109/ICC59461.2026.11587352},
   preprint  = {https://www.arxiv.org/abs/2601.18419}
 }
 
@@ -1072,4 +1081,35 @@
   url           = {https://arxiv.org/abs/2601.18351},
   preprint      = {https://arxiv.org/abs/2601.18351},
   abstract      = {{Efficient entanglement distribution is a cornerstone of the Quantum Internet. However, physical link parameters such as photon loss, memory coherence time, and gate error rates fluctuate dynamically, rendering static purification strategies suboptimal. In this paper, we propose an Adaptive Purification Controller (APC) that automatically optimizes the entanglement distillation sequence to maximize the goodput, i.e., the rate of delivered pairs meeting a strict fidelity threshold. By treating protocol selection as a resource allocation problem, the APC dynamically switches between purification depths and protocols (BBPSSW vs. DEJMPS) to navigate the trade-off between generation rate and state quality. Using a dynamic programming planner with Pareto pruning, simulation results show that our approach mitigates the "fidelity cliffs" inherent in static protocols and reduces resource wastage in high-noise regimes. Furthermore, we extend the controller to heterogeneous scenarios, and evaluate it for both multipartite GHZ state generation and continuous-variable systems using effective noiseless linear amplification models. We benchmark its computational overhead, showing decision latencies in the millisecond range per link in our implementation.}}
+}
+
+@inproceedings{Altmann2024Challenges,
+  author    = {Altmann, Philipp and Stein, Jonas and Kölle, Michael and Bärligea, Adelina and Zorn, Maximilian and Gabor, Thomas and Phan, Thomy and Feld, Sebastian and Linnhoff-Popien, Claudia},
+  booktitle = {2024 IEEE International Conference on Quantum Computing and Engineering (QCE)},
+  title     = {{Challenges for Reinforcement Learning in Quantum Circuit Design}},
+  year      = {2024},
+  volume    = {01},
+  pages     = {1600-1610},
+  doi       = {10.1109/QCE60285.2024.00187},
+  preprint  = {https://arxiv.org/abs/2312.11337},
+  url       = {https://doi.org/10.1109/QCE60285.2024.00187}
+}
+
+@misc{Hager2026Transformer,
+  title         = {Variational Quantum Transformer Architecture for Synthetic Language Generation},
+  author        = {Julian Hager and Michael Kölle and Gerhard Stenzel and Tobias Rohe and Jonas Stein and Claudia Linnhoff-Popien},
+  year          = {2026},
+  eprint        = {2609.18565},
+  archiveprefix = {arXiv},
+  url           = {https://arxiv.org/abs/2609.18565},
+  preprint      = {https://arxiv.org/abs/2609.18565}
+}
+
+@phdthesis{Koelle2026Thesis,
+  author    = {Michael Kölle},
+  title     = {{Variational algorithms in Quantum Artificial Intelligence: Training optimization, automated circuit design and applications}},
+  school    = {Ludwig-Maximilians-Universität München},
+  year      = {2026},
+  url       = {https://edoc.ub.uni-muenchen.de/37436/},
+  urn       = {urn:nbn:de:bvb:19-374364}
 }
